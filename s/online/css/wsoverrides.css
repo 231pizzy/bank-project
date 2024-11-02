@@ -1,0 +1,302 @@
+/********************************************************************************  
+* This CSS class is used override the CSS settings for the Main content sections.
+* This is to override any Web Redesign cascades issues, and to modify existing Main 
+* content to fit and align better in the new pages.
+* Do not pollution this file with other styling.
+********************************************************************************/
+
+
+@media print {
+	#header {
+		display: none;
+	}
+	#footer {
+		display: none;
+	}
+	#nav {
+		display: none;
+	}
+	#disclaimer {
+		display: none;
+	}
+	#log-in {
+		display: none;
+	}
+	#error-pod {
+		display: none;
+	}
+	#advert {
+		display: none;
+	}
+	#nav {
+		display: none;
+	}
+	.navigation {
+		display: none;
+	}
+	/* <!-- Secondary navigation -->*/
+	.col10 {
+		display: none;
+	}
+	.col93 {
+		display: none;
+	}
+	.col30 {
+		display: none;
+	}
+	#security {
+		display: none;
+	}
+	#can-we-help {
+		display: none;
+	}
+	#details {
+		display: none;
+	}
+	#nectar-card {
+		display: none;
+	}
+	#bottom_promotional {
+		display: none;
+	}
+	.options {
+		display: none;
+	}
+}
+
+
+
+* {
+	font-family: San-serif,Segoe UI,Verdana,Geneva,Helvetica;
+}
+#error {
+		font-weight:bold; 
+		color:#990000; 
+		text-align:center
+}
+DIV#log-in p.button 
+{
+	vertical-align: middle;
+	BACKGROUND-COLOR: #FFFFFF; 
+	MARGIN: -7px 0px 0px 0px; 
+	FLOAT: left
+}
+
+
+DIV#login FIELDSET {
+	MARGIN-TOP: 30px
+}
+DIV#login  FIELDSET {
+	FLOAT: left
+}
+
+
+DIV#login .inputblock {
+	WIDTH: 350px;
+	margin-top: 0px;
+	margin-bottom: 8px;	
+}
+
+DIV#login .labelblock {
+	WIDTH: 120px;
+	padding-left:18px;
+	padding-top:3px;
+}
+
+DIV#login .addinputblock {
+	WIDTH: 400px;
+	margin-top: 0px;
+	margin-bottom: 8px;	
+}
+
+DIV#login .questiontext {
+	WIDTH: 150px;	
+}
+
+DIV#login FIELDSET.left INPUT {
+	WIDTH: 220px; 
+	FLOAT: right;
+	display:inline;
+}
+DIV#login FIELDSET.right {
+	WIDTH: 230px; MARGIN-LEFT: 18px; margin-top: 32px;
+}
+DIV#login FIELDSET.right INPUT {
+	FLOAT: left; MARGIN-LEFT: 0px
+}
+
+
+DIV#login .inputs {
+	FLOAT: right; 
+	MARGIN-LEFT: 2px;
+	margin-top: 3px;
+	margin-right: 2px;
+	width: 200px;
+	display:inline;
+}
+DIV#login .buttons {
+	FLOAT: right; 
+	MARGIN-LEFT: 20px;
+	display: inline;
+	padding-left: 10px;
+}
+
+DIV#login FIELDSET.full {
+	MARGIN-BOTTOM: 10px
+}
+
+DIV#login FIELDSET.full xSPAN {
+	WIDTH: 20px;
+}
+DIV#login FIELDSET.full INPUT {
+	WIDTH: 200px
+}
+DIV#login FIELDSET.submit-field {
+	WIDTH: 344px; FLOAT: none; CLEAR: left
+}
+DIV#login FIELDSET.submit-field INPUT {
+	FLOAT: left;
+}
+DIV#login FIELDSET.option-fields {
+	WIDTH: 400px; FLOAT: none; CLEAR: left;
+}
+DIV#login FIELDSET.option-fields INPUT {
+	FLOAT: right; 
+	MARGIN-LEFT: 10px; 
+	margin-right: 0px;
+	display: inline;
+}
+
+DIV#login FIELDSET.full .inputs {
+	FLOAT: right; 
+	display: inline;
+	MARGIN-LEFT: 10px;
+	margin-right: 0px;
+	width: 200px;
+	margin-bottom: 20px;
+}
+
+
+
+
+#disclaimer {
+	font-size:9px;
+	padding-left:10px;
+	color:#7f7f7f;
+	margin-bottom:10px;
+}
+
+
+.options {
+	POSITION: absolute; 
+	TOP: 7px; 
+	RIGHT: 10px;
+	float: right;
+	display: inline;
+}
+.options FIELDSET {
+	MARGIN: 2px 0px 0px 0px; 
+	width: 230px;
+	float: right;
+	display: inline;
+}
+
+.accountoptions {
+	float: left;
+	display: inline;
+}
+
+.gobutton {
+	margin-top: -1px;
+	margin-left: 2px;
+	float: right;
+	display: inline;
+}
+
+
+DIV.multiple DIV.info {
+	BORDER-TOP: #930031 1px solid; WIDTH: 438px; FLOAT: left
+}
+
+DIV.multiple #first_sav {
+	BORDER-TOP: none;
+}
+DIV.multiple #first_CRD {
+	BORDER-TOP: none;
+}
+
+#nectar-card
+{
+	margin-bottom: 15px;
+}
+
+.positiveBalance {
+	COLOR: #5b960f; FONT-WEIGHT: normal
+}
+.negativeBalance {
+	COLOR: #e03c3a; FONT-WEIGHT: normal
+}
+.account-closed {
+	COLOR: #f39820; FONT-WEIGHT: normal
+}
+
+
+
+
+DIV#noticeboard {
+	POSITION: relative; PADDING-LEFT: 0px
+}
+P.issue {
+	COLOR: #930031
+}
+
+
+
+.error-message 
+{
+	color: #CC3300;
+	font-size: 12px;
+	font-weight: bold;
+	margin: 10px 10px 10px 10px;
+}
+
+
+.DESVALErrorText img
+{
+	margin-top: 2px;
+}
+
+DIV#login LABEL SPAN {
+	WIDTH: 20px; 
+}
+
+DIV#login LABEL SPAN #reqUsername  {
+	WIDTH: 50px; 
+}
+
+DIV#login FIELDSET.full LABEL SPAN  #reqSecurityQuestionAnswer {
+	WIDTH: 50px; 
+}
+
+#reg-button
+{
+	margin-top: 15px;
+	margin-bottom: 1px;
+}
+#act-button
+{
+	margin-top: 15px;
+	margin-bottom: 1px;
+}
+
+div#content div.col10 ul li .active
+{
+	COLOR: #930031; FONT-WEIGHT: bold
+}
+
+.drpReason
+{
+	font-size: 9pt;
+	color: Red;
+}
+

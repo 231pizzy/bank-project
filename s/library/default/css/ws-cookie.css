@@ -1,0 +1,13 @@
+
+/* Cookie notice */
+
+div#cookie-notice { margin:8px 12px 6px 10px; padding:12px 14px 14px 14px; border-radius:6px; overflow:hidden; background:#eee; position:relative; display:none; }
+div#cookie-notice p { margin-right:330px; font-size:0.9em; line-height:1.2em; font-weight:bold ; }
+div#cookie-notice div.buttons { position:absolute; top:11px; right:0; width:330px; }
+div#cookie-notice div.buttons div.btnRounded { margin-left:10px; float:left; display:inline; }
+div#cookie-notice div.buttons a { font-size:1.1em; color:#99152e; }
+div#cookie-notice div.buttons .btnActionSFGrey { background-image:url(../images/common/buttons/btnsf-bg-greyongrey.gif); }
+div#cookie-notice div.buttons .btnActionSFGrey span { background-image:url(../images/common/buttons/btnsf-corners-greyongrey.gif); }
+div#cookie-notice div.buttons .btnActionSFGrey a span span span span { background:url(../images/pods/cta-arrow.gif) no-repeat 6px center; }
+
+/* Cookie notice END */

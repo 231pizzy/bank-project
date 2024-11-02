@@ -1,0 +1,79 @@
+#login-keyboard{
+padding:10px 10px 10px 10px;
+position:relative;
+width:95%;
+/*background:#e9f2f7;*/
+background:#eeedec;
+
+}
+#login-keyboard table,#login-keyboard td{
+border:0;
+margin:0;
+padding:0;
+width:auto;
+}
+#login-keyboard input,.virtualButtons{
+	width: 37px;
+	height: 31px;
+	background-repeat: no-repeat;
+	background-image: url(data:image/gif;base64,R0lGODlhJQAfAOYAAAAAAP////j49/T08/Pz8vLy8fDw7+vr6unp6Obm5eTk4+Li4d7e3dDQz/Dv7u/u7e7t7O3s6+vq6erp6Ono5+jn5ufm5ebl5OXk4+Tj4uHg3+Df3tzb2tnY19jX1tbV1NTT0tLR0MrJyMjHxsfGxf38/Pn4+Pj39/f29vb19fTz8/Lx8fHw8O7t7e3s7Ozr6+vq6trZ2dDPz83MzP7+/v39/fz8/Pv7+/r6+vn5+fj4+Pf39/b29vT09PPz8/Ly8u/v7////wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAAEEALAAAAAAlAB8AAAf/gBCCg4SFhoeIhA4oNzQBj5CRkpOPJSYFhis4NJydnp+goTYDD4MPOaGpqqA1mIIFNbGys7S1trMngi8pt72+tDcuEBQCNsbHyMnKy8kHEBY6zNLTyhQQFyk42tvc3d7f3RfXPTnl5ufo6ero4hcqJvDx8vP09fPtKjr6+/z9/v/92hHYQbCgwYMIEx7EcO0Hj4cQI0qcSFEiwwsrUmjcyLGjx48dLxoYQLKkyZMoU55UcA2Ij5cwY8qcSVNmhmsPfujcybOnz589b15osaKo0aNIkypFKtQFi6dQo0qdSlWq0AgGsmrdyrWrV65NgYgdS7as2bNlF1yj0KKt27dwlOPKhav2woK5ePPCnaDhGQcYLgILHky4sGHBGzZAqNDh74vHkCNLnkz5xYIPNyVsaOChwoHPoEOLHi0aAYMGMSxAiGAhhowPDC5YmE27tu3bFhIsiNHgw4IXui64FjGChPHjyJMrJzFixAzfEwi9sMDAA4gQ2LNr384d+4cYGSZEKBRhgoUL6NOrX88+vQUKL8YLCgQAOw==);
+    border: 0 solid #8fa6b6;
+    color: #231f20;
+    font: bold 11px Arial,Helvetica,sans-serif;
+    padding: 0;
+    text-align: center;
+
+/*display:inline-block;
+padding:.2em .3em;
+font:normal .85em/1em "Lucida Grande",Lucida,Arial,sans-serif;
+text-align:center;
+text-decoration:none;
+-moz-border-radius:.3em;
+-webkit-border-radius:.3em;
+border-radius:.3em;
+border:0;cursor:default;
+-moz-user-select:none;
+-webkit-user-select:none;
+user-select:none;
+height:20px;
+width:22px;
+font-size:1em;
+background:#f9f9f9;
+color:#333;
+border:1px solid #cdcdcd!important;
+margin:2px;
+text-align:center;*/
+}
+/*#login-keyboard input:hover{
+background:#efefef;
+color:#333;
+}
+#login-keyboard-controls input{
+font-weight:normal;
+width:95px;
+height:40px;
+text-align:center;
+border:1px solid #ccc;
+margin:2px;
+}*/
+
+#login-keyboard-numeric{
+	padding: 0 5px 0 25px;
+}
+
+#login-keyboard-controls input.buttons {
+    width: 102px;
+	height: 31px;
+	background-repeat: no-repeat;
+	background-image: url(data:image/gif;base64,R0lGODlhZgAfANUAAAAAAP///+Li4eDg397e3dzc29nZ2MvLyr6+vYmJiO7t697d293c2tjX1d7c2t3b2dXT0aqpqJ2cm4SDgu7t7O3s6+zr6urp6Ono5+jn5ufm5ebl5OTj4uLh4OHg393c29nY19fW1dXU09LR0NDPzsvKyeHf3uDe3d/d3Nza2dHPztDOzcvJyMnHxp2bm83Ly+zr6+vq6uLh4drZ2dfW1s7Nzc3MzMC/v4OCgv///wAAAAAAAAAAAAAAAAAAAAAAACH5BAEAADkALAAAAABmAB8AAAb/QIpwSCwaj8ikcslsNi2dlGNKrVqv2Kx2y+16HamOZWhhNB7otHrNbrvf8Lh8nm4wxhSOis7v+/99KhxCBhBfh4iJiogQBkIkC5GSk5SVlpeYmZqbnJYkQgcooqOkpaanqKmqq6ytpwdCJSeztLW2t7i5uru8vb64JbEmw8TFxsfIycrLzM3OyMEUJR7U1dbX2Nna29zd3t/Z0SUd5OXm5+jp6uvs7e7v6eIC8/T19vf4+fr7/P3++PL+CRxIsCDBgAYTKlz4DyHDhxAZOoxIsaI/cTIyatzIsaPHjyBDihxJ0qO4AShTqlzJsqXLlzBjypzZUhyBmzhz6tzJs6fP/59AgwrlKa6A0aNIkypdyrSp06dQoy4VN6Oq1atYs2rdyrWr169gtYqjQbas2bNo06pdy7at27dpxYmYS7eu3bt48+rdy7evX7ziRggeTLiw4cOIEytezLjxYXErIkueTLmy5cuYM2vezNlytBovQoseTbq06dOoU6tezdp0DSEgIrCYTbu27du4c+vezbu3b9sRQAjhcMNFi+PIkytfzry58+fQo0tH7uLGIAoWPiCQkGACju/gw4sfT768+fPo05+fkEACgg94sHMIYaOE/fv48+vfz7+///8AAmhDCBzgscGBCCao4IIMNujggxBG2KAGGmSAwQUxwFDBhgoUEQEEADs=);
+    border: 0 solid #cccccc;
+    color: #231f20;
+    cursor: pointer;
+    font-family: Arial,Verdana;
+    font-size: 8pt;
+    font-weight: bold;
+    height: 31px;
+    padding: 2px 3px;
+    text-transform: capitalize;
+    width: 102px;
+}

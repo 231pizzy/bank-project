@@ -1,0 +1,103 @@
+#double_nectar_calc_summary{
+	overflow: hidden;
+	border-radius: 5px;
+	background-color: #852d91;
+	position: relative;
+}
+
+#double_nectar_calc_summary #wrapper{
+	margin: 0 1px 1px 1px;
+}
+
+#double_nectar_calc_summary p{
+	margin: 0;
+}
+
+#double_nectar_calc_summary #head{
+	height: 50px;
+	background: url("../../images/double_nectar_calc_summary/header.php")no-repeat;
+	padding: 5px;
+}
+
+#double_nectar_calc_summary #head span{
+	width: 47px;
+	height: 47px;
+	background: transparent url("../../images/double-nectar-calc/nectar-logo-trans.png") no-repeat center center;
+	position: absolute;
+	left: 230px;
+}
+
+#double_nectar_calc_summary #head p{
+	color: #fff;
+	width: 200px;
+	position: absolute;
+	left: 20px;
+	top: 12px;
+}
+
+#double_nectar_calc_summary #quote{
+	text-align: center;
+	font-weight: bold;
+	padding: 10px 0;
+	border-bottom: 1px solid #e2e2e2;
+	background-color: #fff;
+	position: relative;
+}
+
+#double_nectar_calc_summary #quote p{
+	line-height: 1em;
+}
+
+#double_nectar_calc_summary #quote .pound_value{
+	font-size: 3.3em;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+#double_nectar_calc_summary #quote .pound_value span{
+	font-size: 0.4em;
+	position: absolute;
+	top: 0;
+}
+
+#double_nectar_calc_summary .orange{
+	color: #ef6600;
+}
+
+#double_nectar_calc_summary #included_products{
+	background-color: #f7f5e8;
+	padding: 10px;
+}
+
+#double_nectar_calc_summary #included_products li{
+	padding-bottom: 10px;
+}
+
+
+#double_nectar_calc_summary #terms{
+	/*color: #989898;*/
+	padding: 20px;
+	background-color: #fff;
+	border-radius: 0 0 5px 5px;
+	-webkit-border-radius: 0 0 5px 5px;
+	-moz-border-radius: 0 0 5px 5px;
+}
+
+
+#double_nectar_calc_summary #terms h4{
+	font-size: 0.7em;
+}
+
+#double_nectar_calc_summary #terms p{
+	font-size: 10px;
+}
+
+@media only screen and (max-width: 640px) {
+
+	#double_nectar_calc_summary #head span {
+		left: auto;
+		right: 10px;
+	}
+
+}
+

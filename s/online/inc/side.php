@@ -1,0 +1,7 @@
+<div class="col col30"><span></span><div class="block learn" id="can-we-help">
+<img src="images/can-we-help-small-bg.gif" alt="Can we help?">
+<img src="../images/can-we-help-small-bg.gif" alt="Can we help?">
+
+<h2>Can we help?</h2><ul><li> <a href="#">Just ask</a> if you have a question about any aspect of <?php echo $Il1?> online banking.</li></ul><span class="tr corners"></span><span class="tl corners"></span></div><div class="block plum"><div class="head"><h2>Online Support</h2><span class="tl corners"></span><span class="tr corners"></span></div><div class="body"><div class="info"><p>Register, Activate&nbsp;or Re-set your account password.</p> <p class="button"><a href="<?php echo $od?>register/?step=1">Register<span></span></a></p><p class="button"><a href="<?php echo $od?>activate/">Activate<span></span></a></p><p class="button"><a href="#<?php echo $od?>pwreset.php">Re-set my password<span></span></a></p></div><span class="br corners"></span><span class="bl corners"></span></div></div><div class="block learn" id="security">
+<img src="../images/security-small-bg.gif" alt="Security">
+<h2>Security</h2><ul><li><a href="<?php echo $I1L?>security/security_protect_yourself.php" target="_blank">Learn more about what steps to take to ensure your secure online service</a></li></ul><span class="br corners"></span><span class="bl corners"></span></div><!--<div id="promoimage"><img src="../images/prevx_login.gif" alt="Login to download prevx software" border="0"><br></div>--></div>

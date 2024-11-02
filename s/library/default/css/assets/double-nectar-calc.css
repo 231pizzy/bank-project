@@ -1,0 +1,475 @@
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+#spend-text {
+	font-size: 12px;
+}
+
+#calc-banner {
+	-moz-box-shadow: 0 0 10px 1px #333;
+	-webkit-box-shadow: 0 0 10px 1px #333;
+	box-shadow: 0 0 10px 1px #333;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 10px 0;
+	text-align: center;
+	z-index: 40;
+	background: #852d91 url("../../images/double-nectar-calc/banner-bg-ext.jpg") no-repeat center;
+	color: #fff;
+}
+
+#calc-banner-wrapper {
+	width: 830px;
+	margin: 0 auto;
+	overflow: visible;
+}
+
+#calc-rewards-wrapper,
+#get-quote-wrapper {
+	display: none;
+	overflow: visible;
+}
+
+#calc-copy {
+	padding: 13px 0 0 20px;
+	font-size: 1em;
+}
+
+#calc-rewards {
+	background: #6e1e43 url("../../images/icons/cta-chevron-large.gif") no-repeat right center;
+	border: 1px solid #a767af;
+	font-family: 'Sainsburys Mary Ann Bold', Helvetica, sans-serif;
+	width: 200px;
+	text-align: left;
+	padding: 10px;
+	color: #e9e5c6;
+	border-radius: 5px;
+	margin-top: 2px;
+	float: right;
+}
+
+#get-quote-wrapper .left img {
+	float: left;
+	margin-left: -20px;
+	padding-bottom: 55px;
+	padding-right: 10px;
+}
+
+#get-quote-wrapper .left {
+	margin-bottom: 10px;
+	width: 430px;
+}
+
+#get-quote-wrapper .left h4 {
+	color: #dbdbdb;
+	text-align: left;
+	font-size: 12px;
+}
+
+#get-quote-wrapper .banner-terms p {
+	clear: both;
+	color: #fff;
+	text-align: center;
+	font-size: 10px;
+	line-height: 1.4em;
+	margin-top: 5px;
+	width: 100%;
+}
+
+#get-quote-wrapper .left #banner_title {
+	margin-bottom: 12px;
+	text-align: left;
+}
+
+#get-quote-wrapper .left ul {
+	text-align: left;
+}
+
+#get-quote-wrapper .left ul li {
+	font-size: 13px;
+	line-height: 18px;
+	margin-bottom: 6px;
+	text-align: left;
+
+}
+
+#quote-area {
+	padding: 10px 15px;
+	background-color: #fff;
+	border-radius: 10px;
+	overflow: hidden;
+	margin-top: 10px;
+}
+
+#quote-area .get-quote {
+	float: right;
+	margin-top: 5px;
+}
+
+#quote-area .pound-value {
+	float: left;
+	font-weight: bold;
+	position: relative;
+}
+
+#quote-area .pound-value span {
+	font-size: 0.4em;
+	position: absolute;
+	top: 0;
+}
+
+#calc-banner .pound-value {
+	font-size: 2.3em;
+}
+
+#calc-banner .terms {
+	font-size: 0.6em;
+	width: 350px;
+	display: none;
+	float: left;
+	text-align: left;
+	margin-top: 10px;
+}
+
+#calc-rewards:hover {
+	cursor: pointer;
+	background-color: #541030;
+}
+
+#double-nectar-calc {
+	overflow: hidden;
+	border-radius: 5px;
+	background-color: #852d91;
+	position: relative;
+}
+
+#double-nectar-calc p {
+	margin: 0;
+}
+
+#double-nectar-calc #head {
+	height: 81px;
+	background: transparent url("../../images/double-nectar-calc/header.jpg") no-repeat right top;
+}
+
+#double-nectar-calc form {
+	margin: 1px;
+	margin-bottom: -9px;
+	padding: 0 0 10px 0;
+	overflow: hidden;
+	width: 298px;
+}
+
+#double-nectar-calc form label {
+	float: none;
+}
+
+#double-nectar-calc form fieldset {
+	padding-left: 20px;
+	padding-top: 10px;
+	width: auto;
+	margin:	0;
+}
+
+#double-nectar-calc form fieldset.amount {
+	border-bottom: 1px solid #e2e2e2;
+	background-color: #fff;
+}
+
+#double-nectar-calc form fieldset.amount .slider {
+	width: 200px;
+}
+
+#double-nectar-calc form fieldset.amount .slider-field {
+	width: 270px;
+	position: relative;
+	left: -10px;
+}
+
+#double-nectar-calc form fieldset.amount .legend {
+	width: 172px;
+	color: #bdbdbd;
+}
+
+#double-nectar-calc form fieldset.checks {
+	padding: 0;
+}
+
+#double-nectar-calc form div.field.checkbox {
+	width: 250px;
+}
+
+#double-nectar-calc form div.field.checkbox label {
+	display: block;
+	padding-right: 15px;
+}
+
+.get-quote {
+	background: #6e1e43 url("../../images/icons/cta-chevron-large.gif") no-repeat right center;
+	width: 200px;
+	text-align: left;
+	color: #e9e5c6;
+	padding: 10px;
+	border-radius: 5px;
+	margin-left: 20px;
+}
+
+.get-quote:hover {
+	cursor: pointer;
+	background-color: #541030;
+}
+
+#quote-submit p {
+	margin-left: 20px;
+}
+
+#double-nectar-calc .wrapper {
+	padding: 10px 20px 10px 20px;
+	width: auto;
+	border-bottom: 1px solid #e2e2e2;
+}
+
+#calc-wrapper #double-nectar-calc #options,
+#calc-wrapper #double-nectar-calc #included-products {
+	background-color: #f7f5e8;
+}
+
+#calc-wrapper #double-nectar-calc input.slider {
+	border-color: #ef6600;
+}
+
+#double-nectar-calc #options.wrapper {
+	border-bottom: 1px solid #e6e0b6;
+}
+
+#double-nectar-calc form .checkbox label {
+	font-weight: bold;
+}
+
+#double-nectar-calc input.slider {
+	width: 70px;
+	height: 20px;
+	border-color: #f45815;
+}
+
+#content #double-nectar-calc .checkbox input {
+	margin-bottom: 20px;
+	margin-right: 25px;
+}
+
+#content #double-nectar-calc fieldset.amount .checkbox input {
+	margin-bottom: 25px;
+}
+
+#double-nectar-calc #included-products,
+#double-nectar-calc #total-points,
+#double-nectar-calc #quote {
+	display: none;
+}
+
+#double-nectar-calc .slider {
+	float: left;
+}
+
+#double-nectar-calc .slider .fill {
+	background: #ef6600;
+	border-radius: 0px;
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+
+#double-nectar-calc h1 {
+	color: #fff;
+	font-size: 1.3em;
+	width: 190px;
+	position: absolute;
+	left: 20px;
+	top: 20px;
+	letter-spacing: 1px;
+}
+
+#double-nectar-calc #quote {
+	text-align: center;
+	font-weight: bold;
+	padding: 10px 0;
+	border-bottom: 1px solid #e2e2e2;
+	position: relative;
+	background-color: #fff;
+}
+
+#double-nectar-calc #quote p {
+	line-height: 1em;
+}
+
+#double-nectar-calc #quote p.note {
+	font-size: 12px;
+	padding: 10px 20px;
+}
+
+#double-nectar-calc #quote fieldset {
+	border: 0;
+	padding-left: 20px;
+}
+
+#double-nectar-calc #quote .pound-value {
+	font-size: 3.3em;
+	padding-top: 5px;
+}
+
+#double-nectar-calc #quote .pound-value-container {
+	position: relative;
+}
+
+#double-nectar-calc #quote p.pound-value span {
+	font-size: 0.875em;
+}
+
+.orange {
+	color: #ef6600;
+}
+
+#double-nectar-calc #included-products li {
+	padding-bottom: 10px;
+}
+
+#double-nectar-calc #total-points {
+	color: #fff;
+	text-align: center;
+	height: 95px;
+	padding-top: 6px;
+	position: relative;
+	background: transparent url("../../images/double-nectar-calc/total-points-bg.jpg") no-repeat right top;
+}
+
+#double-nectar-calc #total-points #total-points-value {
+	font-size: 3em;
+	margin: 0;
+}
+
+#double-nectar-calc #options .checks div {
+	margin: 0;
+}
+
+#double-nectar-calc #options,
+#double-nectar-calc #included-products {
+	background-color: #f1f0f0;
+}
+
+#double-nectar-calc #terms {
+	border-radius: 0 0 5px 5px;
+	-webkit-border-radius: 0 0 5px 5px;
+	-moz-border-radius: 0 0 5px 5px;
+	/*color: #989898;*/
+	padding: 20px;
+	background-color: #fff;
+}
+
+#double-nectar-calc #terms h4 {
+	font-size: 0.7em;
+}
+
+#double-nectar-calc #terms p {
+	font-size: 10px;
+}
+
+#double-nectar-calc #qualify_copy {
+	background-color: #fff;
+}
+
+#double-nectar-calc  #qualify_copy p {
+	color: #989898;
+	font-size: 0.8em;
+	padding-bottom: 20px;
+}
+
+#double-nectar-calc  #qualify_copy h2 {
+	padding-bottom: 10px;
+}
+
+#double-nectar-calc .slider .track-inner {
+	top: 19px;
+	width: 174px;
+	height: 12px;
+}
+
+#double-nectar-calc-borrowing-label {
+	width: 45px;
+	padding: 5px;
+	font-weight: bold;
+	position: absolute;
+	left: 210px;
+	top: 10px;
+}
+
+#double-nectar-calc form fieldset.amount #double-nectar-calc-amount {
+	width: 45px;
+}
+
+#double-nectar-calc .products_error,
+#double-nectar-calc .amount_error {
+	display: none;
+	color: red;
+	font-weight: bold;
+	font-size: 0.7em;
+}
+
+#double-nectar-calc #double-nectar-calc-footer {
+	display: none;
+	background-color: #fff;
+	text-align: center;
+	padding-bottom: 10px;
+	position: relative;
+	top: -3px;
+	border-left: 2px solid #852d91;
+	border-right: 2px solid #852d91;
+}
+
+#double-nectar-calc #head p {
+	display: none;
+}
+
+#double-nectar-calc #head p.head_text_quote {
+	color: #fff;
+	width: 200px;
+	position: absolute;
+	left: 20px;
+	top: 20px;
+}
+
+#double-nectar-calc #head p.head_text_no_quote {
+	position: absolute;
+	color: #fff;
+	width: 200px;
+	top: 70px;
+	left: 20px;
+}
+
+@media only screen and (max-width: 640px) {
+
+	#double-nectar-calc form {
+		width: auto;
+	}
+
+	#double-nectar-calc #quote fieldset#quote-submit {
+		padding-left: 0;
+	}
+
+	#double-nectar-calc #quote p {
+		margin: 0 auto;
+	}
+
+	#calc-banner {
+		display: none;
+	}
+
+}

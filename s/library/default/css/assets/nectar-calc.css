@@ -1,0 +1,378 @@
+#nectar-calculator {
+	position: relative;
+	margin-bottom: 1.5em;
+	width: 100%;
+}
+
+#nectar-calculator .tab {
+	margin-top: 0;
+	padding: 30px;
+	color: #fff;
+	background-color: #ef6600;
+}
+
+.col6 #nectar-calculator .tab {
+	width: 400px;
+}
+
+#content #nectar-calculator .controller li {
+	width: 230px;
+	font: bold 1.25em/110% "Sainsburys Slab Bold", Helvetica, sans-serif;
+}
+
+#content #nectar-calculator .controller li.first {
+	width: 215px;
+	padding-right: 15px;
+}
+
+#nectar-calculator .controller a {
+	border-radius: 5px 5px 0 0;
+	width: 100%;
+	padding: 15px 0;
+	text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
+	color: #4d1700;
+	background-color: #a93300;
+}
+
+#nectar-calculator .controller li.active a {
+	text-shadow: none;
+	color: #fff;
+	background-color: #ef6600;
+}
+
+/* form */
+#frm-nectar-calculator {
+	overflow: hidden;
+}
+
+#content #frm-nectar-calculator fieldset {
+	float: left;
+	width: auto;
+	width: 235px;
+	padding: 0;
+}
+
+#content #frm-nectar-calculator fieldset.control {
+	width: 145px;
+	padding: .25em 0 .25em 10px;
+}
+
+#content #frm-nectar-calculator div.calc-field {
+	margin: 0;
+}
+
+#frm-nectar-calculator div.calc-field label {
+	margin-right: 10px;
+	border-radius: 5px;
+	width: 46px;
+	height: 46px;
+	padding: 2px;
+	text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.4);
+	text-align: center;
+	font-size: 2.375em;
+	color: #9b3001;
+	background-color: #d74100;
+}
+
+#content #frm-nectar-calculator input {
+	font: 1.5em "Interstate Bold", Helvetica, sans-serif;
+}
+
+#frm-nectar-calculator div.calc-field input {
+	margin: 0;
+	border: 0;
+	border-radius: 5px;
+	width: 150px;
+	height: 30px;
+	padding: 10px;
+}
+
+#frm-nectar-calculator fieldset.control input {
+	border: 1px solid #fff;
+	height: 50px;
+	padding: 10px;
+}
+
+#nectar-calculator .ui-panel {
+	margin: .75em 0;
+	padding: 10px;
+	background-color: #fb8552;
+}
+
+#nectar-calculator h2,
+#nectar-calculator h3,
+#nectar-calculator a {
+	color: #fff;
+}
+
+#nectar-calculator p {
+	font: 1.125em "Interstate Bold", Helvetica, sans-serif;
+}
+
+#nectar-calculator .calc-spend p {
+	font: bold 1.75em "Sainsburys Mary Ann Bold", Helvetica, sans-serif;
+}
+
+#nectar-calculator .ui-panel p {
+	margin: 0;
+}
+
+#nectar-calculator p.notes {
+	color: #f8b395;
+	font: .75em Helvetica, Arial, sans-serif;
+}
+
+#nectar-calculator .calc-spend p.notes {
+	/*text-align: right;*/
+	text-align: left;
+}
+
+#nectar-calculator ul.notes {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#nectar-calculator .ui-panel p.notes,
+#nectar-calculator ul.notes li {
+	color: #fff;
+	font-family: "Interstate Bold", Helvetica, sans-serif;
+}
+
+#nectar-calculator .multipliers ul.notes li {
+	font-size: .75em;
+	color: #f8d9cc;
+}
+
+#nectar-calculator .notes b {
+	color: #fff;
+}
+
+#nectar-calculator .calc-main p.disclaimer {
+	/*padding-left: 40px;*/
+	padding-right: 40px;
+}
+
+#nectar-calculator .context {
+	position: absolute;
+	z-index: 10;
+	right: -70px;
+	/*left: -70px;*/
+	bottom: -45px;
+	width: 169px;
+	height: 134px;
+	background: url(../../images/nectar-calc/basket.png) no-repeat;
+}
+
+/* total panel */
+#nectar-calculator .nectar-total {
+	overflow: auto;
+}
+
+#nectar-calculator .nectar-total p {
+	display: inline-block;
+	overflow: hidden;
+	margin: 0 -2px;
+	font-size: 3.125em;
+}
+
+.ie6 #nectar-calculator .nectar-total p {
+	display: inline;
+}
+
+#nectar-calculator .nectar-total strong {
+	float: left;
+	margin: 0 2px;
+	border-top: 1px outset #8e8b89;
+	border-bottom: 1px outset #8e8b89;
+	border-radius: 5px;
+	width: 36px;
+	padding: 3px 12px;
+	text-align: center;
+	background: #000 url(../../images/layout/number-field-bg.gif) repeat-x left center;
+}
+
+/* carousel */
+#nectar-calculator .carousel-container .inner {
+	height: 262px;
+}
+
+#nectar-calculator .carousel-container .slide {
+	height: 262px;
+	color: #303030;
+}
+
+#nectar-calculator .carousel .image {
+	display: block;
+	overflow: hidden;
+	border: 1px solid #a23506;
+	border-radius: 5px;
+	width: 398px;
+	height: 198px;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-color: #fff;
+}
+
+#nectar-calculator .carousel .text {
+	position: absolute;
+	left: 0;
+	top: 210px;
+	width: 400px;
+}
+
+#nectar-calculator .carousel .text h3 {
+	display: block;
+	border: 1px solid #a23506;
+	border-radius: 5px;
+	width: 398px;
+	height: 50px;
+	background: #fff url(../../images/nectar-calc/amount-bg.gif) no-repeat 260px center;
+}
+
+#nectar-calculator .carousel .text span {
+	display: inline-block;
+	padding: 0 20px;
+	vertical-align: middle;
+}
+
+#nectar-calculator .carousel .text span.anchor {
+	overflow: hidden;
+	width: 0;
+	height: 50px;
+	padding: 0;
+}
+
+#nectar-calculator .carousel .text span.desc {
+	width: 218px;
+}
+
+#nectar-calculator .carousel .text span.amount {
+	width: 70px;
+	padding-left: 50px;
+	color: #fff;
+}
+
+#nectar-calculator .carousel-container .slide h3 {
+	color: #303030;	
+}
+
+#nectar-calculator .carousel-container .nav {
+	position: absolute;
+	overflow: hidden;
+	top: 90px;
+	width: 20px;
+	height: 26px;
+	text-indent: -99em;
+	color: #303030;
+}
+
+#nectar-calculator .carousel-container .nav-prev {
+	left: 5px;
+}
+
+#nectar-calculator .carousel-container .nav-prev span {
+	background: url(../../images/icons/cta-chevron-reversed.gif) no-repeat center center;
+}
+
+#nectar-calculator .carousel-container .nav-next {
+	right: 5px;
+}
+
+#nectar-calculator .carousel-container .nav-next span {
+	background: url(../../images/icons/cta-chevron.gif) no-repeat center center;
+}
+
+/* device specific */
+@media only screen and (max-width: 640px) {
+
+	#content #nectar-calculator .tab {
+		width: auto;
+		padding: 10px;
+	}
+
+	#content #nectar-calculator .controller li,
+	#content #nectar-calculator .controller li.first {
+		padding: 0;
+		width: 50%;
+		font-size: .75em;
+	}
+
+	#nectar-calculator .carousel .image {
+		width: 100%;
+	}
+
+	#nectar-calculator .calc-spend p {
+		font-size: 1.125em;
+	}
+
+	#nectar-calculator p.notes {
+		font-size: .75em;
+	}
+
+	#nectar-calculator .calc-main p.disclaimer {
+		padding-left: 0;
+	}
+
+	#content #frm-nectar-calculator fieldset {
+		width: 60%;
+	}
+
+	#content #frm-nectar-calculator fieldset.control {
+		margin-left: 0;
+		width: 35%;
+		padding: .25em 0 .25em 5%;
+	}
+
+	#frm-nectar-calculator div.calc-field label {
+		font-size: 2.375em !important;
+	}
+
+	#frm-nectar-calculator div.calc-field input {
+		width: 80px;
+	}
+
+	#content #frm-nectar-calculator input {
+		font-size: 1em;
+	}
+
+	#nectar-calculator .nectar-total p {
+		width: 100%;
+	}
+
+	#nectar-calculator .nectar-total strong {
+		margin: 1%;
+		width: 10%;
+		padding: 2%;
+	}
+
+	#nectar-calculator .context {
+		display: none;
+	}
+
+	#nectar-calculator .carousel-container .inner {
+		height: 267px;
+	}
+
+	#nectar-calculator .carousel .text {
+		width: 100%;
+	}
+
+	#nectar-calculator .carousel .text h3 {
+		width: auto;
+		height: 55px;
+		background: #fff;
+	}
+
+	#nectar-calculator .carousel .text span.desc {
+		width: 55%;
+		padding: 0 10% 0 5%;
+	}
+
+	#nectar-calculator .carousel .text span.amount {
+		padding: 0;
+		width: 30%;
+		color: #641f73;
+	}
+
+}

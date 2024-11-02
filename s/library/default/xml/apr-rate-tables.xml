@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<opt>
+		<amt_min>1000</amt_min>
+		<amt_max>25000</amt_max>
+		<amt_step>500</amt_step>
+		<term_max>84</term_max>
+		<term_min>12</term_min>
+		<defer_months>2</defer_months>
+		<reward_min_amt>5000</reward_min_amt>
+		<reward_max_term>60</reward_max_term>
+	</opt>
+
+	<bands>
+		<band start="0%" len="9%"/>
+		<band start="9%" len="9%"/>
+		<band start="18%" len="10%"/>
+		<band start="28%" len="31%"/>
+		<band start="59%" len="41%"/>
+	</bands>
+
+	<terms>
+		<term min="12" max="60" minloan="1000" maxloan="7499"/>
+		<term min="12" max="84" minloan="7500" maxloan="15000"/>
+		<term min="24" max="84" minloan="15001" maxloan="25000"/>
+	</terms>
+
+	<link_data>
+		<product id="std">
+			<type id="nondeferred">
+				<link min="1000" max="2999" url="loan_apply.php?responsecode=P0183N"
+					nectar_url="loan_apply.php?responsecode=BASSNE"/>
+				<link min="3000" max="4999" url="loan_apply.php?responsecode=P0183N"
+					nectar_url="loan_apply.php?responsecode=BASSNE"/>
+				<link min="5000" max="7499" url="loan_apply.php?responsecode=P0183N"
+					nectar_url="loan_apply.php?responsecode=BASSNE"/>
+				<link min="7500" max="15000" url="loan_apply.php?responsecode=P0181N"
+					nectar_url="loan_apply.php?responsecode=BSMDNT"/>
+				<link min="15001" max="25000" url="loan_apply.php?responsecode=P0182N"
+					nectar_url="loan_apply.php?responsecode=BASLNE"/>
+			</type>
+
+			<type id="deferred">
+				<link min="1000" max="2999" url="loan_apply.php?responsecode=P0183I"
+					nectar_url="loan_apply.php?responsecode=BASSRE"/>
+				<link min="3000" max="4999" url="loan_apply.php?responsecode=P0183I"
+					nectar_url="loan_apply.php?responsecode=BASSRE"/>
+				<link min="5000" max="7499" url="loan_apply.php?responsecode=P0183I"
+				 	nectar_url="loan_apply.php?responsecode=BASSRE"/>
+				<link min="7500" max="15000" url="loan_apply.php?responsecode=P0181I"
+					nectar_url="loan_apply.php?responsecode=BSMDST"/>
+				<link min="15001" max="25000" url="loan_apply.php?responsecode=P0182I"
+					nectar_url="hloan_apply.php?responsecode=BASLRE"/>
+			</type>
+		</product>
+
+		<product id="reward">
+			<type id="deferred">
+				<link min="1000" max="2999" url="loan_apply.php?responsecode=P0183I"
+					nectar_url="loan_apply.php?responsecode=BASSRE"/>
+				<link min="3000" max="4999" url="loan_apply.php?responsecode=P0183I"
+					nectar_url="loan_apply.php?responsecode=BASSRE"/>
+				
+				<link min="5000" max="7499" url=""
+					nectar_url="loan_apply.php?responsecode=P0175I"/>
+				
+				<link min="7500" max="15000" url=""
+					nectar_url="loan_apply.php?responsecode=P0180I"/>
+				
+				<link min="15001" max="25000" url=""
+					nectar_url="loan_apply.php?responsecode=P0177I"/>
+			</type>
+
+			<type id="nondeferred">
+				<link min="1000" max="2999" url="loan_apply.php?responsecode=P0183N"
+					nectar_url="loan_apply.php?responsecode=BASSNE"/>
+				
+				<link min="3000" max="4999" url="loan_apply.php?responsecode=P0183N"
+					nectar_url="loan_apply.php?responsecode=BASSNE"/>
+				
+				<link min="5000" max="7499" url=""
+					nectar_url="loan_apply.php?responsecode=P0175N"/>
+				
+				<link min="7500" max="15000" url=""
+					nectar_url="loan_apply.php?responsecode=P0180N"/>
+				<link min="15001" max="25000" url=""
+					nectar_url="loan_apply.php?responsecode=P0177N"/>
+			</type>
+		</product>
+	</link_data>
+
+	<examples_nectar>
+		<example min="12" max="60" minloan="1000" maxloan="7499">
+			<text apr="18.6"><![CDATA[Annual Interest Rate (fixed) is <strong>18.60% p.a.</strong>, with a representative <strong>18.6% APR</strong> based on borrowing <strong>&pound;2,000 and repaying over 36 months with 36 monthly repayments</strong>. Monthly repayments of <strong>&pound;71.49</strong> with total amount repayable of <strong>&pound;2,573.64</strong>.]]></text>
+
+			<text apr="12.6"><![CDATA[Annual Interest Rate (fixed) is <strong>12.60% p.a.</strong>, with a representative <strong>12.6% APR</strong> based on borrowing <strong>&pound;3,000 and repaying over 36 months with 36 monthly repayments</strong>. Monthly repayments of <strong>&pound;99.54</strong> with total amount repayable of <strong>&pound;3,583.44</strong>.]]></text>
+
+			<text apr="6.4"><![CDATA[Annual Interest Rate (fixed) is <strong>6.40% p.a.</strong>, with a representative <strong>6.4% APR</strong> based on borrowing <strong>&pound;5,000 and repaying over 60 months with 60 monthly repayments</strong>. Monthly repayments of <strong>&pound;97.18</strong> with total amount repayable of <strong>&pound;5,830.80</strong>.]]></text>
+
+			<text_reward apr="6.9"><![CDATA[Annual Interest Rate (fixed) is <strong>6.90% p.a.</strong>, with a representative <strong>6.9% APR</strong> based on borrowing <strong>&pound;5,000 and repaying over 60 months with 60 monthly repayments</strong>. Monthly repayments of <strong>&pound;98.28</strong> with total amount repayable of <strong>&pound;5,896.80</strong>.]]></text_reward>
+		</example>
+
+		<example min="12" max="84" minloan="7500" maxloan="15000">
+			<text apr="5.1"><![CDATA[Annual Interest Rate (fixed) is <strong>5.00% p.a.</strong>, with a representative <strong>5.0% APR</strong> based on borrowing <strong>&pound;10,000 and repaying over 60 months with 60 monthly repayments</strong>. Monthly repayments of <strong>&pound;188.20</strong> with total amount repayable of <strong>&pound;11,292.00</strong>.]]></text>
+
+			<text_reward apr="5.2"><![CDATA[Annual Interest Rate (fixed) is <strong>5.40% p.a.</strong>, with a representative <strong>5.4% APR</strong> based on borrowing <strong>&pound;10,000 and repaying over 60 months with 60 monthly repayments</strong>. Monthly repayments of <strong>&pound;189.96</strong> with total amount repayable of <strong>&pound;11,397.60</strong>.]]></text_reward>
+		</example>
+
+		<example min="24" max="84" minloan="15001" maxloan="25000">
+			<text apr="6.8"><![CDATA[Annual Interest Rate (fixed) is <strong>6.80% p.a.</strong>, with a representative <strong>6.8% APR</strong> based on borrowing <strong>&pound;20,000 and repaying over 60 months with 60 monthly repayments</strong>. Monthly repayments of <strong>&pound;392.23</strong> with total amount repayable of <strong>&pound;23,533.80</strong>.]]></text>
+
+			<text_reward apr="7.2"><![CDATA[Annual Interest Rate (fixed) is <strong>7.20% p.a.</strong>, with a representative <strong>6.9% APR</strong> based on borrowing <strong>&pound;20,000 and repaying over 60 months with 60 monthly repayments</strong>. Monthly repayments of <strong>&pound;395.77</strong> with total amount repayable of <strong>&pound;23,746.20</strong>.]]></text_reward>
+		</example>
+	</examples_nectar>
+
+	<examples_standard>
+		<example min="12" max="60" minloan="1000" maxloan="2999">
+			<text_standard apr="18.7"><![CDATA[Annual Interest Rate (fixed) is <strong>18.70% p.a.</strong>, with a representative <strong>18.7% APR</strong> based on borrowing <strong>&pound;2,000 and repaying over 36 months with 36 monthly repayments</strong>. Monthly repayments of <strong>&pound;71.57</strong> with total amount repayable of <strong>&pound;2,576.52</strong>.]]></text_standard>
+		</example>
+
+		<example min="12" max="60" minloan="3000" maxloan="4999">
+			<text_standard apr="12.7"><![CDATA[Annual Interest Rate (fixed) is <strong>12.70% p.a.</strong>, with a representative <strong>12.7% APR</strong> based on borrowing <strong>&pound;3,000 and repaying over 36 months with 36 monthly repayments</strong>. Monthly repayments of <strong>&pound;99.67</strong> with total amount repayable of <strong>&pound;3,588.12</strong>.]]></text_standard>
+		</example>
+
+		<example min="12" max="36" minloan="5000" maxloan="7499">
+			<text_standard apr="6.5"><![CDATA[Annual Interest Rate (fixed) is <strong>6.50% p.a.</strong>, with a representative <strong>6.5% APR</strong> based on borrowing <strong>&pound;5,000 and repaying over 36 months with 36 monthly repayments</strong>. Monthly repayments of <strong>&pound;152.82</strong> with total amount repayable of <strong>&pound;5,501.52</strong>.]]></text_standard>
+		</example>
+
+		<example min="37" max="60" minloan="5000" maxloan="7499">
+			<text_standard apr="6.5"><![CDATA[Annual Interest Rate (fixed) is <strong>6.50% p.a.</strong>, with a representative <strong>6.5% APR</strong> based on borrowing <strong>&pound;5,000 and repaying over 60 months with 60 monthly repayments</strong>. Monthly repayments of <strong>&pound;97.40</strong> with total amount repayable of <strong>&pound;5,844.00</strong>.]]></text_standard>
+		</example>
+
+		<example min="12" max="84" minloan="7500" maxloan="15000">
+			<text_standard apr="5.2"><![CDATA[Annual Interest Rate (fixed) is <strong>5.20% p.a.</strong>, with a representative <strong>5.2% APR</strong> based on borrowing <strong>&pound;10,000 and repaying over 60 months with 60 monthly repayments</strong>. Monthly repayments of <strong>&pound;189.08</strong> with total amount repayable of <strong>&pound;11,344.80</strong>.]]></text_standard>
+		</example>
+
+		<example min="24" max="84" minloan="15001" maxloan="25000">
+			<text_standard apr="7.8"><![CDATA[Annual Interest Rate (fixed) is <strong>7.80% p.a.</strong>, with a representative <strong>7.8% APR</strong> based on borrowing <strong>&pound;20,000 and repaying over 60 months with 60 monthly repayments</strong>. Monthly repayments of <strong>&pound;401.09</strong> with total amount repayable of <strong>&pound;24,065.40</strong>.]]></text_standard>
+		</example>
+	</examples_standard>
+
+	<rates>
+		<product id="std" title="Our Standard Loan">
+			<rate min="1000" max="2999" minterm="12" maxterm="60" apr="18.7"/>
+			<rate min="3000" max="4999" minterm="12" maxterm="60" apr="12.7"/>
+			<rate min="5000" max="7499" minterm="12" maxterm="60" apr="6.5"/>
+			<rate min="7500" max="12999" minterm="12" maxterm="60" apr="5.2"/>
+			<rate min="7500" max="12999" minterm="61" maxterm="84" apr="7.2"/>
+			<rate min="13000" max="15000" minterm="12" maxterm="60" apr="5.2"/>
+			<rate min="13000" max="15000" minterm="61" maxterm="84" apr="7.2"/>
+			<rate min="15001" max="19999" minterm="24" maxterm="60" apr="7.8"/>
+			<rate min="15001" max="19999" minterm="61" maxterm="84" apr="8.8"/>
+			<rate min="20000" max="25000" minterm="24" maxterm="60" apr="7.8"/>
+			<rate min="20000" max="25000" minterm="61" maxterm="84" apr="8.8"/>
+		</product>
+
+		<product id="nectar" title="Shopper Reward Loan">
+			<rate min="1000" max="1000" minterm="12" maxterm="36" apr="18.6"/>
+			<rate min="1000" max="1000" minterm="37" maxterm="60" apr="18.7"/>
+			<rate min="1001" max="2999" minterm="12" maxterm="36" apr="18.6"/>
+			<rate min="1001" max="2999" minterm="37" maxterm="60" apr="18.7"/>
+			<rate min="3000" max="4999" minterm="12" maxterm="36" apr="12.6"/>
+			<rate min="3000" max="4999" minterm="37" maxterm="60" apr="12.7"/>
+			<rate min="5000" max="7499" minterm="12" maxterm="36" apr="6.3" reward_apr="6.8"/>
+			<rate min="5000" max="7499" minterm="37" maxterm="60" apr="6.4" reward_apr="6.9"/>
+			<rate min="7500" max="10000" minterm="12" maxterm="36" apr="4.9" reward_apr="5.3"/>
+			<rate min="7500" max="10000" minterm="37" maxterm="60" apr="5.0" reward_apr="5.4"/>
+			<rate min="7500" max="10000" minterm="61" maxterm="84" apr="7.0" reward_apr="7.4"/>
+			<rate min="10001" max="12999" minterm="12" maxterm="36" apr="4.9" reward_apr="5.3"/>
+			<rate min="10001" max="12999" minterm="37" maxterm="60" apr="5.0" reward_apr="5.4"/>
+			<rate min="10001" max="12999" minterm="61" maxterm="84" apr="7.0" reward_apr="7.4"/>
+			<rate min="13000" max="15000" minterm="12" maxterm="36" apr="4.9" reward_apr="5.3"/>
+			<rate min="13000" max="15000" minterm="37" maxterm="60" apr="5.0" reward_apr="5.4"/>
+			<rate min="13000" max="15000" minterm="61" maxterm="84" apr="7.0" reward_apr="7.4"/>
+			<rate min="15001" max="19999" minterm="24" maxterm="36" apr="6.7" reward_apr="7.1"/>
+			<rate min="15001" max="19999" minterm="37" maxterm="60" apr="6.8" reward_apr="7.2"/>
+			<rate min="15001" max="19999" minterm="61" maxterm="84" apr="7.8" reward_apr="9.2"/>
+			<rate min="20000" max="25000" minterm="24" maxterm="36" apr="6.7" reward_apr="7.1"/>
+			<rate min="20000" max="25000" minterm="37" maxterm="60" apr="6.8" reward_apr="7.2"/>
+			<rate min="20000" max="25000" minterm="61" maxterm="84" apr="7.8" reward_apr="9.2"/>
+		</product>
+	</rates>
+</root>

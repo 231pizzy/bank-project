@@ -1,0 +1,298 @@
+.accordion dt, 
+.accordion dd, 
+.accordion dl, 
+.accordion dl dt,
+.accordion dl dd
+ {
+	margin:0px !important;
+	border: none !important;
+}
+
+
+.graphic-box {
+	width:938px !important;
+	height:590px !important;
+	display:block !important;
+	position:relative !important;
+	background:url(../images/money-matters/infographics/supercharged/images/background.png) !important;
+	background-repeat:no-repeat !important;
+
+}
+
+
+.graphic-box a.bedroom {
+	position:absolute !important;
+	display:block !important;
+	height:161px !important;
+	width:209px !important;
+	left: 167px !important;
+	top: 202px !important;
+}
+
+.graphic-box a.bedroom:hover {
+	background:url(../images/money-matters/infographics/supercharged/images/bedroom.png) !important;
+	background-repeat:no-repeat !important;
+}
+
+.graphic-box a.bathroom {
+	position:absolute !important;
+	display:block !important;
+	height:159px !important;
+	width:121px !important;
+	left: 481px !important;
+	top: 207px !important;
+}
+
+.graphic-box a.bathroom:hover {
+	background:url(../images/money-matters/infographics/supercharged/images/bathroom.png) !important;
+	background-repeat:no-repeat !important;
+}
+
+.graphic-box a.loft {
+	position:absolute !important;
+	display:block !important;
+	width:465px !important;
+	height:143px !important;
+	left: 141px !important;
+	top: 67px !important;
+}
+
+.graphic-box a.loft:hover {
+	background:url(../images/money-matters/infographics/supercharged/images/loft.png) !important;
+	background-repeat:no-repeat !important;
+}
+
+.graphic-box a.driveway {
+	position:absolute !important;
+	display:block !important;
+	width:161px !important;
+	height:200px !important;
+	left: 0px !important;
+	top: 390px !important;
+}
+
+.graphic-box a.driveway:hover {
+	background:url(../images/money-matters/infographics/supercharged/images/driveway.png) !important;
+	background-repeat:no-repeat !important;
+}
+
+.graphic-box a.garden {
+	position:absolute !important;
+	display:block !important;
+	width:199px !important;
+	height:312px !important;
+	left: 739px !important;
+	top: 278px !important;
+}
+
+.graphic-box a.garden:hover {
+	background:url(../images/money-matters/infographics/supercharged/images/garden.png) !important;
+	background-repeat:no-repeat !important;
+}
+
+.graphic-box a.kitchen {
+	position:absolute !important;
+	display:block !important;
+	width:306px !important;
+	height:216px !important;
+	left: 428px !important;
+	top: 366px !important;
+}
+
+.graphic-box a.kitchen:hover {
+	background:url(../images/money-matters/infographics/supercharged/images/kitchen.png) !important;
+	background-repeat:no-repeat !important;
+}
+
+.graphic-box a.living {
+	position:absolute !important;
+	display:block !important;
+	width:261px !important;
+	height:217px !important;
+	left: 166px !important;
+	top: 363px !important;
+}
+
+.graphic-box a.living:hover {
+	background:url(../images/money-matters/infographics/supercharged/images/living.png) !important;
+	background-repeat:no-repeat !important;
+}
+.graphic-box a {
+	cursor:pointer !important;
+}
+
+
+dl.accordion {
+	border: 0px !important;
+} 
+
+.accordion dt 
+{
+	max-width:726px !important;
+	line-height: 37px !important;
+	height: 37px !important;
+	border: 0px !important;
+	border-bottom:1px solid #a4a4a4 !important;
+	font-family:Helvetica,sans-serif !important;
+	font-size:22px !important;
+	position:relative !important;
+	cursor:pointer !important;
+	font-weight: normal !important;
+	text-decoration: none !important;
+	color: #000 !important;
+	margin-left: 0px !important;
+	background: #fff !important;
+	padding: 0px !important;
+}
+
+.accordion dd {
+	background: #fff !important;
+}
+
+.accordion dl dt {
+	margin-left: 15px !important;
+	max-width: 659px !important;
+	padding: 0px !important;
+	padding-left: 10px !important;
+	border-bottom:1px solid #d5d5d5 !important;
+	 font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif !important;
+	font-size:18px !important;
+	position:relative !important;
+	cursor:pointer !important;
+}
+
+.accordion dl dd {
+	margin-left:15px !important;
+	max-width: 711px !important;
+	border-bottom: 0px !important;
+	padding: 0px !important;
+	padding-left: 10px !important;
+	}
+.accordion dt.open {
+	background:#e0f2e2 !important;
+	border-bottom:none !important;
+}
+
+.accordion dt.open .arrow-icon {
+	
+	background-position: 0px 0px !important;
+
+	}
+
+
+.accordion dl dt.open {
+	background:#edf7ef !important;
+	
+}
+
+
+.accordion dt a {
+	margin-left:10px !important;
+	font-family:'Sainsburys Mary Ann Bold',Helvetica,sans-serif !important;
+	text-decoration: none !important;
+}
+
+.accordion dl dd img{
+	float:left !important;
+	margin-left: 22px !important;
+    margin-top: 17px !important;
+}
+
+.accordion dl dd p{
+	display:table-cell !important;
+	padding: 14px 20px 10px 22px !important;
+	font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif !important;
+	color:#333333 !important;
+	line-height:22px !important;
+	font-size:14px !important;
+}
+
+.accordion dl dd p a{
+	font-family:'Sainsburys Mary Ann Bold',Helvetica,sans-serif !important;
+	color:#8dcd95 !important;
+	line-height:20px !important;
+	font-size:16px !important;
+}
+	
+.accordion dt .arrow-icon {
+	background-image:url('../images/money-matters/infographics/supercharged/images/black_arrows.png') !important;
+	background-repeat:no-repeat !important;
+	background-position:0px -24px !important; 
+	display:block !important;
+	width:21px !important;
+	height:16px !important;
+	position:absolute !important;
+	right:10px !important;
+	top:10px !important;
+	}
+
+.accordion dl dt .arrow-icon {
+	background-image:url('../images/money-matters/infographics/supercharged/images/green_arrows.png') !important;
+	}
+
+.scallowerbutton {
+    background-color: #FFFFFF !important;
+    clear: both !important;
+    float: left !important;
+    padding-bottom: 10px !important;
+    width: 100% !important;
+}
+    
+	
+.accordion_toggler_1 {
+width:100% !important;
+float:left !important;
+clear:both !important;
+    background-color:white !important;
+	position:relative !important;
+	z-index:999 !important;
+}
+    .accordion_content_1 {
+        width:100% !important;
+        float:left !important;
+        clear:both!important;
+        background-color:white !important;
+	text-decoration: none !important;
+    }
+	
+    .accordion_toggler_2 {
+        width:100% !important;
+           background-color:white !important;
+        float:left !important;
+        clear:both !important;
+    }
+	.accordion_content_2 {
+        width:94% !important; 
+        float:left !important;
+           background-color:white !important;
+        clear:both !important;
+    }
+	
+    dd.accordion_content_1 dl {
+        width:100% !important;
+        float:left !important;
+           background-color:white !important;
+        clear:both !important;
+    }
+	
+	
+	dl.accordion {
+    border: 0 none !important;
+    height: auto !important;
+    overflow: hidden !important;
+	background-color:white !important;
+	position:relative !important;
+}
+
+
+@media (max-width: 400px) {
+  .graphic-box {
+	  display:none !important;
+	  visibility:hidden !important;
+	  }
+
+.accordion dl dt{
+	max-width: 285px !important;
+}
+
+}

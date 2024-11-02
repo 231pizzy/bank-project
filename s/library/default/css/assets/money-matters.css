@@ -1,0 +1,1160 @@
+@import url(money-matters-cats.css);
+
+/* !typography */
+#mm-shell h1 {
+	letter-spacing: 0;
+	font: 2.25em/115% 'Sainsburys Slab Bold', Helvetica, test, sans-serif;
+	color: #2f2f2f;
+}
+
+#mm-shell h2 {
+	letter-spacing: 0;
+	font: 1.5em/115% 'Sainsburys Slab Bold', Helvetica, test, sans-serif;
+	color: #2f2f2f;
+}
+
+#mm-shell h3 {
+	letter-spacing: 0;
+	font: 1.125em/115% 'Sainsburys Slab Bold', Helvetica, test, sans-serif;
+	color: #2f2f2f;
+}
+
+#mm-shell p {
+	margin: 1em 0;
+	line-height: 130%;
+	font-size: .75em;
+}
+
+#mm-shell ul,
+#mm-shell ol {
+	margin: 1em 0;
+	padding: 0 0 0 2em;
+}
+
+#mm-shell ul {
+	list-style: disc outside;
+}
+
+#mm-shell ol {
+	list-style: decimal outside;
+}
+
+#mm-shell li {
+	line-height: 130%;
+	font-size: .75em;
+}
+
+#mm-shell li li {
+	font-size: 1em;
+}
+
+/* !header */
+#header {
+position: relative;
+clear: both;
+margin: 0 auto;
+width: 940px;
+height: 130px !important;
+margin-bottom: 1px;
+z-index: 30;
+}
+
+#mm-logo {
+	float: left;
+	margin: 1em 0;
+}
+
+#mm-logo a.logo {
+	overflow: hidden;
+	margin: 0;
+	width: 172px;
+	height: 22px;
+	text-indent: -999em;
+}
+
+#mm-logo a.logo span {
+	background-image: url(../../images/money-matters/logo.gif);
+}
+
+#mm-logo .section {
+	margin: 0;
+	font: 2.25em/115% 'Sainsburys Slab Bold', Helvetica, sans-serif;
+	text-decoration: none;
+	color: #f45815;
+}
+
+#header ul.quicklinks {
+	float: right;
+	list-style: none;
+	margin: 1em 0;
+	padding: 0;
+}
+
+#header ul.quicklinks li {
+	display: inline;
+	float: left;
+	border-radius: 5px;
+	margin-left: 5px;
+	padding-left: 5px;
+	font: 1em 'Sainsburys Slab Bold', Helvetica, sans-serif;
+}
+
+#header ul.quicklinks li.first {
+	border-left: 0;
+}
+
+#header ul.quicklinks li.bn {
+	background: #ef6600 url(../../images/money-matters/quicklink-bn-bg.gif) no-repeat 10px center;
+}
+
+#header ul.quicklinks a {
+	float: left;
+	border-radius: 5px;
+	padding: 8px 25px 10px 8px;
+	text-decoration: none;
+	color: #2f2f2f;
+	background: #dadada url(../../images/money-matters/quicklink-chevron.gif) no-repeat right center;
+}
+
+#header ul.quicklinks li.bn a {
+	padding-left: 40px;
+	color: #fff;
+	background: url(../../images/money-matters/quicklink-chevron-bn.gif) no-repeat right center;
+}
+
+#header ul.quicklinks a:hover,
+#header ul.quicklinks a:focus,
+#header ul.quicklinks a:active {
+	color: #000;
+}
+
+#header ul.quicklinks li.bn a em {
+	font-style: normal;
+	color: #832a04;
+}
+
+/* primary nav */
+#nav-primary {
+	overflow: visible;
+	height: 39px;
+}
+
+#nav-primary li.nested {
+	position: relative;
+	float: right;
+	z-index: 1000;
+	margin: 0;
+	padding: 0;
+	background: #b83b05 url(../../images/layout/primary-nav-nested-bg.gif) repeat-x left bottom;
+}
+
+.ie6 #nav-primary li.nested {
+	width: 180px;
+}
+
+#nav-primary li.nested-open {
+	border-radius: 5px 5px 0 0;
+}
+
+#nav-primary li.nested a {
+	height: 39px;
+	padding: 0 10px;
+	color: #fff;
+}
+
+#nav-primary li.nested a:hover,
+#nav-primary li.nested a:focus,
+#nav-primary li.nested a:active {
+	background: none;
+}
+
+#nav-primary li.nested a span,
+#nav-primary li.nested a:hover span,
+#nav-primary li.nested a:focus span,
+#nav-primary li.nested a:active span {
+	padding: 12px 15px 12px 0;
+	background: url(../../images/icons/dropdown-closed-small.gif) no-repeat right center;
+}
+
+#nav-primary li.nested-open a span {
+	background: none;
+}
+
+/* primary nav - level 2/nested */
+#nav-primary ul {
+	display: none;
+	position: absolute;
+	z-index: 1000;
+	left: 0;
+	top: 35px;
+	border-radius: 0 0 5px 5px;
+	width: 100%;
+	padding-bottom: 5px;
+	background: #932f04;
+}
+
+#nav-primary li li {
+	font-size: 1em;
+}
+
+#nav-primary li.nested-open ul {
+	display: block;
+}
+
+#nav-primary li.nested ul li,
+#nav-primary li.nested ul a {
+	display: block;
+	float: none;
+	margin: 0;
+	padding: 0;
+	height: auto;
+	background: none;
+}
+
+#nav-primary li.nested ul li {
+	width: 100%;
+}
+
+#nav-primary li.nested ul a {
+	border-radius: 5px;
+	margin: 0 5px;
+	border-radius: 5px;
+	padding: 10px;
+	background-color: #932f04;
+}
+
+.ie6 #nav-primary li.nested ul a {
+	width: 150px;
+}
+
+#nav-primary li.nested ul a:hover,
+#nav-primary li.nested ul a:focus,
+#nav-primary li.nested ul a:active {
+	color: #f45815;
+	background-color: #fff;
+}
+
+/* !carousel (which usually contains article panels) */
+#mm-carousel {
+	position: relative;
+	clear: both;
+	width: 100%;
+}
+
+#mm-carousel div.inner {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	height: 520px;
+}
+
+#mm-carousel div.slides {
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+#mm-carousel div.slide {
+	overflow: hidden;
+	width: 960px;
+}
+
+#mm-carousel div.col {
+	margin-bottom: 10px;
+	height: 250px;
+}
+
+#mm-carousel span.guest-tag {
+	display: none;
+}
+
+#mm-carousel div.col12 span.guest-tag,
+#mm-carousel div.col8 span.guest-tag {
+	display: block;
+	position: absolute;
+	left: 20px;
+	top: 0;
+	border-radius: 0 0 40px 40px;
+	width: 70px;
+	height: 100px;
+	background-color: #000;
+}
+
+#mm-carousel span.guest-tag em {
+	position: absolute;
+	left: 5px;
+	bottom: 5px;
+	border-radius: 40px;
+	border: 1px solid #fff;
+	width: 58px;
+	height: 41px;
+	padding: 15px 0 0 0;
+	text-align: center;
+	font: normal .9375em/105% 'Sainsburys Slab Regular', serif;
+	color: #fff;
+}
+
+#mm-carousel h2 {
+	clear: left;
+	font-size: 1.125em;
+}
+
+#mm-carousel div.col12 h2,
+#mm-carousel div.col8 h2 {
+	font-size: 2em;
+}
+
+#mm-carousel.gateway h2 {
+	margin-top: 2em;
+}
+
+#mm-carousel a.navigation {
+	position: absolute;
+	z-index: 1000;
+	top: 205px;
+	width: 68px;
+	height: 100px;
+}
+
+#mm-carousel a.navigation span {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: #fdfdfd url(../../images/money-matters/carousel-nav-bg.gif) no-repeat;
+}
+
+#mm-carousel a.nav-prev {
+	left: -65px;
+}
+
+#mm-carousel a.nav-prev:hover span {
+	background-color: #000;
+	background-position: left bottom;
+}
+
+#mm-carousel a.nav-next {
+	right: -65px;
+}
+
+#mm-carousel a.nav-next span {
+	background-position: right top;
+}
+
+#mm-carousel a.nav-next:hover span {
+	background-color: #000;
+	background-position: right bottom;
+}
+
+@media only screen and (max-width: 1024px) {
+	#mm-carousel a.nav-prev {
+		left: -25px;
+	}
+
+	#mm-carousel a.nav-next {
+		right: -25px;
+	}
+}
+
+/* !footer */
+#mm-footer {
+	clear: both;
+	overflow: hidden;
+}
+
+.ie6 #mm-footer {
+	width: 960px;
+}
+
+#mm-footer.fix {
+	position: fixed;
+	overflow: visible;
+	z-index: 2000;
+	left: 50%;
+	bottom: 0;
+	margin-left: -480px;
+	width: 960px;
+	height: 48px;
+}
+
+#mm-footer div.outer {
+	border-top: 5px solid #000;
+	border-bottom: 5px solid #000;
+	margin: 0 10px;
+	width: 940px;
+}
+
+.ie6 #mm-footer div.outer {
+	margin: 0;
+	width: 960px;
+}
+
+#mm-footer div.inner {
+	position: relative;
+	overflow: hidden;
+	left: -10px;
+	padding: 10px 0;
+	width: 960px;
+	background: #eee;
+}
+
+.ie6 #mm-footer div.inner {
+	position: static;
+	left: 0;
+}
+
+#mm-footer.fix div.col {
+	position: relative;
+	min-height: 35px;
+}
+
+#mm-footer.fix div.inner {
+	overflow: visible;
+	height: 25px;
+}
+
+#mm-footer div.footer-panel {
+	width: 300px;
+	background: #eee;
+}
+
+#mm-footer.fix div.footer-panel {
+	position: absolute;
+	z-index: 1000;
+	top: 0;
+	left: 0;
+	bottom: auto;
+	cursor: pointer;
+}
+
+#mm-footer.fix div.footer-panel-over {
+	left: -10px;
+	top: auto;
+	bottom: 0;
+	box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+	padding: 10px;
+}
+
+#mm-footer.fix h2 {
+	height: 25px;
+	font-size: 1.125em;
+	background: url(../../images/money-matters/footer-head-bg.gif) no-repeat 280px center;
+}
+
+#mm-footer.fix div.footer-panel:hover h2 {
+	background-position: -660px center;
+}
+
+#mm-footer div.article-list,
+#mm-footer div.author-list {
+	margin-top: .5em;
+	border-top: 1px solid #000;
+}
+
+#mm-footer div.author {
+	margin: 0;
+	padding: .5em 0 0;
+	border-bottom: 1px solid #c2c2c2;
+}
+
+#mm-footer div.active-link-node {
+	background: url(../../images/money-matters/active-link-node-inverted.gif) no-repeat right bottom;
+}
+
+#mm-footer div.active-link-node:hover {
+	position: relative;
+	left: -5px;
+	padding-left: 5px;
+	padding-right: 5px;
+	background-color: #fff;
+}
+
+#mm-shell #mm-footer div.author img {
+	margin-bottom: .5em;
+	width: 60px;
+	height: 60px;
+}
+
+#mm-shell #mm-footer div.author ul.tags {
+	margin: 0 0 .25em 70px;
+}
+
+.ie6 #mm-shell #mm-footer ul.tags span {
+	border-top-color: #eee;
+	border-bottom-color: #eee;
+}
+
+#mm-shell #mm-footer div.author h1,
+#mm-shell #mm-footer div.author h2,
+#mm-shell #mm-footer div.author h3,
+#mm-shell #mm-footer div.author p.role {
+	margin-left: 70px;
+}
+
+/* !calls to action */
+#mm-shell p.cta {
+	overflow: hidden;
+}
+
+#mm-shell p.cta a {
+	float: left;
+	border-radius: 3px;
+	padding: 6px 25px 6px 10px;
+	color: #fff;
+	background: #990033 url(../../images/money-matters/cta-bg.gif) no-repeat right center;
+}
+
+#mm-shell p.cta-block {
+	margin: 0 0 10px;
+	border-radius: 5px;
+	text-align: center;
+	font: 1em 'Sainsburys Slab Bold', Helvetica, test, sans-serif;
+	background-color: #f45815;
+}
+
+#mm-body p.cta-block {
+	margin: .75em 0;
+}
+
+#mm-shell p.cta-block a {
+	display: block;
+	float: none;
+	padding: 10px;
+	color: #fff;
+	background: none;
+}
+
+#mm-shell p.cta-block a strong {
+	display: inline-block;
+	padding-right: 12px;
+	font-weight: normal;
+	background: url(../../images/money-matters/block-cta-bg.png) no-repeat right center;
+}
+
+#mm-shell p.cta-block a:hover,
+#mm-shell p.cta-block a:focus,
+#mm-shell p.cta-block a:active {
+	background-color: #000;
+}
+
+/* !content */
+#mm-shell {
+	margin-bottom: 2em;
+}
+
+#content {
+	padding-top: 0;
+}
+
+#mm-related {
+	margin-top: 0.94em;
+}
+
+#mm-related h2 {
+	font-size: 1.375em;
+}
+
+#mm-shell div.intro p {
+	line-height: 130%;
+	font-size: 0.9375em;
+	color: #747474;
+}
+
+#mm-shell a.fbn-cta {
+	margin: 1em 0;
+	width: 300px;
+	height: 155px;
+}
+
+#mm-shell a.fbn-cta span {
+	background: url(../../images/money-matters/fbn-cta.gif);
+}
+
+/* !asset - article */
+#mm-shell div.article {
+	padding-bottom: 1.75em;
+}
+
+#mm-shell div.article p,
+#mm-shell div.article li {
+	line-height: 140%;
+	font-size: .9375em;
+	color: #515151;
+}
+
+#mm-shell div.article blockquote {
+	position: relative;
+	float: right;
+	margin: 20px 1em 60px;
+	border-radius: 5px;
+	width: 240px;
+	padding: 50px 20px 30px;
+	background-image: url(../../images/money-matters/blockquote-bg.png) !important;
+	background-image: transparent;
+	background-repeat: no-repeat;
+	background-position: 20px 20px;
+}
+
+.ie6 #mm-shell div.article blockquote {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+#mm-shell div.article blockquote p {
+	margin: 0;
+	padding-bottom: 20px;
+	letter-spacing: 1px;
+	font: 1.25em/115% 'Sainsburys Slab Regular', serif;
+	color: #fff;
+	background-image: url(../../images/money-matters/blockquote-bg.png) !important;
+	background-image: transparent;
+	background-repeat: no-repeat;
+	background-position: right bottom;
+}
+
+#mm-shell div.article blockquote span.flourish {
+	position: absolute;
+	overflow: hidden;
+	right: 40px;
+	bottom: -40px;
+	width: 0;
+	height: 0;
+	border-left: 40px solid transparent;
+	border-right: 40px solid transparent;
+	border-top: 40px solid #f4cb36;
+}
+
+.ie6 #mm-shell div.article blockquote span.flourish {
+	border-left-color: #fff;
+	border-right-color: #fff;
+}
+
+#mm-shell div.article div.context-image {
+	overflow: hidden;
+	margin: 1em 0;
+	width: auto !important;
+	width: 97%;
+	max-width: 97%;
+	padding: 1% 1%;
+	background-color: #eee;
+}
+
+#mm-shell div.article div.context-image img {
+	width: 100%;
+	height: auto;
+}
+
+#mm-shell div.article .left {
+	clear: both;
+	float: left;
+	margin: 10px 10px 10px 0;
+}
+
+#mm-shell div.article .right {
+	clear: both;
+	float: right;
+	margin: 10px 0 10px 10px;
+}
+
+div.article .image-caption {
+	background: #eee;
+	padding: 10px;
+}
+
+div.article .image-caption img {
+	display: block;
+}
+
+div.article .image-caption span.label {
+	display: block;
+	margin-top: 5px;
+	padding: 2px;
+	text-align: center;
+	font-size: .75em;
+	background: #fff;
+}
+
+#mm-shell div.article div.context-image p {
+	margin-bottom: 0;
+}
+
+#mm-shell div.article div.article-cta {
+	margin-top: .875em;
+	border-top: 1px solid #ccc;
+	padding-top: .875em;
+}
+
+#mm-shell div.article div.article-cta p {
+	margin: 0;
+	font-size: 1.125em;
+	color: #a0a0a0;
+}
+
+#mm-shell div.article div.article-cta a {
+	text-decoration: underline;
+	font-weight: bolder;
+	color: #f45815;
+}
+
+#mm-shell div.article div.article-cta a:hover,
+#mm-shell div.article div.article-cta a:focus,
+#mm-shell div.article div.article-cta a:active {
+	color: #000;
+}
+
+/* !asset - article heading */
+#mm-shell div.article-heading {
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+/* !asset - author panel */
+#mm-shell div.author {
+	clear: both;
+	overflow: hidden;
+	width: 100%;
+}
+
+#mm-shell div.col12 div.author {
+	margin-bottom: 1em;
+	width: 50%;
+}
+
+#mm-shell div.author img {
+	display: inline;
+	float: left;
+	margin-bottom: .75em;
+	width: 90px;
+	height: 90px;
+}
+
+#mm-shell div.author h1,
+#mm-shell div.author h2 {
+	margin: 0 0 0 100px;
+	font-size: 1.5em;
+}
+
+#mm-shell div.author ul.tags {
+	margin: 0 0 0 100px;
+}
+
+#mm-shell div.author p {
+	clear: left;
+}
+
+#mm-shell div.author a {
+	text-decoration: underline;
+}
+
+#mm-shell div.author a:hover {
+	text-decoration: none;
+}
+
+#mm-shell div.author p.role {
+	clear: none;
+	margin: 0 0 0 100px;
+	font-weight: bold;
+	font-size: 1.125em;
+	color: #a8a8a8;
+}
+
+#mm-shell div.author-list div.author p.role {
+	font-size: .875em;
+	color: #2b2b2b;
+}
+
+#mm-shell div.author p.cite {
+	margin: .5em 0 .5em 100px;
+}
+
+#mm-shell div.author p.cite,
+#mm-shell div.author cite {
+	clear: none;
+	color: #b7b7b7;
+}
+
+#mm-shell div.author cite a {
+	text-decoration: underline;
+	color: #b7b7b7;
+}
+
+#mm-shell div.author cite a:hover,
+#mm-shell div.author cite a:focus,
+#mm-shell div.author cite a:active {
+	color: #000;
+}
+
+/* !asset - navigation */
+#mm-body ul.navigation {
+	list-style: none;
+	padding: 0;
+	border-top: 1px solid #fdf7df;
+}
+
+#mm-body ul.navigation li {
+	border-bottom: 1px solid #fdf7df;
+}
+
+#mm-body ul.navigation a {
+	display: block;
+	padding: 10px 5px;
+	color: #797979;
+	background: url(../../images/money-matters/active-link-node-yellow.gif) no-repeat right bottom;
+}
+
+/* !asset - panels */
+#mm-shell div.panel {
+	position: relative;
+	width: 100%;
+	padding-bottom: 270px;
+	background-color: #f45815;
+	background-repeat: no-repeat;
+	background-position: center bottom;
+}
+
+#mm-shell div.panel div.text {
+	overflow: hidden;
+	padding: .75em .75em 0;
+	color: #fff;
+	background-color: #f45815;
+}
+
+#mm-shell div.panel h2 {
+	line-height: 110%;
+	font-size: 1.75em;
+}
+
+#mm-shell div.panel h3 {
+	font-size: .875em;
+}
+
+#mm-shell div.panel p {
+	font: 1em/120% 'Sainsburys Slab Regular', serif;
+}
+
+#mm-shell div.panel p.cta {
+	position: absolute;
+	overflow: visible;
+	margin: 0;
+	left: 10px;
+	bottom: 10px;
+	line-height: 130%;
+}
+
+#mm-shell div.panel p.cta a {
+	padding-top: 8px;
+}
+
+#mm-shell div.panel p.cta a:hover,
+#mm-shell div.panel p.cta:hover a,
+#mm-shell div.panel:hover p.cta a {
+	position: relative;
+	left: 1px;
+	top: -1px;
+	box-shadow: -1px 1px 0 rgba(0, 0, 0, .8);
+	text-decoration: none;
+	background-color: #b8003f;
+	background-image: url(../../images/money-matters/cta-bg.gif);
+}
+
+#mm-shell div.panel div.text p.cta {
+	position: static;
+}
+
+/* !asset - article heading - image heading */
+#mm-shell div.article-heading div.image-text {
+	position: relative;
+	width: 100%;
+	height: 430px;
+	background-repeat: no-repeat;
+}
+
+#mm-shell div.article-heading div.image-text h2 {
+	position: absolute;
+	left: 0;
+	bottom: 30px;
+	width: 912px;
+	padding: 15px 10px;
+	font-size: 2em;
+	background: url(../../images/money-matters/header-strip-bg.png) !important;
+	background: #fff;
+}
+
+#mm-shell div.article-heading div.image-text h2 {
+	border-left: 8px solid #f45815;
+}
+
+/* !asset - article heading - gallery */
+#mm-shell div.article-heading div.gallery {
+	width: 100%;
+	background-color: #2c2c2c;
+}
+
+#mm-shell div.article-heading div.gallery ul.list {
+	overflow: hidden;
+	list-style: none;
+	margin: 0;
+	width: 100%;
+	padding: 0;
+}
+
+#mm-shell div.gallery ul.list li {
+	position: relative;
+	float: left;
+	width: 84px;
+	height: 84px;
+	margin: 5px;
+}
+
+.ie6 #mm-shell div.gallery ul.list li {
+	display: inline;
+}
+
+#mm-shell div.gallery ul.list img {
+	display: block;
+	width: 84px;
+	height: 84px;
+}
+
+#mm-shell div.gallery ul.list li.selected img {
+	position: absolute;
+	left: -3px;
+	top: -3px;
+	border: 3px solid #fff;
+}
+
+#mm-shell div.gallery ul.list p {
+	display: none;
+	font-size: 1em;
+}
+
+#mm-shell div.gallery div.image-container span {
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+#mm-shell div.gallery div.image-container a.nav {
+	position: absolute;
+	z-index: 100;
+	top: 50%;
+	margin-top: -29px;
+	width: 41px;
+	height: 64px;
+	background: url(../../images/money-matters/gallery-nav-bg.png) no-repeat;
+}
+
+.ie6 #mm-shell div.gallery div.image-container a.nav {
+	background-image: url(../../images/money-matters/gallery-nav-bg.gif);
+}
+
+#mm-shell div.gallery div.image-container a.nav-prev {
+	left: 5px;
+}
+
+#mm-shell div.gallery div.image-container a.nav-prev:hover {
+	background-position: left bottom;
+}
+
+#mm-shell div.gallery div.image-container a.nav-next {
+	right: 5px;
+	background-position: right top;
+}
+
+#mm-shell div.gallery div.image-container a.nav-next:hover {
+	background-position: right bottom;
+}
+
+#mm-shell div.gallery div.copy {
+	overflow: hidden;
+	clear: both;
+	padding: 0 5px;
+}
+
+#mm-shell div.gallery div.description {
+	margin: 0 5px;
+	color: #fff;
+}
+
+#mm-shell div.gallery div.description p {
+	font-size: .875em;
+}
+
+#mm-shell div.article-heading div.gallery p.cta {
+	font: .75em "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#mm-shell div.article-heading div.gallery p.cta a {
+	padding: 0 10px 0 0;
+	text-decoration: underline;
+	background: transparent url(../../images/money-matters/gallery-cta-bg.gif) no-repeat right center;
+}
+
+div.social-links-nav { margin: 0 0 10px 0; height:70px; }
+div.social-links-footer { margin: 0 0 60px 0; }
+
+div.social-links-nav div.mm-fb { float: left; margin-right : 10px; }
+div.social-links-footer div.mm-fb { float: left; }
+
+div.social-links-nav div.mm-tweet { float: left;  margin-bottom: 5px;}
+div.social-links-footer div.mm-tweet { float: left; margin-right: -15px; }
+
+/* device specific */
+@media only screen and (max-width: 640px) {
+
+	#mm-logo {
+		margin-left: 10px;
+	}
+
+	#mm-carousel div.inner {
+		height: auto;
+	}
+
+	#mm-carousel div.slides {
+		position: relative;
+	}
+
+	#mm-carousel div.slide {
+		width: 100%;
+	}
+
+	#mm-carousel a.navigation {
+		position: static;
+		width: auto;
+		height: auto;
+		padding: 10px;
+	}
+
+	#mm-carousel a.nav-prev {
+		float: left;
+	}
+
+	#mm-carousel a.nav-next {
+		float: right;
+	}
+
+	#mm-carousel a.navigation span {
+		background: none;
+		width: auto;
+		height: auto;
+	}
+
+	#content .article-panel,
+	#content #mm-carousel div.col {
+		height: auto;
+		background: none !important;
+	}
+
+	#content .article-panel .content {
+		float: none !important;
+		border-radius: 5px;
+	}
+
+	div.col12 .article-panel .content,
+	div.col8 .article-panel .content {
+		width: auto;
+	}
+
+	#content .article-panel div.text {
+		float: none;
+		border-radius: 5px;
+		width: auto;
+		height: auto;
+	}
+
+	/* footer */
+	#mm-footer.fixed {
+		position: static;
+	}
+
+	#mm-footer div.outer,
+	#mm-footer div.inner {
+		position: static;
+		margin: 0;
+		width: auto;
+	}
+
+	#mm-footer div.inner {
+		padding: 0 10px;
+	}
+
+	#mm-footer div.footer-panel {
+		width: auto;
+	}
+
+	#mm-shell a.fbn-cta {
+		margin: 1em auto;
+	}
+
+	/* primary nav */
+	#nav-primary ul {
+		position: static;
+		display: block;
+	}
+
+	#nav-primary li.nested {
+		width: 100%;
+	}
+
+	#nav-primary li.nested > a {
+		display: none;
+	}
+
+	#nav-primary li.nested ul {
+		overflow: hidden;
+	}
+
+	#nav-primary li.nested ul li {
+		float: left;
+		width: 50%;
+	}
+
+	#nav-primary li.nested ul a {
+		margin: 0;
+	}
+
+	/* authors */
+	#mm-shell div.col12 div.author {
+		width: auto;
+	}
+
+	/* article headings */
+	#mm-shell div.article-heading div.image-text {
+		background-size: contain;
+		height: auto;
+		padding-top: 100px;
+	}
+
+	#mm-shell div.article-heading div.image-text h2 {
+		position: static;
+		width: auto;
+	}
+
+	div.article-heading div.video iframe {
+		width: 100%;
+		height: 250px;
+	}
+
+	div.article-heading div.image img {
+		width: 100%;
+		height: auto;
+	}
+
+	/* articles */
+	#mm-shell div.article blockquote {
+		width: 50%;
+		padding-top: 30px;
+		margin-bottom: 40px;
+	}
+
+	#mm-shell div.article blockquote p {
+		font-size: .875em;
+	}
+
+	/* panels */
+	#mm-shell div.panel {
+		margin: 0 auto;
+		width: 220px;
+	}
+
+}

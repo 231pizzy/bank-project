@@ -1,0 +1,604 @@
+@import url(blankcanvas.css);
+@import url(base-typography.css);
+@import url(base-datasets.css);
+@import url(assets.css);
+
+.red{color:#FF0000}
+@media screen {
+		
+		div.col { float: left; }
+		
+		div.col10 { width: 104px; }
+		
+		div.col28 { width: 280px; }
+		
+		div.col30 { padding-left: 20px; width: 220px; }
+		
+		div.wide div.col30 { padding-left: 10px; width: 220px; float: right; }
+
+		div.col43 { width: 460px; }
+		
+		div.wide div.col43 { width: 552px; }
+		
+		div.col62 { width: 620px; }
+		
+		div.col78 { 
+			border-left: 1px solid #930031;
+			margin-left: 25px;
+			padding-left: 25px;
+			width: 780px; 
+		}
+		
+		div.wide div.col78 {
+			margin-left: 15px;
+			padding-left: 15px;
+			width: 805px;
+		}
+		
+		div.col93 { margin-bottom: 20px; width: 935px; }
+		
+		div#wrapper { 
+			margin: 0 auto;
+			position: relative;
+			width: 975px; 
+		}	
+		
+		div#header {
+			background: #fff no-repeat 0 0;
+			padding-top: 5px;
+		}
+		
+		div#logo { margin: 7px 0 8px 8px; }
+		
+		div#header a#header-logo { 
+			color: white; 
+			height: 80px;
+			text-decoration: none; 
+			width: 255px;
+		}
+		
+		div#header a#header-logo span { background: transparent url(logo.png) no-repeat 0 0; }
+		
+		/* Main navigation */
+		
+		div#nav {
+			background: #0B3357 url(../images/nav-bg.gif) repeat-x 0 0;
+			height: 38px;
+			position: relative;
+			width: 975px;
+		}
+		
+		div#nav span { height: 36px; position: absolute; width: 7px; }
+		
+		div#nav span.nav-left { background: transparent url(../images/nav-left.gif); left: 0; }
+		
+		div#nav span.nav-right { background: transparent url(../images/nav-right.gif); right: -1px; }
+		
+		div#nav ul { padding-left: 14px; }
+		
+		div#nav ul li {  
+			float: left;
+			font-size: 0.815em;
+		}
+		
+		div#nav ul li a {
+			background: transparent url(../images/nav-divider.gif) no-repeat 0 0;
+			color: #fff;
+			display: block;
+			padding: 10px 15px;
+			text-decoration: none;
+			font-weight: bold;
+		} 
+		
+		div#nav ul li a:hover,
+		div#nav ul li a:active,
+		div#nav ul li a:focus
+		{ text-decoration: underline; }
+		
+		div#nav ul li.first a {
+			background: transparent url(../images/nav-home-icon.gif) no-repeat 0 10px;
+			padding-left: 20px;
+		}
+		
+		div#content { 
+			float: left;
+			margin-bottom: 20px;
+			padding: 20px;
+			width: 940px;
+		}
+		
+		/*Secondary navigation*/
+		
+		div.col10 ul li { 
+			font-size: 0.75em;
+			font-weight: bold;
+			margin-bottom: 0.5em;
+		}
+		
+		div#content div.col10 ul li a { 
+			color: #000;
+			font-weight: normal;
+			text-decoration: none;
+		}
+		
+		div#content div.col10 ul li.active a { 
+			color: #930031;
+			font-weight: bold;
+		}
+		
+		/* Log in */
+		
+		div#log-in { float: right; padding: 10px 5px 0 0; }
+		div#log-in img { float: left; margin: -7px 65px 0 0; }
+		div#log-in p.button { background-color: #930031; float: left; }
+		div#log-in p.login-info { color: #930031; float: left; margin-right: 10px; }
+		
+		/* buttons */
+		
+		div#content p.button a {
+			background: transparent url(../images/button-left.gif) no-repeat 0 0;
+			color: #fff;
+			padding: 6px 10px 6px 15px;
+			position: relative;
+			text-decoration: none;
+		}
+		
+		p.button a span {
+			background: transparent url(../images/button-right.gif) no-repeat right 0;
+			display: block;
+			height: 28px;
+			position: absolute;
+			right: -5px;
+			top: 0;
+			width: 5px;
+		}
+		
+		/* blocks */
+		
+		div.block { float: left; padding-bottom: 20px; width: 100%; }
+		
+		div.block h2 { padding: 4px 0 0 4px; }
+		
+		div.body .in-credit { color: #5b960f; font-weight: normal; }
+		div.body .in-debt { color: #e03c3a; font-weight: normal; }
+		div.body .account-closed { color: #f39820; font-weight: normal; }
+		div.body .error { color: #e23d3a; padding: 0.5em 4em 0 0; }
+		div.body img.error-input { cursor: help; float: left; margin: 3px 0 0; display: inline; }
+
+		span.corners {
+			display: block;	
+			font-size: 0;
+			line-height: 0;
+			height: 7px;
+			position: absolute !important;
+			width: 7px;
+		}
+		
+		span.tl {
+			left: 0;
+			top: 0;
+		}
+		
+		span.tr {
+			right: 0;
+			top: 0;
+		}
+		
+		span.bl {
+			left: 0;
+			bottom: 0;
+		}
+		
+		span.br {
+			right: 0;
+			bottom: 0;
+		}
+		
+		div.head {
+			background: #f2a616 url(../images/honey-bg.gif) repeat-x 0 0;
+			position: relative;
+			padding: 10px 10px 13px 10px;
+			clear: both;
+		}
+		
+		div.head span.corners {
+			height: 10px;
+			width: 10px;
+		}
+		
+		div.head span.tl {
+			background: transparent url(../images/honey-block-tl.gif) no-repeat 0 0;
+		}
+		
+		div.head span.tr {
+			background: transparent url(../images/honey-block-tr.gif) no-repeat 0 0;
+		}
+		
+		div.head span.br {
+			background: transparent url(../images/honey-block-br.gif) no-repeat 0 0;
+			bottom: -1px;
+		}
+		
+		div.head span.bl {
+			background: transparent url(../images/honey-block-bl.gif) no-repeat 0 0;
+			bottom: -1px;
+		}
+		
+		div.body {  
+			background: #fafafa url(../images/grey-block-bg.gif) repeat-x 0 bottom;
+			border-left: 1px solid #ededed;
+			border-right: 1px solid #ededed;
+			position: relative;
+			padding: 10px 0;
+			float: left;
+		}
+		
+		div.col43 div.body { width: 458px; }
+		
+		/*div.col30 div.body { width: 298px; }*/
+		div.col30 div.body { width: 218px; }
+
+		div.body span.br {
+			background: transparent url(../images/grey-block-br.gif) no-repeat 0 0;
+			right: -1px;
+		}
+		
+		div.body span.bl {
+			background: transparent url(../images/grey-block-bl.gif) no-repeat 0 0;
+			left: -1px;
+		}
+		
+		div.info {
+			padding: 10px;
+			position: relative;
+		}
+		
+		div.multiple div.info {
+			border-bottom: 1px solid #930031;
+			float: left;
+			width: 438px;
+		}
+		
+		div.multiple div.info.last { border-bottom: none; }
+		
+		div.info h3 { margin-bottom: 1.2em; }
+		
+		div.info p { line-height: 1.4em; margin-bottom: 0.5em; }
+		
+		div.info p.balance { color: #930031; font-weight: bold; }
+		
+		div.block dl { font-size: 0.875em; line-height: 1.3em; }
+		
+		div.block dl dt,
+		div.block dl dd { float: left; }
+		
+		div.block dl dd { 
+			color: #930031;
+			margin-left: 5px; 
+		}
+		
+		/* Details */
+		
+		div#details div.info p { 
+			padding-right: 50px;
+			position: relative;
+		}
+		
+		div#details div.info p a.update { position: absolute; right: 0; top: 0; }
+		
+		/* Plum blocks */
+		
+		div.plum div.head {
+			background: #960231 url(../images/plum-bg.gif) repeat-x top left;
+		}
+		
+		div.plum span.corners { height: 7px; width: 7px; }
+		
+		div.plum span.tl {
+			background: transparent url(../images/plum-tl.gif) no-repeat 0 0;
+		}
+		
+		div.plum span.tr {
+			background: transparent url(../images/plum-tr.gif) no-repeat 0 0;
+		}
+		
+		div.plum h2 { color: #fff; }
+		
+		div#content div.plum p a { color: #000; }
+		
+		div#content div.plum p.button { margin-top: 20px; }
+		
+		div#content div.plum p.button a { 
+			background: transparent url(../images/grey-button-left.gif) no-repeat 0 0; 
+			color: #930031; 
+			padding-bottom: 7px;
+		}
+		
+		div#content div.plum p.button a span { 
+			background: transparent url(../images/grey-button-right.gif) no-repeat 0 0; 
+			height: 29px;
+			width: 6px;
+		}
+		
+		/* Servicing options form */
+		
+		form.options {
+			position: absolute;
+			right: 10px;
+			top: 7px;
+		}
+		
+		form.options fieldset { display: inline; }
+		
+		form.options select { float: left; margin: 2px 10px 0 0; }
+		
+		/* Accout header */
+		
+		div#account-header div.body { width: 778px; }
+		
+		div#account-header div.info p#welcome { font-size: 1.25em; margin-bottom: 0; }
+		
+		div#account-header div.info p span { color: #930031; }
+		
+		/* Credit card */
+		
+		div#credit-card dl { clear: both; }
+		
+		div#credit-card dl dt { width: 120px; }
+
+		div#credit-card dl dd { padding-right: 10px; width: 80px; }
+		
+		div#savings div.info h3,
+		div#credit-card div.info h3 { line-height: 1.2em; width: 200px; }
+		
+		/* Nectar card */
+		
+		div#nectar-card { 
+			background-color: #efd9e0;
+			padding: 15px 0;
+			position: relative;
+			float: left;
+			width: 460px;
+		}
+		
+		div#nectar-card span.tl { background: transparent url(../images/nectar-tl.gif) no-repeat 0 0; }
+		
+		div#nectar-card span.tr { background: transparent url(../images/nectar-tr.gif) no-repeat 0 0; }
+		
+		div#nectar-card span.bl { background: transparent url(../images/nectar-bl.gif) no-repeat 0 0; }
+		
+		div#nectar-card span.br { background: transparent url(../images/nectar-br.gif) no-repeat 0 0; }
+		
+		div#nectar-card img { float: left; margin: 0 10px; }
+		
+		div#nectar-card p { color: #930031; margin-top: 5px; }
+		
+		/* Service issues */
+		
+		div#noticeboard {
+			padding-left: 0;
+			position: relative;
+		}
+		
+		div#noticeboard p.issue { color: #930031; }
+		
+		/* Product block */
+		
+		div#product {
+			background: #f0c300 url(../images/product-bg.gif) repeat-x left bottom;
+			padding: 10px;
+			position: relative !important;
+			float: left;
+			width: 280px;
+		}
+		
+		div#product img {
+			bottom: 5px;
+			right: 5px;
+			position: absolute;
+		}
+		
+		div#product p { 
+			background: transparent url(../images/product-arrow.gif) no-repeat 0 6px; 
+			color: #930031; 
+			line-height: 1.3em; 
+			margin-bottom: 1.5em; 
+			padding-left: 12px;
+			width: 210px; 
+		}
+		
+		div#content div#product p.button { background: none; padding: 0; }
+		
+		div#content div#product p.button a { background: transparent url(../images/button-left-product.gif) no-repeat 0 0; }
+		
+		div#content div#product p.button a span { background: transparent url(../images/button-right-product.gif) no-repeat right 0; }
+		
+		div#product span.tl {
+			background: transparent url(../images/product-tl.gif) no-repeat 0 0;
+		}
+		
+		div#product span.tr {
+			background: transparent url(../images/product-tr.gif) no-repeat 0 0;
+		}
+		
+		div#product span.bl {
+			background: transparent url(../images/product-bl.gif) no-repeat 0 0;
+		}
+		
+		div#product span.br {
+			background: transparent url(../images/product-br.gif) no-repeat 0 0;
+		}
+		
+		/* Details edit */
+		
+		div#detail-edit p.button {
+			position: absolute;
+			right: 10px;
+			bottom: 3px;
+		}
+		
+		div#detail-edit p.button a {
+			background: transparent url(../images/update-button-left.gif) no-repeat 0 0;
+			color: #930031;
+		}
+		
+		div#detail-edit p.button a span {
+			background: transparent url(../images/update-button-right.gif) no-repeat 0 0;
+		}
+		
+		/* Login */
+				
+		div#login div.body { width: 618px; }
+		
+		div#login h3 {
+			color: #930031;
+			font-size: 14px;
+			font-weight: bold;
+			margin-bottom: 10px;
+		}
+		
+		div#login h4,
+		div#login p.subtext {
+			font-size: 13px;
+		}
+		
+		div#login h4 {
+			color: #930031;
+			font-weight: normal;
+			margin: 40px 0 5px 0;
+		}
+		
+		div#login form { margin-top: 35px; }
+		div#login form fieldset { float: left; }
+		div#login label { clear: both; float: right; margin-bottom: 1em; }
+		div#login label span { color: #930031; float: left; font-size: 0.875em; width: 120px; line-height: 1.5em; }
+		div#login form fieldset.left label { width: 350px; }
+		div#login form fieldset.left input { width: 200px; float: right;}
+		div#login form fieldset.right { margin-left: 18px; width: 230px; }
+		div#login fieldset.right label span{ color: #000; float: left; font-size: 12px; margin-top: 2px; width: auto; }
+		div#login fieldset.right p { clear: both; font-size: 0.8125em; }
+		div#login fieldset.right p a { color: #000; }
+		div#login form fieldset.right input { float: left; margin-left: 0; }
+		div#login form fieldset.full { margin-bottom: 30px; }
+		div#login form fieldset.full label { width: 500px; margin-bottom: 0;  }
+		div#login form fieldset.full span { width: 200px; }
+		div#login form fieldset.full input { width: 200px; }
+		div#login form fieldset.submit-field { clear: left; float: none; width: 344px; }
+		div#login form fieldset.submit-field input { float: right; }
+		div#login form fieldset.option-fields { clear: left; float: none; width: 68%; }
+		div#login form fieldset.option-fields input { float: right; margin-left: 20px; }
+		
+		/* Learn */
+		
+		div.learn {
+			float: left;
+			margin-bottom: 20px;
+			padding: 10px;
+			position: relative;
+			/*width: 280px;*/
+			width: 200px;
+			background: #fffae5;
+			position: relative;
+		}
+		
+		div.wide div.learn {
+			/*width: 222px;*/
+			width:200px;
+		}
+		
+		div.wide div.learn ul { line-height: 1em; }
+		div.wide div.learn li { 
+			font-size: 0.75em; 
+			background: url(../images/learn-arrow.gif) no-repeat scroll 0 5px transparent
+			}
+		div.wide div.learn h2 {
+			font-size: 1.25em;
+		}
+		
+		div.learn * { position: relative; z-index: 30; }
+		div.learn img { position: absolute; z-index: 10; }
+		
+		div.learn span.tl {
+			background: transparent url(../images/learn-tl.gif) no-repeat 0 0;
+		}
+		
+		div.learn span.tr {
+			background: transparent url(../images/learn-tr.gif) no-repeat 0 0;
+		}
+		
+		div.learn span.bl {
+			background: transparent url(../images/learn-bl.gif) no-repeat 0 0;
+		}
+		
+		div.learn span.br {
+			background: transparent url(../images/learn-br.gif) no-repeat 0 0;
+		}
+		
+		div.learn h2 { margin-bottom: 0.5em; padding: 0; width: 140px; }
+		
+		div.learn ul { 
+			line-height: 1.1em; width: 140px; }
+		
+		div.learn ul li { 
+			background: transparent url(../images/learn-arrow.gif) no-repeat 0 6px; 
+			color: #000;
+			padding-left: 10px;
+			font-size: 14px; 
+			margin-bottom: 0.5em;
+			list-style-position: outside;
+		}
+		
+		div#content div.learn ul li a {
+			color: #000;
+		}
+		
+		div#security img {
+			top: 0; right: 0;
+		}
+		
+		div#can-we-help img {
+			bottom: 0; right: 0;
+		}
+		
+		/* Footer */
+		
+		div#footer { 
+			background: #0B3357 url(../images/footer-bg.gif) no-repeat 0 0; 
+			clear: both;
+			height: 20px;
+			padding-left: 5px; 
+			width: 970px; 
+		}
+		
+		div#footer ul li { float: left; font-size: 0.69em; font-weight: bold; }
+		
+		div#footer ul li a { 
+			background: transparent url(../images/footer-nav-divider.gif) no-repeat 0 5px;
+			color: #fff; 
+			display: block;
+			padding: 5px 10px 5px 10px; 
+			text-decoration: none; 
+		}
+		
+		div#footer ul li.first a { background: none; }
+
+		/* added by SB */
+		div#promoimage {
+			float: left; 
+			padding-bottom: 20px; 
+			width: 100%;
+		}
+		div#backToLink a {
+			background: transparent url(../images/learn-arrow.gif) no-repeat 0 6px; 
+			color: #000;
+			padding: 0 10px 0 10px;
+			font-size: 0.875em; 
+			text-decoration: none;
+		}
+		div#backToLink a:hover {	
+			text-decoration: underline;
+		}
+		
+}		
+#google_translate_element{float:right; margin:10px 20px 0 0}
+#google_translate_element img{display:none}

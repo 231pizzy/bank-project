@@ -1,0 +1,496 @@
+/* loans calcularor */
+#content div#loan-switcher-calc {
+	overflow: hidden;
+	width: 99%;
+	border: 3px solid #f45815;
+	border-radius: 10px;
+	background-color: #ffffff;
+	color: #f45815;
+	font-size: 1.454em;
+}
+
+/* loans calculator wrapper */
+#content div#loan-switcher-calc div.shell {
+	display: block;
+	overflow: hidden;
+	padding: 20px 5% 10px 5%;
+	border-bottom: 1px solid #cf4409;
+	background-color: #ffffff;
+	color: #f45815;
+}
+
+/* form label font */
+#content form.loan-switcher-calc p.label {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* form default margins */
+#content .loan-switcher-calc,
+#content .loan-switcher-calc fieldset,
+#content .loan-switcher-calc form {
+	margin: 0;
+}
+
+/* loans calculator top header */
+div.loan-switcher-calc-header h2 {
+	display: block;
+	width: 100%;
+	padding: 0 0 20px 0;
+	background: url(../../images/loan-switcher-calc/pound-sign.jpg) no-repeat right top;
+	color: #fff;
+	text-indent: 0;
+}
+
+div.loan-switcher-calc-header h2 span {
+	color: #990033;
+}
+
+#content div.loan-switcher-calc-header h3 {
+	font-size: 18px;
+}
+
+#content div.loan-switcher-calc-header p {
+	display: block;
+	margin: 0.25em 0 1em 0;
+	max-width: 320px;
+	color: #929292;
+	font-weight: bold;
+	font-size: 10px;
+	line-height: 12px;
+}
+
+#content div.loan-switcher-calc-header {
+	overflow: hidden;
+	border-bottom: 1px solid #cf4409;
+}
+
+div#loan-switcher-calc .loan-switcher-calc fieldset label {
+	width: 100%;
+}
+
+#content p.empty,
+#content div#loan-switcher-calc .loan-switcher-calc fieldset label p,
+#content div#loan-switcher-calc-phase-two .loan-switcher-calc fieldset label p {
+	display: block;
+	float: left;
+	clear: right;
+	margin: 5px 0;
+	margin-right: 10px;
+	width: 280px;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+div#loan-switcher-calc .loan-switcher-calc fieldset label p span,
+div#loan-switcher-calc-phase-two .loan-switcher-calc fieldset label p span {
+	display: block;
+	color: #919191;
+	font-weight: bold;
+	font-size: 10px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	line-height: 12px;
+
+}
+
+#content div#loan-switcher-calc .loan-switcher-calc p.loans-tip,
+#content div#loan-switcher-calc .loan-switcher-calc p.loans-tip {
+	float: left;
+	margin-top: 12px;
+	width: 70px;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+#content .loan-switcher-calc p.cta-submit {
+	display: inline;
+	float: left;
+	margin: 10px 0;
+	padding: 0 0 0 0;
+	width: 162px;
+	border-radius: 5px;
+	background: #af312f;
+	font-family: 'Sainsburys Slab Bold', Helvetica, test, sans-serif;
+}
+
+#content .loan-switcher-calc p.cta-submit a,
+#content .result-footer p.cta-submit a {
+	display: block;
+	padding: 7px 0px 7px 10px;
+	background: url(../../images/icons/cta-chevron-large.gif) no-repeat right center;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 18px;
+	font-family: 'Sainsburys Slab Bold', Helvetica, test, sans-serif;
+}
+
+#content div#loan-switcher-calc-phase-two .loan-switcher-calc p.cta-submit:hover,
+#content div#loan-switcher-calc-results p.cta-submit:hover,
+#content .loan-switcher-calc p.cta-submit:hover,
+#content .result-footer p.cta-submit:hover {
+	background-color: #670023;
+}
+
+#content div#loan-switcher-calc-results p.cta-submit,
+#content div#loan-switcher-calc-phase-two .loan-switcher-calc p.cta-submit {
+	display: inline;
+	float: left;
+	margin: 5px 0 0 0;
+	width: 170px;
+	border: 1px solid #fab091;
+	border-radius: 5px;
+	background: #af312f;
+	font-family: 'Sainsburys Slab Bold', Helvetica, test, sans-serif;
+}
+
+#content div#loan-switcher-calc-results p.cta-submit a,
+#content div#loan-switcher-calc-phase-two .loan-switcher-calc p.cta-submit a {
+	padding: 11px 0px 11px 10px;
+}
+
+#content p.note {
+	display: block;
+	clear: both;
+	margin: 0;
+	color: #919191;
+	font-weight: bold;
+	font-size: 12px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#content #loan-switcher-calc-results p.note,
+#content #loan-switcher-calc-phase-two p.note {
+	width: 90%;
+	color: #ffffff;
+}
+
+#content #loan-switcher-calc-results ul li,
+#content p.note-body {
+	display: block;
+	clear: both;
+	margin: 0;
+	width: 90%;
+	color: #919191;
+	font-weight: normal;
+	font-size: 10px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#content #loan-switcher-calc-results ul li,
+#content #loan-switcher-calc-results p.note-body,
+#content #loan-switcher-calc-phase-two p.note-body {
+	width: 90%;
+	color: #ffffff;
+}
+
+div#loan-switcher-calc-phase-two .loan-switcher-calc h4 {
+	font-size: 18px;
+}
+
+div#loan-switcher-calc .loan-switcher-calc fieldset label input {
+	float: left;
+	clear: right;
+	margin-right: 10px;
+	padding: 10px 5px 10px 30px;
+	width: 125px;
+	border: 1px solid #b0b0b0;
+	border-radius: 5px;
+	color: #f45815;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+div#loan-switcher-calc .loan-switcher-calc input#monthly-repayments,
+div#loan-switcher-calc .loan-switcher-calc input#total-cost {
+	background: #ffffff url(../../images/loan-switcher-calc/pound-sign-input.jpg) no-repeat 10px 13px;
+}
+
+div#loan-switcher-calc-phase-two {
+	display: none;
+	overflow: hidden;
+	padding: 10px 20px 20px 20px;
+	border-top: 1px solid #f78250;
+	background: #f45815;
+	color: #fff;
+	font-size: 1.454em;
+}
+
+#content div#loan-switcher-calc-phase-two .loan-switcher-calc fieldset label {
+	margin-bottom: 10px;
+	padding: 0;
+}
+
+#content div#loan-switcher-calc-phase-two .loan-switcher-calc fieldset label p {
+	margin: 10px 0 10px 0;
+	width: 90%;
+	font-size: 14px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+div#loan-switcher-calc-phase-two .loan-switcher-calc .percent {
+	display: inline;
+	float: left;
+	margin-right: 19%;
+	padding-right: 25px;
+	background: url(../../images/loan-switcher-calc/percent-sign.jpg) no-repeat right 14px;
+}
+
+div#loan-switcher-calc-phase-two .loan-switcher-calc fieldset label input {
+	padding: 10px 20px;
+	width: 120px;
+	border: 1px solid #a83d0e;
+	border-radius: 5px;
+	color: #f45815;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+div#loan-switcher-calc-results {
+	display: none;
+	overflow: hidden;
+	width: 100%;
+}
+
+div#actions {
+	display: block;
+	overflow: hidden;
+	margin: 0 0 10px 0;
+	clear: both;
+}
+
+#content div#loan-switcher-calc-results div#actions p.cta-submit {
+	margin: 0 0 10px 0;
+}
+
+#content div#loan-switcher-calc-results div#actions p.cta-more {
+	margin: 0 8px 10px 0;
+}
+
+div#loan-switcher-calc-results div.loan-switcher-calc-header {
+	display: block;
+	clear: both;
+	overflow: hidden;
+}
+
+div#loan-switcher-calc-results div.loan-switcher-calc-header h2 {
+	display: block;
+	float: left;
+	clear: right;
+	margin:0 0 10px 0;
+	padding: 0;
+	width: 50%;
+	background: none;
+	color: #f45815;
+	text-indent: 0;
+	font: 32px/32px 'Sainsburys Slab Bold', Helvetica, test, sans-serif;
+}
+
+div#loan-switcher-calc-results div.loan-switcher-calc-header a#goback {
+	display: block;
+	float: left;
+	clear: right;
+	padding: 10px 0 16px 0;
+	width: 50%;
+	height: 16px;
+	text-align: right;
+	text-decoration: none;
+	font: 14px/14px 'Sainsburys Slab Bold', Helvetica, test, sans-serif;
+}
+
+div#loan-switcher-calc-results div.loan-switcher-calc-header a#goback span {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+div#loan-switcher-calc-results p {
+	display: inline;
+	float: left;
+	clear: right;
+	overflow: hidden;
+	margin-top: 3px;
+	margin-right: 10px;
+	width: 70%;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+div#loan-switcher-calc-results p.old-total-repayable,
+div#loan-switcher-calc-results p.new-repayments,
+div#loan-switcher-calc-results p.total-repayable,
+div#loan-switcher-calc-results p.you-save {
+	display: inline;
+	margin: 0 0 10px 0;
+	width: 150px;
+	color: #252525;
+	font-weight: normal;
+	font-size: 20px;
+	font-family: 'Interstate Bold', Helvetica, sans-serif;
+}
+
+#content #loan-switcher-calc-results ul {
+	position: relative;
+	overflow: hidden;
+	margin: 0;
+	padding: 20px 0 0 0;
+	width: 100%;
+}
+
+#content #loan-switcher-calc-results h3 {
+	display: block;
+	margin: 0 0 20px 0;
+	width: 70%;
+	color: #ffffff;
+	font-size: 20px;
+	font-family: 'Interstate Bold', Helvetica, sans-serif;
+}
+
+#content #loan-switcher-calc-results h4 {
+	margin: 0 0 10px 0;
+	color: #ffffff;
+	font-size: 16px;
+	font-family: 'Sainsburys Slab Bold', Helvetica, test, sans-serif;
+}
+
+#content #loan-switcher-calc-results div.data-table table {
+	margin: 0 0 20px 0;
+	border: 5px solid #ffffff;
+	background: #ffffff;
+	color: #f45815;
+}
+
+#content #loan-switcher-calc-results div.data-table  table td {
+	padding: 0 10px 0 10px;
+	width: 24%;
+	height: 90px;
+	border: 1px solid #f45815;
+	background: #ffffff;
+	color: #f45815;
+	vertical-align: middle;
+	font-size: 20px;
+	font-family: 'Sainsburys Slab Bold', Helvetica, test, sans-serif;
+}
+
+#content #loan-switcher-calc-results div.data-table table td.table-head {
+	display: block;
+	margin: 0;
+	padding: 0 0 0 10px;
+	width: 110px;
+	border: 0;
+	color: #454545;
+	font-weight: bold;
+	font-size: 14px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#content #loan-switcher-calc-results div.data-table table td span {
+	display: block;
+	height: 35px;
+	color: #454545;
+	font-weight: bold;
+	font-size: 12px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	line-height: 16px;
+}
+
+div#loan-switcher-calc-results p.title {
+	display: inline;
+	overflow: hidden;
+	margin: 10px 0 20px 0;
+	width: 100%;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 22px;
+}
+
+div#loan-switcher-calc-results #positive-result {
+	overflow: hidden;
+	height: 100%;
+}
+
+div#loan-switcher-calc-results #positive-result div {
+	display: block;
+	clear: both;
+	overflow: hidden;
+	margin-top: 10px;
+}
+
+div#loan-switcher-calc-results #positive-result p {
+	display: inline;
+	overflow: hidden;
+}
+
+#content #loan-switcher-calc-results p.you-save span {
+	display: block;
+	font-weight: bold;
+	font-size: 14px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+div#loan-switcher-calc-results #negative-result {
+	display: block;
+	clear: both;
+	overflow: hidden;
+	height: 100%;
+}
+
+div#loan-switcher-calc-results #negative-result p {
+	display: block;
+	clear: both;
+	width: 90%;
+}
+
+div#loan-switcher-calc-results #negative-result p.title {
+	margin-bottom: 0;
+	color: #202020;
+}
+
+div#loan-switcher-calc-results p.cta-more,
+div#loan-switcher-calc-results #negative-result p.cta-more {
+	display: block;
+	overflow: hidden;
+	margin: 0 0 20px 0;
+	padding: 0;
+	width: 170px;
+	border: 1px solid #787878;
+	border-radius: 5px;
+	background: #dcdcdc;
+	font-family: 'Sainsburys Slab Bold', Helvetica, test, sans-serif;
+}
+
+div#loan-switcher-calc-results p.cta-more a,
+div#loan-switcher-calc-results #negative-result p.cta-more a {
+	display: block;
+	padding: 11px 0px 11px 10px;
+	background: url(../../images/icons/cta-chevron-secondary-large.gif) no-repeat right center;
+	color: #231f20;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 18px;
+	font-family: 'Sainsburys Slab Bold', Helvetica, test, sans-serif;
+}
+
+div#loan-switcher-calc-results p.cta-more:hover,
+div#loan-switcher-calc-results #negative-result p.cta-more:hover {
+	background-color: #b9b9b9;
+}
+
+div#loan-switcher-calc-results div.result-footer {
+	overflow: hidden;
+	padding: 20px 5% 20px 5%;
+	border-top: 1px solid #f78250;
+	background: #f45815;
+	color: #fff;
+}
+
+/* fix apple telephone link colour */
+div#loan-switcher-calc-results h3 a {
+	color: #fff;
+	text-decoration: none;
+}
+
+@media only screen and (max-width: 640px) {
+	div.loan-switcher-calc-header h2 {
+		width: auto;
+		padding: 0 78px 20px 0;
+		
+	}
+}

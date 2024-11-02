@@ -1,0 +1,42 @@
+@media screen {
+
+	/* =table */
+	
+		table { border-collapse: separate; border-spacing: 0px; }
+		table td { border: 1px solid #000000; }
+		table th { border: 1px solid #000000; font-weight: bold; }
+
+	/* =form */
+
+		form { }
+	
+	/* =fieldset */
+
+		form { }
+		
+	/* =legend */
+
+		legend { margin-left: -5px; }
+
+	/* =label */
+	
+		/* It's best to apply font-sizes to input and span elements directly, rather than to the label, IE doesn't play well otherwise */
+
+		label { }
+
+		label span { }
+		label.checkbox span { }
+		label.radio span { }
+
+	/* =input */
+
+		input { }
+		label.checkbox input { border: 0; width: auto; padding: 0; display: block; }
+		label.radio input { border: 0; width: auto; padding: 0; display: block; position: absolute; }
+		label.control input { background-image: url(button.png); }
+
+	/* =textarea */
+
+		textarea { }
+
+}

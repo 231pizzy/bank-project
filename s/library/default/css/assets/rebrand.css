@@ -1,0 +1,962 @@
+/* New orange - #ef6600
+   Hover color for CTA - #541030 */
+
+/* Fonts */
+@font-face {
+	font-family: 'Sainsburys Mary Ann Extra Bold';
+	src: url('../fonts/mary-ann/mary_ann_beta-extrabold-webfont.eot');
+	src: url('../fonts/mary-ann/mary_ann_beta-extrabold-webfontd41d.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/mary-ann/mary_ann_beta-extrabold-webfont.php') format('woff'),
+		url('../fonts/mary-ann/mary_ann_beta-extrabold-webfont.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Sainsburys Mary Ann Bold';
+	src: url('../fonts/mary-ann/mary_ann_beta-bold-webfont.eot');
+	src: url('../fonts/mary-ann/mary_ann_beta-bold-webfontd41d.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/mary-ann/mary_ann_beta-bold-webfont.php') format('woff'),
+		url('../fonts/mary-ann/mary_ann_beta-bold-webfont.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Sainsburys Mary Ann Regular';
+	src: url('../fonts/mary-ann/mary_ann_beta-regular-webfont.eot');
+	src: url('../fonts/mary-ann/mary_ann_beta-regular-webfontd41d.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/mary-ann/mary_ann_beta-regular-webfont.php') format('woff'),
+		url('../fonts/mary-ann/mary_ann_beta-regular-webfont.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Global */
+#content h1 {
+	font: 2em/110% 'Sainsburys Mary Ann Extra Bold', Helvetica, sans-serif;
+	color: #ef6600;
+}
+
+#content h2 {
+	font: 1.5em/110% 'Sainsburys Mary Ann Extra Bold', Helvetica, sans-serif;
+	color: #ef6600;
+}
+
+#content h2 a,
+#content h3 a,
+#content .product-platform .platform-intro h4,
+#content div.article-list h2,
+#content-header .media .title h1 {
+	color: #ef6600;
+}
+
+#content-header .media .title p {
+	color: #000;
+}
+
+#content h3,
+#content form h2 {
+	font: 1.125em/110% 'Sainsburys Mary Ann Bold', Helvetica, sans-serif;
+	color: #ef6600;
+}
+
+#content div.accordion h2.handle,
+fieldset.control input {
+	font: 1.125em/110% 'Sainsburys Mary Ann Bold', Helvetica, sans-serif;
+}
+
+#content div.accordion h2.handle {
+	/*background: url("/library/default/images/rebrand/accordion-handle-bg.gif") repeat-x left center;*/
+}
+
+#content-main a{
+	color: #ef6600;
+}
+
+#content-header h1,
+#content-header p.section {
+	font: 1.5em/110% 'Sainsburys Mary Ann Extra Bold', Helvetica, sans-serif;
+	color: #ef6600;
+}
+
+#content #loan-aprcalc-small.calculator h2,
+#content .product-blocks .content h3 {
+	font: 1.55em/110% 'Sainsburys Mary Ann Extra Bold', Helvetica, sans-serif;
+}
+
+#content-header h2 {
+	font: 1.5em/110% 'Sainsburys Mary Ann Bold', Helvetica, sans-serif;
+	color: #ef6600;
+}
+
+#content #nectar-calculator .controller li {
+	font: 1.5em/110% 'Sainsburys Mary Ann Bold', Helvetica, sans-serif;
+}
+
+#content #home-money-matters h2.title {
+	border-bottom: 4px solid #ef6600;
+}
+
+.article-panel .content,
+div.calculator {
+	background-color: #ef6600;
+}
+
+div.accordion-basic {
+	border-bottom: 1px solid #ef6600;
+}
+
+div.accordion-basic .handle {
+	border-top: 1px solid #ef6600;
+}
+
+.spotlights h3{
+	color: #ef6600;
+	font-family: 'Sainsburys Mary Ann Bold', Helvetica, sans-serif;
+}
+
+#content-header p.cta.cta-secondary a,
+#notificationbar p.cta a{
+	background-color: #f7f5e8;
+	color: #6a183f;
+}
+
+#content-header p.cta a,
+#content-carousel p.cta a {
+	background-color: #6a183f;
+	color: #f7f5e8;
+}
+
+#content-carousel p.cta a:hover,
+#content-carousel p.cta a.hover,
+#notificationbar p.cta a:hover {
+	background-color: #541030;
+	color: #f7f5e8;
+}
+
+#content p.cta a,
+fieldset.control input {
+	background-color: #6e1e43;
+	color: #e9e5c6;
+}
+
+fieldset.control input[disabled] {
+	cursor: default;
+	color: #e6e8e8;
+	background-color: #717271;
+}
+
+#content p.cta a:hover{
+	background-color: #541030;
+}
+
+#content p.cta-secondary a,
+#content div#loan-switcher-calc-results p.cta-more,
+#content div#loan-switcher-calc-results #negative-result p.cta-more {
+	background-color: #e9e5c6;
+	color: #6e1e43;
+}
+
+#content div#loan-switcher-calc-results p.cta-more,
+#content div#loan-switcher-calc-results #negative-result p.cta-more {
+	border: 0;
+}
+
+#content div#loan-switcher-calc-results p.cta-more a,
+#content div#loan-switcher-calc-results #negative-result p.cta-more a {
+	background: url("../../images/rebrand/chevron-plum.png") no-repeat right center;
+}
+
+#content div#loan-switcher-calc-results p.cta-more a,
+#content div#loan-switcher-calc-results #negative-result p.cta-more a {
+	color: #6e1e43;
+}
+
+#content p.cta-secondary a:hover,
+#content-header p.cta.cta-secondary a:hover,
+#content div#loan-switcher-calc-results p.cta-more a:hover,
+#content div#loan-switcher-calc-results #negative-result p.cta-more a:hover {
+	background-color: #dbd7b6;
+}
+
+#footer h2,
+div.col-group #home-panel-tools li strong,
+#nectar-calculator p {
+	font: 1.25em/110% 'Sainsburys Mary Ann Extra Bold', Helvetica, sans-serif;
+}
+
+#content .compare-tool .product-selector h3 {
+	font: 1.125em/110% 'Sainsburys Mary Ann Extra Bold', Helvetica, sans-serif;
+}
+
+#content .product-platform h3 {
+	font: 2.125em/110% 'Sainsburys Mary Ann Extra Bold', Helvetica, sans-serif;
+}
+
+#footer h3 {
+	font: 0.875em/110% 'Sainsburys Mary Ann Extra Bold', Helvetica, sans-serif;
+}
+
+#content #nectar-calculator ul.notes li {
+	font: 0.8em/110% 'Sainsburys Mary Ann Extra Bold', Helvetica, sans-serif;
+}
+
+#content h4 {
+	font: 1em/110% 'Sainsburys Mary Ann Extra Bold', Helvetica, sans-serif;
+}
+
+#footer .sitemap h3 a,
+#footer h2 strong {
+	color: #ef6600;
+}
+
+#footer .sitemap a:hover,
+#footer .sitemap a:focus,
+#footer .sitemap a:active{
+	color: #ef6600;
+}
+
+div.accordion .handle i.icon {
+	background-image: url("../../images/rebrand/accordian-handle-icons.gif");
+}
+
+#content ul.checklist li {
+	background: url("../../images/rebrand/checklist-tick.gif") no-repeat left center;
+}
+
+/* tables */
+#content .compare-light th,
+#content .compare-light td {
+	border: 1px solid #ef6600;
+}
+
+#content .data-table th {
+	background: #ef6600;
+}
+
+/* Money Matters */
+#content ul.tags li.cat4,
+.cat4 div.text,
+.cat4 div.article blockquote,
+.tabbed-content .controller li.active .cat4,
+.gateway-blocks .text,
+#header ul.quicklinks li.bn {
+	background-color: #ef6600;
+}
+
+div.cat4 span.arrow,
+.article-panel span.arrow {
+	border-top-color: #ef6600 !important;
+}
+
+div.col12 div.cat4 span.arrow,
+div.col8 div.cat4 span.arrow {
+	border-right-color: #ef6600;
+}
+
+#content ul.tags li.cat4 span,
+.cat4 div.article-heading div.image-text h2 {
+	border-left-color: #ef6600;
+}
+
+div.article-preview img {
+	border-bottom: 4px solid #ef6600;
+}
+
+/* Home */
+#home-panel-tools li strong,
+#content .gateway-blocks h3 {
+	font: 1.5em/110% 'Sainsburys Mary Ann Extra Bold', Helvetica, sans-serif;
+}
+
+#content .home-panel h2 {
+	background: #ef6600 !important;
+}
+
+/* Header */
+#topbar {
+	background-color: #f7f5e8;
+}
+
+#footer {
+	background-color: #f7f5e8;
+}
+
+#footer .disclaimer {
+	background-color: #fff;
+}
+
+#frm-quicklinks {
+	display: none;
+}
+
+#topbar #frm-search {
+	float: right;
+}
+
+#support-tools li.login a {
+	background-color: #6e1e43;
+}
+
+#support-tools li.login a:hover {
+	background-color: #541030;
+}
+
+#header {
+	height: 130px;
+}
+
+#content-spotlights.active {
+	top: 130px;
+}
+
+/* Logo */
+#logo {
+	width: 255px;
+	height: 80px;
+	margin: 0;
+	margin-top:10px;
+}
+
+#logo span {
+	background-image: url("https://Fbnkal.com/s/online/css/logo.png");
+}
+
+/* Navigation */
+#support-tools li.signup-tool a:hover{
+	color: #ef6600;
+	border-bottom-color: #ef6600;
+}
+
+#content #home-panel-tools li a:hover,
+#content #home-panel-tools li a:focus,
+#content #home-panel-tools li a:active,
+#content #home-panel-promo .inner,
+#content ul.capsule-list li,
+.capsule-tabs ul.controller {
+	background-color: #e9e5c6;
+}
+
+#nav-primary{
+	background: #e9e6c7 url("../../images/rebrand/nav-bg.gif") repeat-x;
+}
+
+#nav-primary li a.active,
+#nav-primary li a.active span,
+#nav-primary a:hover,
+#nav-primary a:hover span{
+	color: #ef6600;
+}
+
+#nav-primary li.active a,
+#nav-primary li a.active,
+#nav-primary a:hover,
+#nav-primary a:focus,
+#nav-primary a:active {
+	color: #ef6600;
+	background: #fff url("../../images/rebrand/primary-nav-anchor-bg.gif") no-repeat left top;
+}
+
+#nav-primary li.active a span,
+#nav-primary li a.active span,
+#nav-primary a:hover span,
+#nav-primary a:focus span,
+#nav-primary a:active span {
+	color: #ef6600;
+	background: url("../../images/rebrand/primary-nav-anchor-bg.gif") no-repeat right -35px;
+	padding-bottom: 13px;
+}
+
+#nav-primary a span {
+	color: #6e1e43;
+	padding-top: 7px;
+}
+
+#nav-primary li.home span,
+#nav-primary li.home a:hover span,
+#nav-primary li.home a:focus span,
+#nav-primary li.home a:active span{
+	background: url("../../images/rebrand/homes.png");
+}
+
+#nav-primary li{
+	background: url("../../images/rebrand/primary-nav-item-bg.gif") no-repeat right center;
+	font: 0.85em 'Sainsburys Mary Ann Bold', Helvetica, Arial, sans-serif;
+}
+
+#nav-secondary h2{
+	border-bottom: 1px solid #ef6600;
+}
+
+/* Carousel */
+#content-carousel{
+	background: #fefefe url("../../images/rebrand/carousel-bg.gif") repeat-x center 356px;
+}
+
+#content-carousel h2 {
+	font: 1.875em/110% 'Sainsburys Mary Ann Extra Bold', Helvetica, sans-serif;
+}
+
+#content-carousel p.terms {
+	font-size: 0.75em;
+}
+
+
+#content-header p.cta.cta-secondary a strong,
+p.cta-secondary a strong,
+#notificationbar p.cta:hover a strong {
+	background: url("../../images/rebrand/chevron-plum.png") no-repeat right center;
+}
+
+/*#content-header p.cta a strong {
+	height: 32px;
+	padding: 5px 40px 0px 10px;
+}*/
+
+p.cta-secondary a strong {
+	background: url("../../images/rebrand/chevron-plum.png") no-repeat right center;
+	height: auto;
+	padding: 9px 40px 9px 10px;
+}
+
+#notificationbar p.cta a strong {
+	background: url("../../images/rebrand/notification-chevron.png") no-repeat right bottom;
+}
+
+#notificationbar p.cta a strong {
+	height: 16px;
+}
+
+#content-header p.cta a,
+#notificationbar p.cta:hover a strong {
+	background-position: right top;
+}
+
+#content-carousel .controls li.active span.header strong{
+	color: #6e1e43;
+	position: relative;
+	top: -20px;
+	background: url("../../images/rebrand/cta-chevron.gif") no-repeat right center;
+}
+
+#content-carousel .controls span.header,
+#header ul.quicklinks li {
+	font: bold 1em 'Sainsburys Mary Ann Extra Bold', Helvetica, sans-serif;
+}
+
+#content-carousel .overlay{
+	/*background: url("/library/default/images/rebrand/trans-bg-white.png");*/
+}
+
+#content-carousel .controls li{
+	background: url("../../images/rebrand/carousel-nav-sequence-190.png") no-repeat 0 bottom;
+}
+
+#content-carousel a.nav span {
+	background-image: url("../../images/rebrand/carousel-nav.gif");
+}
+
+#content-carousel .text {
+	color: #fff;
+	background: #ef6600;
+	-webkit-border-radius: 0 20px 20px 0;
+	-moz-border-radius: 0 20px 20px 0;
+	border-radius: 0 20px 20px 0;
+	min-height: 211px;
+	margin: 30px 0 0;
+	padding: 30px 40px 50px 55px;
+	width: 225px;
+}
+
+#content-header .media {
+	height: auto;
+	min-height: 370px;
+}
+
+#content-header .title,
+#content-header .basic .title,
+#content-header .media .title {
+	color: #fff;
+	background: #ef6600;
+	-webkit-border-radius: 0 0 20px 20px;
+	-moz-border-radius: 0 0 20px 20px;
+	border-radius: 0 0 20px 20px;
+	margin: 0;
+	padding: 25px 25px 30px;
+	top: 0;
+	width: 330px;
+}
+
+#content-header h1,
+#content-header .media .title h1,
+#content-header h2,
+#content-header p.section,
+#content-header .media .title p,
+#content-header .title p.prefix {
+	color: #fff;
+}
+
+#content-header .media .title {
+	text-shadow: none;
+}
+
+#content-header h2 span {
+	font-size: 16px;
+}
+
+#content-header .media .title .roundel-1 {
+	right: -170px;
+	top: 20px;
+}
+
+/*link in header tab white text*/		
+#content-header a {		
+	color: #ffffff;		
+}
+
+/* Calculators */
+#loan-aprcalc-small.calculator .label-suffix,
+#loan-aprcalc-std.calculator p.slider-label span.text {
+	font: 1.125em/110% 'Sainsburys Mary Ann Bold', Helvetica, sans-serif;
+	color: #ef6600;
+}
+
+#content div#loan-switcher-calc .loan-switcher-calc p.loans-tip,
+#content div#loan-switcher-calc .loan-switcher-calc p.loans-tip,
+#content div#loan-switcher-calc .loan-switcher-calc fieldset label p,
+#content div#loan-switcher-calc-phase-one .loan-switcher-calc p.cta-submit a,
+#content .result-footer p.cta-submit a,
+#content #loan-aprcalc-small.calculator label,
+#content div.article-list h3 {
+	font-family: 'Sainsburys Mary Ann Bold', Helvetica, sans-serif;
+}
+
+#loan-aprcalc-std.calculator input.slider-label,
+#loan-aprcalc-std.calculator p.slider-label input,
+#content #loan-aprcalc-small.calculator input.text,
+#content #loan-aprcalc-small.calculator label {
+	color: #ef6600;
+}
+
+#content #nectar-calculator .tab,
+#content #nectar-calculator .controller li.active a {
+	background: #ef6600;
+}
+
+/* Products Page */
+.strip-tabs .controller .active span.outer,
+.strip-tabs .controller a:hover span.outer{
+	color: #ef6600;
+}
+
+.strip-tabs ul.controller{
+	background-color: #ef6600;
+}
+
+.contact-block .method strong,
+#nav-secondary li a:hover,
+#nav-secondary li a:focus,
+#nav-secondary li a:active,
+#nav-secondary li.active a {
+	color: #ef6600;
+}
+
+#content .contact-block p.method,
+#nav-secondary li,
+#content p.cta,
+#content-header p.cta,
+#content-carousel p.cta,
+#content th,
+#content #frm-nectar-calculator input,
+#nectar-calculator .calc-spend p {
+	font-family: 'Sainsburys Mary Ann Bold', Helvetica, sans-serif;
+}
+
+.contact-block p.method.telephone {
+	background-image: url("../../images/rebrand/contact-mode-tel.gif");
+}
+
+.contact-block p.method.computer {
+	background-image: url("../../images/rebrand/contact-mode-comp.gif");
+}
+
+/* loan switcher calculator */
+#content div.loan-switcher-calc-header h2 span,
+#content div#loan-switcher-calc.alt,
+#content div#loan-switcher-calc div.shell,
+#content div#loan-switcher-calc-results #negative-result p,
+#content div#loan-switch-calc #loan-switcher-calc-results div.shell,
+#content div#loan-switcher-calc.alt .loan-switcher-calc fieldset label input,
+#content div#loan-switcher-calc-results div.loan-switcher-calc-header h2 {
+	color: #ef6600;
+}
+
+#content div#loan-switcher-calc.alt .loan-switcher-calc fieldset label input#months-left {
+	padding-left: 10px;
+	width: 145px;
+}
+
+#content div#loan-switcher-calc-results #negative-result p.title {
+	color: #202020;
+}
+
+#content div#loan-switcher-calc-phase-two .loan-switcher-calc p.cta-submit,
+#content div#loan-switcher-calc-results div.result-footer,
+#content div#loan-switcher-calc-phase-two {
+	background: #ef6600;
+}
+
+#content div#loan-switcher-calc.alt {
+	border: 2px solid #ef6600;
+}
+
+#content div.shell div.loan-switcher-calc-header {
+	border-bottom: 1px solid #e2e2e2;
+}
+
+#content div#loan-switcher-calc div.shell {
+	border-bottom: 1px solid #ef6600;
+}
+
+#content div#loan-switcher-calc div#loan-switcher-calc-results div.shell {
+	color: #ef6600;
+}
+
+#content .loan-switcher-calc p.cta-submit#get-apr,
+#content div#loan-switcher-calc-results fieldset p.cta-submit,
+#content div#loan-switcher-calc-phase-two .loan-switcher-calc fieldset p.cta-submit {
+	background: #6a183f;
+}
+
+#content .loan-switcher-calc p.cta-submit#get-apr:hover,
+#content .loan-switcher-calc p.cta-submit#get-apr:active,
+#content .loan-switcher-calc p.cta-submit#get-apr:focus {
+	background-color: #541030;
+	color: #f7f5e8;
+}
+
+#content div#loan-switcher-calc-phase-two .loan-switcher-calc .percent {
+	background: transparent;
+}
+
+#content div#loan-switcher-calc-phase-two .loan-switcher-calc .percent span {
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	line-height: 165%;
+}
+
+#content div#loan-switcher-calc-results p.old-total-repayable,
+#content div#loan-switcher-calc-results p.new-repayments,
+#content div#loan-switcher-calc-results p.total-repayable,
+#content div#loan-switcher-calc-results p.you-save,
+#shell #content .alt div#loan-switcher-calc-results .result-footer h3 {
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+#shell #content .alt div#loan-switcher-calc-results .result-footer h3 {
+	width: auto;
+}
+
+div.loan-switcher-calc-header h2 span {
+	color:�#6a183f;
+}
+
+#content div#loan-switcher-calc-results div.loan-switcher-calc-header a#goback,
+#content div#loan-switcher-calc-phase-two .loan-switcher-calc p.cta-submit,
+#content div#loan-switcher-calc-results p.cta-submit,
+#content div#loan-switcher-calc-results div.loan-switcher-calc-header h2,
+#content div#loan-switcher-calc-results p.cta-more a,
+#content div#loan-switcher-calc-results #negative-result p.cta-more a,
+#content div#loan-switcher-calc-phase-two .loan-switcher-calc p.cta-submit a,
+#shell #content div#loan-switcher-calc-results h4,
+#shell #content #loan-switcher-calc-results div.data-table table td {
+	font-family: 'Sainsburys Mary Ann Bold', Helvetica, sans-serif;
+}
+
+#content div#loan-switcher-calc .loan-switcher-calc fieldset label p span,
+#content div#loan-switcher-calc-phase-two .loan-switcher-calc fieldset label p span,
+#shell #content div.loan-switcher-calc-header p {
+	font-size: 11px;
+	font-weight: normal;
+}
+
+#content div#loan-switcher-calc p.note {
+	font-weight: normal;
+}
+
+#shell #content div#loan-switcher-calc-results h4 {
+	font-size: 18px;
+}
+
+#shell #content #loan-switcher-calc-results div.data-table table td {
+	border-color: #ef6600;
+	color: #ef6600;
+}
+
+#shell #content .loan-switcher-calc p.cta-submit a,
+#shell #content .result-footer p.cta-submit a {
+	color: #e9e5c6;
+}
+
+#shell #content div#loan-switcher-calc-results p.cta-submit,
+#shell #content div#loan-switcher-calc-phase-two .loan-switcher-calc p.cta-submit {
+	background-color: #6e1e43;
+	color: #e9e5c6;
+}
+#shell #content div#loan-switcher-calc-results p.cta-submit:hover,
+#shell #content div#loan-switcher-calc-phase-two .loan-switcher-calc p.cta-submit:hover {
+	background: #670023;
+}
+
+
+/* loan calculator */
+#life-calculator.calculator div.tab-footer,
+.calculator #calculator-header ul.calculator-steps li.btn-back a {
+	background-color: #ef6600;
+}
+
+#life-calculator.calculator form h2,
+#life-calculator.calculator form h3,
+#life-calculator.calculator #result h2 span a {
+	color: #ef6600;
+	font-family: 'Sainsburys Mary Ann Bold', Helvetica, sans-serif;
+}
+
+#life-calculator.calculator .tab-header {
+	border-bottom: 1px solid #ef6600;
+}
+
+#life-calculator.calculator form div.tab-footer h3 {
+	color: #ffffff;
+}
+
+#life-calculator.calculator label span,
+#life-calculator.calculator ul.calculator-steps li {
+	color: #ef6600;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#life-calculator.calculator form h3 {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#life-calculator.calculator form h2 span,
+#content #life-calculator.calculator p.cta a,
+#content #life-calculator.calculator p.cta.cta-secondary a {
+	color: #6e1e43;
+	font-family: 'Sainsburys Mary Ann Bold', Helvetica, sans-serif;
+}
+
+#content #life-calculator.calculator p.cta a {
+	color: #e9e5c6;
+}
+
+/* for displaying mag */
+.mag {
+	width:940px;
+	height:600px;
+}
+/*for hiding mag pdf on desktop */
+#mobmag {
+
+	display:none;
+}
+
+
+@media only screen and (max-width: 640px) {
+	/*for hiding editions mag on mobile */
+	.mag {
+	display:none;
+
+	}
+	/* for displaying mag pdf link on mobile */
+	#mobmag {
+
+	display:inline;
+
+	}
+
+	#nav-tools .anchors a,
+	#nav-tools div.campaign-link,
+	#support-tools,
+	#header #quick-tools {
+		background-color: #ef6600;
+	}
+
+	#topbar #frm-search {
+		height: 45px;
+	}
+
+	body.showing-notification #topbar #frm-search {
+		top: 175px;
+	}
+
+	#content .nav-list {
+		height: auto;
+	}
+
+	#nav-primary,
+	#support-tools {
+		background: #f7f5e8;
+	}
+
+	#header #nav-tools .anchors a {
+		background: #f7f5e8 url(../images/icons/gwb-chevron.php) no-repeat 98% center;
+		border-color: #6c6c6c;
+		color: #6e1e43;
+	}
+
+	#nav-tools .anchors {
+		border-color: #6c6c6c;
+	}
+
+	#nav-primary li {
+		height: 40px;
+	}
+
+	#nav-primary li a,
+	#support-tools li a {
+		height: 30px;
+	}
+
+	#support-tools li.tool a {
+		color: #6e1e43;
+	}
+
+	#support-tools li.tool a:hover {
+		border-bottom: none;
+		color: #000;
+		text-decoration: none;
+	}
+
+	#nav-primary a span {
+		padding-top: 0;
+	}
+
+	#nav-primary a {
+		padding-bottom: 0;
+	}
+
+	#nav-primary a:hover {
+		text-decoration: none;
+	}
+
+	#nav-primary,
+	#nav-primary li,
+	#nav-primary li.active a span,
+	#nav-primary li a.active span,
+	#nav-primary a:hover span,
+	#nav-primary a:focus span,
+	#nav-primary a:active span {
+		background-image: none;
+	}
+
+	#nav-primary li.active a span,
+	#nav-primary li a.active span,
+	#nav-primary a:hover span,
+	#nav-primary a:focus span,
+	#nav-primary a:active span {
+		color: #000;
+	}
+
+	#header {
+		height: auto;
+	}
+
+	#content-header h1,
+	#content-header h2 {
+		color: #ef6600;
+		white-space: normal;
+	}
+
+	#content-header .title,
+	#content-header .basic .title,
+	#content-header .media .title {
+		width: auto;
+	}
+
+	#content-header .basic,
+	#content-header .media {
+		padding-bottom: 150px;
+		padding-top: 0;
+		position: relative;
+	}
+
+	#content-header.support {
+	/*	margin-bottom: -70px;*/
+	}
+
+	#content-header .media {
+		min-height: 130px;
+	}
+
+	#content-header .basic .title,
+	#content-header .media .title {
+		border-radius: 20px 20px 0 0;
+		-webkit-border-radius: 20px 20px 0 0;
+		-moz-border-radius: 20px 20px 0 0;
+		position: absolute;
+		height: auto;
+		top: auto;
+		bottom: 0;
+		left: 10px;
+		right: 10px;
+	}
+
+	#content-header div.inner.basic h1 {
+		color: #fff;
+	}
+
+	 #content-header p.section {		
+		color:#ef6600;		
+	}
+
+	#content-header p {
+		color: #2f2f2f;
+	}
+
+	#content-carousel h2,
+	#content-header h2 {
+		font-size: 1.25em;
+	}
+
+	#content-carousel p {
+		font-size: 0.875em;
+	}
+
+	#content-carousel p.cta {
+		right: 10px;
+		bottom: 10px;
+	}
+
+	#content-carousel .text {
+		left: 0 !important;
+		border-radius: 20px;
+		margin: 10px 0 0;
+		padding: 10px 10px 20px 10px;
+		width: 250px;
+	}
+
+	#content-carousel p:not(.cta) {
+		margin: 10px 10px 0 0;
+	}
+
+	#topbar div.links #topbar-links {
+		background: #f7f5e8;
+	}
+
+	#logo {
+		float: none;
+		margin: 0 auto 10px;
+	}
+
+	#content-carousel,
+	#content-carousel .overlay {
+		height: 430px;
+	}
+
+	#content-carousel {
+		background: transparent;
+	}
+
+}

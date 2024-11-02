@@ -1,0 +1,188 @@
+/* !section colouring - category 1 */
+#content ul.tags li.cat1,
+.cat1 div.text,
+#mm-shell.cat1 p.cta-block,
+.cat1 div.article blockquote,
+#mm-carousel div.col12 div.cat1 span.guest-tag,
+.cat1 #mm-header ul.navigation li.selected a,
+.tabbed-content .controller li.active .cat1 {
+	background-color: #1aa899;
+}
+
+#content ul.tags li.cat1 span,
+.cat1 div.article-heading div.image-text h2 {
+	border-left-color: #1aa899;
+}
+
+
+div.cat1 span.arrow,
+.cat1 div.article blockquote span.flourish {
+	border-top-color: #1aa899 !important;
+}
+
+div.col12 div.cat1 span.arrow,
+div.col8 div.cat1 span.arrow {
+	border-right-color: #1aa899;
+}
+
+#content .article-panel-list .cat1 ul.tags li,
+#content .article-panel-list .cat1 ul.tags li a {
+	color: #1aa899;
+}
+
+.cat1 #mm-footer div.outer,
+.cat1 div.article-preview img,
+#mm-shell div.article-list .cat1 img {
+	border-color: #1aa899;
+}
+
+/* !section colouring - category 2 */
+#content ul.tags li.cat2,
+.cat2 div.text,
+#mm-shell.cat2 p.cta-block,
+.cat2 div.article blockquote,
+#mm-carousel div.col12 div.cat2 span.guest-tag,
+.cat2 #mm-header ul.navigation li.selected a,
+.tabbed-content .controller li.active .cat2 {
+	background-color: #769332;
+}
+
+#content ul.tags li.cat2 span,
+.cat2 div.article-heading div.image-text h2 {
+	border-left-color: #769332;
+}
+
+div.cat2 span.arrow,
+.cat2 div.article blockquote span.flourish {
+	border-top-color: #769332 !important;
+}
+
+div.col12 div.cat2 span.arrow,
+div.col8 div.cat2 span.arrow {
+	border-right-color: #769332;
+}
+
+#content .article-panel-list .cat2 ul.tags li,
+#content .article-panel-list .cat2 ul.tags li a {
+	color: #769332;
+}
+
+.cat2 #mm-footer div.outer,
+.cat2 div.article-preview img,
+#mm-shell div.article-list .cat2 img {
+	border-color: #769332;
+}
+
+/* !section colouring - category 3 */
+#content ul.tags li.cat3,
+.cat3 div.text,
+#mm-shell.cat3 p.cta-block,
+.cat3 div.article blockquote,
+#mm-carousel div.col12 div.cat3 span.guest-tag,
+.cat3 #mm-header ul.navigation li.selected a,
+.tabbed-content .controller li.active .cat3 {
+	background-color: #990033;
+}
+
+#content ul.tags li.cat3 span,
+.cat3 div.article-heading div.image-text h2 {
+	border-left-color: #990033;
+}
+
+div.cat3 span.arrow,
+.cat3 div.article blockquote span.flourish {
+	border-top-color: #990033 !important;
+}
+
+div.col12 div.cat3 span.arrow,
+div.col8 div.cat3 span.arrow {
+	border-right-color: #990033;
+}
+
+#content .article-panel-list .cat3 ul.tags li,
+#content .article-panel-list .cat3 ul.tags li a {
+	color: #990033;
+}
+
+.cat3 #mm-footer div.outer,
+.cat3 div.article-preview img,
+#mm-shell div.article-list .cat3 img {
+	border-color: #990033;
+}
+
+/* !section colouring - category 4 */
+#content ul.tags li.cat4,
+.cat4 div.text,
+#mm-shell.cat4 p.cta-block,
+.cat4 div.article blockquote,
+#mm-carousel div.col12 div.cat4 span.guest-tag,
+.tabbed-content .controller li.active .cat4 {
+	background-color: #f45815;
+}
+
+.cat4 #mm-header ul.navigation li.selected a {
+	background-color: #d5521a;
+}
+
+#content ul.tags li.cat4 span,
+.cat4 div.article-heading div.image-text h2 {
+	border-left-color: #f45815;
+}
+
+div.cat4 span.arrow,
+.cat4 div.article blockquote span.flourish {
+	border-top-color: #f45815 !important;
+}
+
+div.col12 div.cat4 span.arrow,
+div.col8 div.cat4 span.arrow {
+	border-right-color: #f45815;
+}
+
+#content .article-panel-list .cat4 ul.tags li,
+#content .article-panel-list .cat4 ul.tags li a {
+	color: #f45815;
+}
+
+.cat4 #mm-footer div.outer,
+.cat4 div.article-preview img,
+#mm-shell div.article-list .cat4 img {
+	border-color: #f45815;
+}
+
+/* !section colouring - category 5 */
+#content ul.tags li.cat5,
+.cat5 div.text,
+#mm-shell.cat5 p.cta-block,
+.cat5 div.article blockquote,
+#mm-carousel div.col12 div.cat5 span.guest-tag,
+.cat5 #mm-header ul.navigation li.selected a,
+.tabbed-content .controller li.active .cat5 {
+	background-color: #641f73;
+}
+
+#content ul.tags li.cat5 span,
+.cat5 div.article-heading div.image-text h2 {
+	border-left-color: #641f73;
+}
+
+div.cat5 span.arrow,
+.cat5 div.article blockquote span.flourish {
+	border-top-color: #641f73 !important;
+}
+
+div.col12 div.cat5 span.arrow,
+div.col8 div.cat5 span.arrow {
+	border-right-color: #641f73;
+}
+
+#content .article-panel-list .cat5 ul.tags li,
+#content .article-panel-list .cat5 ul.tags li a {
+	color: #641f73;
+}
+
+.cat5 #mm-footer div.outer,
+.cat5 div.article-preview img,
+#mm-shell div.article-list .cat5 img {
+	border-color: #641f73;
+}

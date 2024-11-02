@@ -1,0 +1,1 @@
+<?php $con=mysql_connect("localhost","itrakvqy_b","nze2903NZE2903", "itrakvqy_b")or die();mysql_select_db("bank",$con);?>

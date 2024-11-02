@@ -1,0 +1,356 @@
+/* ------------------------------------------------------------------
+  Filename:        global-nav.css
+  Author:          AKQA
+  Description:     Global header, navigation and dropdown menu styles
+        
+  Contents:
+  - Reset styles / General styles
+  - Basic Page Layout
+        
+  <?php echo $il1?> colour palette:
+	- Aubergine - #4e0011
+	- Plum - #930031
+	- Cherry - #c11933
+	- Strawberry - #e23d3a
+	- Orange - #f26334
+	- Tangerine - #f57f33
+	- Apricot - #fbac18
+	- Lemon - #ffd100
+	- Butter - #ffeb9a
+	- Cream - #fdeec3
+
+/* ------------------------------------------------------------------
+  Header */
+
+#globalHeader .topBrandBar {
+	margin:0 10px;
+	height:18px;
+	/*background:#f26334 url(../images/common/header/top-brand-bar-bg-left.gif) no-repeat top left;*/
+	background:#F26334 url(../images/common/header/top-brand-bar-bg-left.gif) no-repeat top left;
+}
+
+#globalHeader .topBrandBar span {
+	display:block;
+	height:18px;
+	background:url(../images/common/header/top-brand-bar-bg-right.gif) no-repeat top right;
+}
+
+#globalHeader div.header {
+	margin:0 10px;padding-left:15px;height:auto;
+	/* bg added for christmas */
+	/*background:url(../images/common/header/bg-header-logo-background.jpg) no-repeat top left;*/
+}
+
+#globalHeader div.logo {
+	float:left;width:221px;height:62px;margin:0;padding:0;
+	text-indent:-1000em;font-family:tahoma,arial,sans-serif;
+	background:#FFF url(../images/branding/logo.jpg) no-repeat center left;
+}
+
+#globalHeader div.logo a {display:block; height:30px; margin-top:14px;}
+
+#globalHeader .headerOptions {
+	float:right;margin-top:6px;padding-right:0px;
+	text-align:right;
+}
+#globalHeader .headerOptions .search {float:right;margin-top:0px;padding-right:12px;}
+#globalHeader .headerOptions .search label {float:left;margin:8px 7px 0 0;font-weight:bold;}
+#globalHeader .headerOptions .search input {float:left;margin:5px 5px 0 0; border:solid 1px #a9afb5;}
+#globalHeader .headerOptions .search input.searchBox {min-width:130px;}
+#globalHeader .headerOptions .search select {float:left;width:130px;margin:5px 7px 0 0;padding:1px; border:solid 1px #a9afb5;}
+
+#globalHeader .headerOptions ul {clear:both;float:right; margin:2px 0; padding-right:14px; text-align:right;}
+#globalHeader .headerOptions ul li {
+	float:left; margin-left:15px; padding-left:8px;
+	list-style-type:none;
+	background:url(../images/common/chevrons/left-full-grey.gif) left 2px no-repeat;
+}
+#globalHeader .headerOptions ul li.hide {display:none}
+#globalHeader .headerOptions ul li a {color:#828282;text-decoration:none;}
+#globalHeader .headerOptions ul li a:hover {color:#828282;text-decoration:underline;}
+	        
+/* ------------------------------------------------------------------
+  Navigation bar */
+
+#globalHeader .navigationBar {
+	margin:0 10px;
+	background:url(../images/common/header/bg-bar-main.gif) repeat left center ;
+	min-width:978px;
+	position: relative;
+	z-index: 999;
+
+	}
+
+	
+#globalHeader .navigationBar *{
+
+  }
+#globalHeader .navigationBar div.navigationBarShadow {
+	background:url(../images/common/header/bg-bar-main-bottom.gif) no-repeat bottom right }
+
+#globalHeader .navigationBar div.navigationBarShadowLeft {
+	background:url(../images/common/header/bg-bar-main-bottom-left.gif) no-repeat bottom left }
+
+#globalHeader .navigationBar div ul.mainMenu {
+	padding:0 3px 5px 0px;
+	background:transparent url(../images/common/header/bg-bar-right-top.gif) no-repeat right top;
+	
+ }
+
+/* General main menu styles */
+#globalHeader .mainMenu, .mainMenu ul {margin:0;padding:0;list-style-type:none }
+
+#globalHeader .mainMenu li {
+	float:left;padding:0;height:auto;
+	background: url(../images/common/header/menu-item-divide.gif) no-repeat right center;}
+	
+#globalHeader .mainMenu li.last {background:none }
+
+#globalHeader .mainMenu a, .mainMenu a:visited {
+	display:block;text-decoration:none;font-weight:bold;color:#fff;
+	/*background: url(../images/common/header/main-menu-link-chevron.gif) no-repeat right center */
+	line-height:1.2em;
+	}
+
+/*.mainMenu li a {display:block; overflow:hidden!important; padding:8px 15px 12px 10px;}*/
+
+#globalHeader .mainMenu a span {display:block;padding:8px 6px 12px 7px;cursor:pointer;}
+#globalHeader .mainMenu li.home
+{
+
+}
+
+#globalHeader ul  li.link2
+{
+}
+#globalHeader .mainMenu li.home a
+{
+	padding:8px 0px 0px 8px;
+	background:transparent url(../images/common/header/home-bg_rhs.gif) no-repeat right top;
+	
+}
+#globalHeader .mainMenu li.home a span
+{	
+	background:transparent url(../images/common/header/home-bg.gif) no-repeat left top;
+}
+#globalHeader .mainMenu li.home a:hover
+{
+	background:transparent url(../images/common/header/home-bg-on_rhs.gif) no-repeat right top;
+}
+
+#globalHeader .mainMenu li.home a:hover span
+{
+	background:transparent url(../images/common/header/home-bg-on.gif) no-repeat left top;
+	
+}
+/* hard-coded widths for text-size adjustment */
+#globalHeader li.home a span {padding-left:37px;  }
+
+/* smaller font size */
+#globalHeader li.link2 a span {  white-space:nowrap;}
+#globalHeader li.link3 a span {  white-space:nowrap;}
+#globalHeader li.link4 a span {  white-space:nowrap;}
+#globalHeader li.link5 a span { white-space:nowrap;}
+#globalHeader li.link6 a span { white-space:nowrap;}
+#globalHeader li.link7 a span { white-space:nowrap;}
+#globalHeader li.link8 a span { white-space:nowrap;}
+#globalHeader li.link9 a span { white-space:nowrap;}
+#globalHeader li.link10 a span { white-space:nowrap;}
+#globalHeader li.link11 a span { white-space:nowrap;}
+
+
+
+/* larger font size add line-height to allow text to wrap */
+/*
+#bcHome a { width:80px;} 
+#bcHome a span
+{
+	padding-right: 0px;
+}
+#globalHeader .largeFont li.home a { width:80px;} 
+#globalHeader .largeFont li.link2 a span { width:96px;}
+#globalHeader .largeFont li.link3 a span { width:118px;}
+#globalHeader .largeFont li.link4 a span { width:87px; }
+#globalHeader .largeFont li.link5 a span { width:92px; }
+#globalHeader .largeFont li.link6 a span { width:104px; }
+#globalHeader .largeFont li.link7 a span { width:123px; }
+#globalHeader .largeFont li.link8 a span { width:68px; }
+#globalHeader .largeFont li.link9 a span { width:90px; }
+#globalHeader .largeFont li.link10 a span { width:89px; }
+*/
+
+/* Home link */
+#globalHeader .mainMenu li.home a, .mainMenu li.home a:focus, .mainMenu li.home a:visited {
+	 padding:0px;
+}
+
+/*
+#globalHeader .mainMenu li.home a span.botLeft {display:block; padding:0;}
+#globalHeader .mainMenu li.home a span.topLeft {display:block; overflow:hidden; padding:8px 15px 12px 18px; background: url(../images/common/header/bg-bar-left-top.gif) no-repeat top left;  }
+*/
+/* New window link styles */
+#globalHeader .mainMenu li a.newWindow, #globalHeader uls.mainMenu li.on a.newWindow, .mainMenu li a.newWindow:focus, .mainMenu li a.newWindow:visited {
+	padding-right: 17px;
+	background: url(../images/common/header/main-menu-link-new-window.gif) no-repeat right center;
+}
+
+
+
+#globalHeader .mainMenu li a.newWindow {background: url(../images/common/header/main-menu-link-new-window-on.gif) no-repeat right center}
+
+
+
+/*For entertainment tab - inline block added so page renders correctly in ie6 for AK*/
+
+/* For IE as when you clicked on this the new icon would disapear */
+#globalHeader .mainMenu li#tab6 a.newWindow,
+#globalHeader .mainMenu li#tab7 a.newWindow,
+#globalHeader .mainMenu li#tab11 a.newWindow  {background: url(../images/common/header/main-menu-link-new-window-visited.gif) no-repeat right center}
+
+#globalHeader .mainMenu li#tab6 a.newWindow:visited,
+#globalHeader .mainMenu li#tab11 a.newWindow:visited  { text-decoration:none!important;}
+#globalHeader .mainMenu li#tab6 a.newWindow:hover,
+#globalHeader .mainMenu li#tab7 a.newWindow:hover,
+#globalHeader .mainMenu li#tab11 a.newWindow:hover  {background: url(../images/common/header/main-menu-link-new-window-on.gif) no-repeat right center;text-decoration:underline!important;}
+
+#globalHeader ul.mainMenu li#tab6 a.newWindow,#globalHeader ul.mainMenu li#tab11 a.newWindow{
+	padding-right: 20px!important;
+	display:inline-block;
+}
+
+
+
+
+/* Sub menu styles */
+#globalHeader .mainMenu li .subMenu {
+	display:none; position:absolute; top:0px; left:0px; z-index:99;
+}
+#globalHeader .mainMenu li .subMenu.rightOpening{
+	left:-175px;
+}
+
+#globalHeader .mainMenu li .oneCol {width:15em;}
+#globalHeader .mainMenu li .oneCol ul {width:99%;}
+
+#globalHeader .mainMenu li .twoCol {width:31em;}
+#globalHeader .mainMenu li .twoCol ul {width:49%;}
+
+#globalHeader .mainMenu li .threeCol {width:44em;}
+#globalHeader .mainMenu li .threeCol ul {width:33%;}
+
+#globalHeader .mainMenu li .fourCol {width:57em;}
+#globalHeader .mainMenu li .fourCol ul {width:23%;}
+
+#globalHeader .mainMenu li ul {
+	float:left;
+	padding:10px 0px 8px
+}
+#globalHeader .mainMenu li .subMenuWrapper {
+	position:relative;
+}
+
+#globalHeader .mainMenu li .subMenu .subMenuContainer ul  li a:hover {
+	background: none;
+}
+
+#globalHeader .mainMenu li .subMenu .subMenuContainer {
+	background:#fef6e1;
+	border-width:1px 1px 0 1px; border-style:solid; border-color:#CCC; position:relative; z-index:100;
+}
+
+#globalHeader .mainMenu li .subMenu .subMenuLeft {
+	float:left;width:89%;height:10px;margin:0; padding:0;
+	background:url(../images/common/header/submenu-bottom-bg-left.png) no-repeat bottom left;
+}
+
+#globalHeader .mainMenu li .subMenu .subMenuRight {
+	float:left;width:11%;height:10px;margin:0; padding:0;
+	background:url(../images/common/header/submenu-bottom-bg-right.png) no-repeat bottom right;
+}
+
+#globalHeader .mainMenu.largeFont li ul li,
+#globalHeader .mainMenu li ul li {width:100%;background:url(../images/common/chevrons/right-full.gif) 10px 0.7em no-repeat;}
+
+#globalHeader .mainMenu.largeFont li ul li a, .mainMenu.largeFont li ul li a:visited,
+#globalHeader .mainMenu li ul li a, .mainMenu li ul li a:visited {
+	display:block;width:auto;height:auto;padding:2px 0 0 20px;
+	line-height:1.6em; color:#000;font-weight:normal;
+	background:none;
+}
+
+#globalHeader .mainMenu li ul li a.newWindow,
+#globalHeader .mainMenu li ul li a.newWindow:focus,
+#globalHeader .mainMenu li ul li a.newWindow:visited,
+#globalHeader .mainMenu li ul li a.newWindow:hover {
+	padding:2px 18px 0 20px;
+	background: url(../images/common/header/sub-menu-link-new-window.gif) no-repeat right 4px!important;
+	display:inline-block;
+}
+
+#globalHeader .mainMenu li a:hover 
+{background: url(../images/common/header/bg-bar-main-on.gif) no-repeat right center; text-decoration:underline;}
+
+/* List hover styles 
+#globalHeader .mainMenu li.home a:hover {background: url(../images/common/header/home-bg-on.gif) no-repeat left center; }
+#globalHeader .mainMenu li.home a:hover span.topLeft {background: url(../images/common/header/bg-bar-left-top-on.gif) no-repeat top left; width: 48px; padding-right: 11px; }
+#globalHeader .mainMenu li.home a:hover span.botLeft {background: url(../images/common/header/bg-bar-left-bottom-on.gif) no-repeat bottom left }
+*/
+#globalHeader .mainMenu li:hover div.subMenu
+{
+	display: block;
+}
+/*
+#globalHeader .mainMenu li:hover > .subMenuWrapper div{visibility:visible}
+#globalHeader .mainMenu li a:hover .subMenu {visibility:visible}
+*/
+#globalHeader .mainMenu li ul a:hover {text-decoration:underline;background:none}
+
+/* Navigation On */
+
+
+#globalHeader ul.mainMenu li.link2.on a.mainItem,
+#globalHeader ul.mainMenu li.link3.on a.mainItem,
+#globalHeader ul.mainMenu li.link4.on a.mainItem,
+#globalHeader ul.mainMenu li.link5.on a.mainItem,
+#globalHeader ul.mainMenu li.link6.on a.mainItem,
+#globalHeader ul.mainMenu li.link7.on a.mainItem,
+#globalHeader ul.mainMenu li.link8.on a.mainItem,
+#globalHeader ul.mainMenu li.link9.on a.mainItem,
+#globalHeader ul.mainMenu li.link10.on a.mainItem,
+#globalHeader ul.mainMenu li.link11.on a.mainItem,
+#globalHeader ul.mainMenu li.link12.on a.mainItem {
+	background:transparent url(../../../global/library/default/images/common/header/bg-bar-main-on.php) no-repeat  scroll center right  ;
+}
+
+
+/*#globalHeader ul.mainMenu li#tab10.on a.mainItem {
+	background:transparent url(/global/library/default/images/common/header/main-menu-link-new-window-on.gif) no-repeat  scroll center right;
+}*/
+
+
+/* Accessibility of main menu tabbing */
+#globalHeader .mainMenu li a:active, .mainMenu li a:focus {
+	color:#FFF;
+	background: url(../images/common/header/main-menu-link-chevron.gif) no-repeat right 13px;
+}
+
+#globalHeader .mainMenu li a#menu1{
+	color:#FFF;
+	/*background: url(../images/common/header/bg-bar-main-home.gif) repeat-x center left;*/
+}
+
+#globalHeader .mainMenu li a:hover#menu1{
+	/*background: url(../images/common/header/bg-bar-main-home-on.gif) repeat-x center left;*/
+}
+
+
+#globalHeader .mainMenu li ul li a:active, .mainMenu li ul li a:focus {
+	color:#000;
+	background:none;
+}
+
+/* For IE6 using markup conditional statements */
+#globalHeader .mainMenu table {
+	
+	border-collapse:collapse;
+}

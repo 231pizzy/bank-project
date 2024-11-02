@@ -1,0 +1,475 @@
+ body {
+	background: #FFFFFF;
+	color: #000000;
+    font-family: Verdana, Tahoma, Arial, Helvetica, sans-serif;
+    font-size: 8pt;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+a:link {
+	color: #0000FF;
+}
+
+a:visited {
+	color: #800080;
+}
+
+.textbox {
+    color: #000000;
+    font-size: 8pt;
+    font-family: Verdana, Tahoma, Arial, Helvetica, sans-serif;
+}
+
+.dropdown {
+    color: #000000;
+    font-size: 8pt;
+    font-family: Verdana, Tahoma, Arial, Helvetica, sans-serif;
+}
+
+.radio {
+    background: transparent;
+    font-size: 8pt;
+}
+
+.tableHeader {
+    background: #BDBEBD;
+    border-color: #BDBEBD;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    color: #000000;
+    display: block;
+    font-size: 8pt;
+    font-weight: bold;
+    padding: 5px 5px 5px 5px;
+}
+
+.area {
+    border-color: #BDBEBD;
+    border-style: solid;
+    border-width: 0px 1px 1px 1px;
+    border-collapse: collapse;
+    margin: 0px 0px 0px 0px;
+    padding: 0px;
+    width: 100%;
+}
+
+.information {
+    width: 100%;
+    background: #EFEBEF;
+    border-color: #BDBEBD;
+    border-style: solid;
+    border-width: 1px 0px 1px 0px;
+    /*display: block;*/ 
+    font-size: 8pt;
+    padding: 5px 5px 5px 10px;
+    margin: 0px 0px 0px 0px;
+}
+
+.subHeader {
+    background: #EFEBEF;
+    border-color: #BDBEBD;
+    border-style: solid;
+    border-width: 0px 1px 1px 1px;
+    /*display: block;*/
+    font-size: 8pt;
+    font-weight: normal;
+    padding: 5px 5px 5px 10px;
+}
+
+.division {
+    height: 1px;
+    width: 100%;
+    color: #BDBEBD;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+
+.tableFooter {
+    background: #EFEBEF;
+    border-color: #BDBEBD;
+    border-style: solid;
+    border-width: 1px 0px 0px 0px;
+    /*display: block;*/
+    font-size: 8pt;
+    height: 30px;
+    padding: 5px 10px 5px 10px;
+    margin: 0px 0px 0px 0px;
+    text-align: center;
+}
+
+.title {
+    background: #FFFFFF;
+    border-color: #BDBEBD;
+    border-style: solid;
+    border-width: 1px;
+    display: block;
+    font-size: 12pt;
+    font-weight: bold;
+    padding: 5px 5px 5px 10px;
+    text-align: left;
+    width: 100%;
+}
+
+.text {
+    display: block;
+    font-size: 8pt;
+    margin: 15px;
+}
+    
+.ttxt {
+    display: block;
+    font-size: 8pt;
+    padding: 5px 0px 5px 10px;
+    height: 30px;
+}
+
+
+.ttxt2 {
+    display: block;
+    font-size: 8pt;
+    padding: 5px 0px 5px 10px;
+    height: none;
+}
+
+#loyaltyCardInput {
+    height: 80px;
+    vertical-align: middle;
+}
+
+.ttxtLeft {
+    display: block;
+    font-size: 8pt;
+    padding: 5px 0px 5px 0px;
+    height: 30px;
+}
+
+.ttxtIndented {
+    display: block;
+    font-size: 8pt;
+    font-style: italic;
+    margin: 0px 20px;
+    height: 30px;
+}
+
+.ttxtBold {
+    display: block;
+    font-size: 8pt;
+    font-weight: bold;
+    height: 30px;
+}
+
+.inlineMandatory {
+    display: inline;
+    font-size: 8pt;
+    font-weight: bold;
+}
+
+.summary {
+    margin-left: 10px;
+    border-width: 0px;
+}
+
+.summaryTable {
+    margin: 0px 0px -1px 10px;
+    width: 97%;
+    border-width: 1px;
+    border-color: #BDBEBD;
+    border-style: solid;
+    border-collapse: collapse;
+}
+
+.summaryHeader {
+    background: #EFEBEF;
+    border-color: #BDBEBD;
+    border-style: solid;
+    border-width: 0px 0px 1px 0px;
+    /*display: block;*/
+    font-size: 8pt;
+    font-weight: normal;
+    padding: 5px 5px 5px 10px;
+    margin: 0px;
+    text-align: left;
+}
+
+.summaryColumnHeader {
+    background: #EFEBEF;
+    border-color: #BDBEBD;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    /*display: block;*/
+    font-size: 8pt;
+    font-weight: normal;
+    padding: 5px 5px 5px 10px;
+    margin: 0px;
+    text-align: left;
+}
+
+.summaryColumnSubHeader {
+    background: #EFEBEF;
+    border-color: #BDBEBD;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-collapse: collapse;
+    /*display: block;*/
+    font-size: 8pt;
+    font-weight: normal;
+    padding: 5px 5px 5px 10px;
+    margin: 0px;
+    text-align:left
+}
+
+.summaryText {
+    background: #FFFFFF;
+    border-color: #BDBEBD;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-collapse: collapse;
+    /*display: block;*/
+    font-size: 8pt;
+    padding: 5px 5px 5px 10px;
+    margin: 0px;
+    text-align: left;
+}
+
+.summaryFooter {
+    background: #EFEBEF;
+    border-color: #BDBEBD;
+    border-style: solid;
+    border-width: 1px 0px 0px 0px;
+    /*display: block;*/
+    font-size: 8pt;
+    padding: 10px 0px 10px 0px;
+    margin-left: 10px;
+    text-align: center;
+}
+
+.centerText{
+    text-align: center;
+    font-size: 8pt;
+}
+
+.tab {
+    background: #EFEBEF;
+    border-color: #BDBEBD;
+    border-style: solid;
+    color: #000000;
+    border-width: 1px;
+    font-weight: normal;
+    padding: 5px;
+}
+
+.tabSelected {
+    background: #BDBEBD;
+    border-color: #BDBEBD;
+    border-style: solid;
+    border-width: 1px;
+    color: #000000;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.menuSection {
+    background: transparent;
+}
+
+.contentSection {
+    padding: 10px;
+    width: 100%;
+}
+
+.button {
+    background: #BDBEBD;
+    border-color: #666666;
+    border-style: solid;
+    border-width: 1px;
+    color: #FFFFFF;
+    cursor: hand;
+    font-size: 8pt;
+    font-weight: bold;
+}
+
+.tabHolder {
+    border-color: #BDBEBD;
+    border-style: solid;
+    border-width: 0px 0px 0px 0px;
+    border-collapse: collapse;
+    display: block;
+    font-size: 8pt;
+    margin: 14px 0px 0px 0px;
+    padding: 5px 0px 6px 0px;
+    text-align: right;
+}
+
+.cardSummary {
+    display: block;
+    font-size: 8pt;
+    line-height: 20px;
+    margin: 0px 0px 5px 0px;
+    padding: 0px 0px 0px 10px;
+}
+
+.cardDesign {
+    margin: 10px 10px 10px 10px;
+}
+
+.inlineLabel {
+    font-size: 8pt;
+    margin: 0;
+    padding: 0;
+}
+
+.brandSection {
+    background-color: #790396;
+}
+
+.spacer {
+    height: 10px;
+}
+
+#current_address {
+ float:left;
+ width:200px;
+ padding: 0px 0px 0px 0px;
+}
+
+#previous_address {
+ float:left;
+ width:200px;
+ padding: 0px 0px 0px 0px;
+}
+
+/* New section for AB Testing */
+p.error label { color: white; }
+
+div.container {
+    background-color: red;
+    border: 0px solid;
+    border-color: #aa0396;
+    margin-top: 5px;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 10px;
+    padding: 5px 10px 10px 10px;
+}
+
+div.container ol {
+    margin-top: 0px;
+    margin-left: 20px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    padding: 0px;
+}
+
+div.container ol li {
+    list-style-type: disc;
+    color: white;
+    margin-top: 0px;
+    margin-left: 1px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    padding: 0px;
+}
+
+div.container { display: none }
+
+.container label.error
+{
+    display: inline;
+}
+
+label.error {
+  /* remove the next line when you have trouble in IE6 with labels in list */
+  color: white;
+  display: block;
+  margin-left: 0px;
+  width: auto;
+  font-style: italic;
+  font-size: 8pt;
+}
+
+div.error { display: none; }
+
+.cardName {
+    font-size: 13pt;
+    font-weight: bold;
+    padding: 1px;
+    margin:1px;
+    text-align: left;
+}
+
+.cardstyle {
+    display: inline;
+    font-size: 8pt;
+    margin: 15px;
+}
+
+.newtext {
+    display: block;
+    font-size: 8pt;
+    margin: 10px 15px 0px 15px;
+}
+
+.salesPoint {
+    align:left;
+    margin: 0px 16px 0px 16px;
+    padding: 10px;
+    background-color:#F3EAF6;
+    border-color: #790396;
+    width:100%;
+}
+
+.salesPoint ul {
+    margin: 0px 0px 0px 20px;
+    padding: 0px;
+}
+
+.salesConrainer {
+   width:100%;
+   border: 0px;
+   margin: 0px 0px 0px 0px;
+   padding: 0px;
+   font-size: 10pt;
+}
+
+.vmiddle {
+    display: inline;
+    align:center;
+    vertical-align:middle;
+}
+
+div.container h4 {
+	font-size: 11pt;
+	margin: 0px;
+	padding: 0px;
+        color: white;
+}
+
+div.container h5 {
+	font-size: 9pt;
+	margin: 0px;
+	padding: 0px 0px 0px 0px;
+        text-align: center;
+        color: white;
+}
+
+input.error { border: 1px dotted red; }
+select.error { color: red;}
+
+.radioErrorClass {
+   color:red;
+   display: inline;
+}
+
+.newTabHolder {
+    border-color: #BDBEBD;
+    border-style: solid;
+    border-width: 0px 0px 0px 0px;
+    border-collapse: collapse;
+    display: block;
+    font-size: 8pt;
+    margin: 2px 0px 0px 0px;
+    padding: 5px 0px 6px 0px;
+    text-align: right;
+}

@@ -1,0 +1,245 @@
+@import url(blankcanvas.css);
+@import url(base.css);
+@import url(assets/global.css);
+@import url(assets/money-matters-cats.css);
+
+/* internally hosted fonts */
+@font-face {
+	font-family: 'Sainsburys Slab Bold';
+	src: url('fonts/sainsburysslab_bold-webfont.eot');
+	src: url('fonts/sainsburysslab_bold-webfontd41d.eot?#iefix') format('embedded-opentype'),
+		url('fonts/sainsburysslab_bold-webfont.php') format('woff'),
+		url('fonts/sainsburysslab_bold-webfont.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Sainsburys Slab Regular';
+	src: url('fonts/sainsburysslab_regular-webfont.eot');
+	src: url('fonts/sainsburysslab_regular-webfontd41d.eot?#iefix') format('embedded-opentype'),
+		url('fonts/sainsburysslab_regular-webfont.php') format('woff'),
+		url('fonts/sainsburysslab_regular-webfont.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+@font-face {
+	font-family: 'Interstate Bold';
+	src: url('fonts/127f15a6-fe95-4cf4-b0e8-99a478ace9bb-2.eot');
+	src: url('fonts/127f15a6-fe95-4cf4-b0e8-99a478ace9bb-2d41d.eot?#iefix') format('embedded-opentype'),
+		url('fonts/127f15a6-fe95-4cf4-b0e8-99a478ace9bb-3.php') format('woff'),
+		url('fonts/127f15a6-fe95-4cf4-b0e8-99a478ace9bb-1.ttf') format('truetype');
+	font-style: normal;
+	font-weight: bold;
+}
+
+body {
+	background-color: #fff;
+}
+
+#shell {
+	min-width: 960px;
+}
+
+/* top bar */
+#topbar {
+	border-bottom: 1px solid #e3e3e3;
+	background-color: #f7f7f7;
+}
+
+#topbar .inner {
+	margin: 0 auto;
+	width: 940px;
+	height: 35px;
+	padding: 10px 0 0;
+}
+
+/* notification bar */
+body.showing-notification #shell {
+	margin-top: 60px;
+}
+
+#notificationbar {
+	display: none;
+		/* fix against push down by translate widget */
+		position: fixed;
+		z-index:1000;
+	overflow: hidden;
+	left: 0;
+	top: 0;
+	width: 100%;
+	min-width: 960px;
+	height: 60px;
+	background-color: #2b2b2b;
+}
+
+#notificationbar .inner {
+	overflow: hidden;
+	margin: 0 auto;
+	width: 940px;
+	padding: 10px 0;
+}
+
+#notificationbar p.intro {
+	color: #fff;
+	float: left;
+	font-size: 0.6875em;
+	line-height: 12px;
+	width: 550px;
+}
+
+#notificationbar p.cta {
+	float: right;
+}
+
+#notificationbar p.cookiecontinue {
+	margin: 0 10px 0 10px;
+}
+
+#notificationbar p.cta a strong {
+	font-size: 0.875em;
+	font-weight: bold;
+}
+
+/* header */
+#header {
+	position: relative;
+	clear: both;
+	margin: 0 auto;
+	z-index: 40;
+	width: 940px;
+	height: 115px;
+	margin-bottom: 10px;
+}
+
+/* columns */
+.col {
+	float: left;
+	margin-right: 10px;
+	margin-left: 10px;
+	width: 60px;
+}
+
+.ie6 .col {
+	display: inline;
+}
+
+.col-group {
+	clear: both;
+	margin-left: -10px;
+	margin-right: -10px;
+}
+
+.col-group-separator {
+	overflow: hidden;
+}
+
+.group-separator-col4 {
+	background: url(../images/layout/col-separator.gif) repeat-y 319px top;
+}
+
+.ie6 div.col-group,
+.ie7 div.col-group {
+	display: inline-block;
+}
+
+.col2 {
+	width: 140px;
+}
+
+.col3 {
+	width: 220px;
+}
+
+.col4 {
+	width: 300px;
+}
+
+.col5 {
+	width: 380px;
+}
+
+.col6 {
+	width: 460px;
+}
+
+.col7 {
+	width: 540px;
+}
+
+.col8 {
+	width: 620px;
+}
+
+.col9 {
+	width: 700px;
+}
+
+.col10 {
+	width: 780px;
+}
+
+.col11 {
+	width: 860px;
+}
+
+.col12 {
+	width: 940px;
+}
+
+/* content */
+#content {
+	position: relative;
+	z-index: 30;
+	margin: 0 auto;
+	width: 960px;
+	padding-top: 1.5em;
+}
+
+#content.support {
+	overflow: hidden;
+	background-color: #fff;
+}
+
+#content-header .inner {
+	position: relative;
+	z-index: 30;
+	margin: 0 auto;
+	width: 940px;
+}
+
+#content-main,
+#content-related,
+#content-secondary {
+	padding-bottom: 1.75em;
+}
+
+#content-secondary {
+	border-top: 1px solid #f9ccb9;
+	padding: .75em 0;
+}
+
+/* footer */
+#footer {
+	clear: both;
+	border-top: 1px solid #b2b2b2;
+	width: 100%;
+	background-color: #f7f7f7;
+}
+
+#footer .inner {
+	overflow: hidden;
+	margin: 0 auto;
+	width: 960px;
+}
+
+#footer .disclaimer {
+	background-color: #ecebeb;
+}
+
+#footer .links {
+	color: #fff;
+	background-color: #252525;
+}
